@@ -24,8 +24,6 @@ document.getElementById("logo").addEventListener("click", () => {
     navbox.style.right = '-200px'
   }
 
-// navbox.style.right = '0px'
-  alert("hello")
 });
 
 
