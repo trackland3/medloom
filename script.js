@@ -11,6 +11,21 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
+//navbar color change ----------------------------------------------------------
+
+//responsive navbar ------------------------------------------------------------
+
+const navbox = document.getElementById("navbox") ;
+const toggle = document.getElementById("toggle") ;
+
+toggle.onclick
+
+toggle.addEventListener('Click', (e) =>{
+    alert("Hello World!");
+})
+
+//responsive navbar ------------------------------------------------------------
+
 
 
 
