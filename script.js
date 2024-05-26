@@ -11,6 +11,28 @@ window.addEventListener('scroll', (e) => {
     }
 })
 
+//navbar color change ----------------------------------------------------------
+
+//responsive navbar ------------------------------------------------------------
+
+const navbox = document.getElementById("navbox") 
+
+document.getElementById("logo").addEventListener("click", () => {
+    navbox.classList.toggle('active')
+    if (navbox.style.right === "-200px") {
+    navbox.style.right = '0px'
+    console.log('hello');
+  } else {
+    navbox.style.right = '-200px'
+    console.log('helloo');
+  }
+
+});
+
+
+//responsive navbar ------------------------------------------------------------
+
+
 
 
 
