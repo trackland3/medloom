@@ -15,16 +15,22 @@ window.addEventListener('scroll', (e) => {
 
 //responsive navbar ------------------------------------------------------------
 
-const navbox = document.getElementById("navbox") ;
-const toggle = document.getElementById("toggle") ;
+const navbox = document.getElementById("navbox") 
 
-toggle.onclick
+document.getElementById("logo").addEventListener("click", () => {
+  if (navbox.style.right == '-200px') {
+    navbox.style.right = '0px'
+  } else if (navbox.style.right == '0px') {
+    navbox.style.right = '-200px'
+  }
 
-toggle.addEventListener('Click', (e) =>{
-    alert("Hello World!");
-})
+// navbox.style.right = '0px'
+  alert("hello")
+});
+
 
 //responsive navbar ------------------------------------------------------------
+
 
 
 
