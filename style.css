@@ -26,7 +26,6 @@
     display: flex;
     position: fixed;
     top: 100px;
-    right: -200px;
     width: 200px;
     height: calc(100vh - 100px);
     background-color: #85bce1;

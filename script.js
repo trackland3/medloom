@@ -18,10 +18,13 @@ window.addEventListener('scroll', (e) => {
 const navbox = document.getElementById("navbox") 
 
 document.getElementById("logo").addEventListener("click", () => {
-  if (navbox.style.right == '-200px') {
+    navbox.classList.toggle('active')
+    if (navbox.style.right === "-200px") {
     navbox.style.right = '0px'
-  } else if (navbox.style.right == '0px') {
+    console.log('hello');
+  } else {
     navbox.style.right = '-200px'
+    console.log('helloo');
   }
 
 });
