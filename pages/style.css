@@ -55,8 +55,119 @@
     
 }
 
+/*Services page css styles go here ..............*/
+/*Operations css styles go here ................*/
 
-.landpage{
+.Operations{
+    background-color: rgb(108, 194, 255);
+    padding-bottom: 5vh;
+}
+
+
+.Operationsbox{
+display: flex;
+flex-direction: row;
+padding:5vh;
+background-color: #0161b5;
+margin: 8vh;
+border-radius: 8vh;
+
+}
+
+.Heading_Op{
+   padding-top: 20vh;
+   font-family: "Montserrat",sans-serif;
+   text-align: center;
+   
+}
+
+.description_Op{
+
+    text-align: center;
+    padding:10vh;
+
+}
+
+.description_heading_Op{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    padding:2vh;
+    font-size: 3vh;
+    color:white;
+}
+.description_para{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    color:white;
+
+}
+.image_Op{
+    align-items: center;
+    justify-content: center;
+    padding: 15vh;
+    background-color: aliceblue;
+    border-radius: 5vh;
+
+}
+/*Operations css styles go here ................*/
+
+/*Awards css styles go here ................*/
+.Awards{
+    background-color: rgb(0, 98, 255);
+    padding-bottom: 5vh;
+}
+
+
+.Awardsbox{
+display: flex;
+flex-direction: row;
+padding:5vh;
+background-color: #38b6ff;
+margin: 8vh;
+border-radius: 8vh;
+
+}
+
+.Heading_Aw{
+   padding-top: 20vh;
+   font-family: "Montserrat",sans-serif;
+   text-align: center;
+   
+}
+
+.description_Aw{
+
+    text-align: center;
+    padding:10vh;
+
+}
+
+.description_heading_Aw{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    padding:2vh;
+    font-size: 3vh;
+    color:white;
+}
+.description_para{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    color:white;
+
+}
+.image_Aw{
+    align-items: center;
+    justify-content: center;
+    padding: 15vh;
+    background-color: aliceblue;
+    border-radius: 5vh;
+
+}
+/*Awards css styles go here ................*/
+/*Services page css styles go here ................*/
+
+
+/*.landpage{
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(rgba(156, 215, 240, 0.8),rgba(156, 215,  240, 0.7)),url(assets/hero-bg.jpg);
@@ -81,7 +192,7 @@
     position: sticky;
     top: 0px;
     min-height: 100vh;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
 
 }
 
@@ -112,6 +223,6 @@
     min-height: 100vh;
     background-color: teal;
 }
-
+*/
 
 
