@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consulting</title>
+
+    <link rel="stylesheet" href="doctor.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="form.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-------------------------------1st division----------------------------------------------->
+    <div class="doctors">
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image1.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Amelia Grant </li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image2.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Name</li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment" target="blank"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image3.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Name</li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment" target="blank"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+
+    </div>
+
+    <!-------------------------------2nd division----------------------------------------------->
+    <div class="doctors">
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image4.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Name</li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Name</li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------------->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Name</li>
+                    <li><i class="fa-solid fa-stethoscope"></i></i> MBBs. Specializtion</li>
+                    <li><i class="fa-regular fa-envelope"></i> Email</li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------3rd division----------------------------------------------->
+    <div class="consulting" id="appoinment">
+
+        <div>
+            <h1>Consultation Form</h1>
+        </div>
+
+        <div class="internalform">
+
+            <form id="myform">
+                <label>Patient Name :</label>
+                <br>
+                <input id="patientName" type="text" name="patientName">
+                <br><br>
+
+                <label>Patient Email :</label><br>
+                <input id="patientEmail" type="email" name="patientEmail">
+                <br><br>
+
+                <label>Contact Number :</label><br>
+                <input id="contactNumber" type="number" name="contactNumber">
+                <br><br>
+
+                <label>Doctor Name :</label><br>
+                <input id="doctorName" type="text" name="doctorName">
+                <br><br>
+
+                <label>Select Hospital:</label><br>
+                <select id="hospitalSelect" name="hospital">
+                    <option value="Hospital_1">Hospital_1</option>
+                    <option value="Hospital_2">Hospital_2</option>
+                    <option value="Hospital_3">Hospital_3</option>
+                    <option value="Hospital_4">Hospital_4</option>
+                </select>
+                <br><br>
+
+                <p>Once you submit the form you will receive a SMS including your channelling no. and time.</p>
+            
+                <p>If you have filled the form properly you will get an alert message. If not refresh the browswer and fill the form again</p>
+                <br>
+
+                <div style="display:flex; justify-content: center; align-items: center;">
+                    <button type="submit">Submit</button>
+
+                </div>
+                <br>
+                <p id="errorMessages" class="error"></p>
+            </form>
+
+        </div>
+
+    </div>
+    <!-----------------------------------end---------------------------------------------------->
+
+</body>
+
+</html>

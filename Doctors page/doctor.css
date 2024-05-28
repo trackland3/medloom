@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: url(pics/backgroung.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------Description of doctors---------------------------------------------------------------*/
+
+/* #main {
+    background: #1d4237;
+    height: 40px;
+    width: auto;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+} */
+
+.doctors {
+    background: #011928a3;
+    /* width: 100vw; */
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    width: 300px;
+    height: auto;
+    margin: 10px 50px 10px 50px;
+    padding: 10px;
+    background: #0c3327;
+    border: 2px solid #18f1a9cd;
+    border-radius: 10px;
+}
+
+.pictorial {
+    margin: 20px;
+    border: 2px solid #ffffff4f;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.details {
+    margin: 5px;
+    color: #ffffff;
+    height: auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+li {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    line-height: 3.0em;
+    margin: 0;
+}
+
+i {
+    color: #b4fbf1;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.buttondiv {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border: 2px solid #b4fbf1;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    width: 150px;
+    background-color: #ffffff14;
+    border: 2px solid #18f1a9cd;
+    border-radius: 5px;
+}
+
+/*---------------------------------------Consulting---------------------------------------------------------------*/
+
+.consulting {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: auto;
+    height: 100vh;
+    background: #011928a3;
+}
+
+.consulting h1 {
+    margin: 0;
+    margin: 0 0 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.internalform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+form {
+    width: 400px;
+    background: #011928c8;
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+label {
+    color: #fff;
+    line-height: 1.5em;
+    width: 200px;
+    margin-right: 10px;
+}
+
+p {
+    color: #fff;
+    font-style: italic;
+    text-align: left;
+    font-size: 12px;
+}
+
+input,
+select {
+    height: 20px;
+    width: 400px;
+    background: #ffffff52;
+    color: #ffffff;
+    border: 2px none;
+    border-radius: 4px;
+}
+
+option {
+    background: #011928a3;
+}
+
+
+.error {
+    color: #18f1a9;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+/*-----------------responsiveness-----------------*/
+
+@media (max-width: 1200px) {
+    .doctors {
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+
+    .description {
+        width: 350px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .internalform {
+        width: 100vw;
+        height: auto;
+    }
+
+    form {
+        width: 50%;
+        height: auto;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query for screens smaller than 480px (mobile devices)
+@media (max-width: 480px) {
+    .doctors {
+        height: auto;
+        padding: 20px;
+    }
+} */
