@@ -166,6 +166,7 @@ border-radius: 8vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: white;
+   font-size: 5vh;
    
 }
 
@@ -180,7 +181,7 @@ border-radius: 8vh;
     font-family: "Montserrat",sans-serif;
     text-align: center;
     padding:2vh;
-    font-size: 3vh;
+    font-size: 4vh;
     color:white;
     margin: 3vh;
 }
@@ -189,6 +190,7 @@ border-radius: 8vh;
     text-align: center;
     color:white;
     margin: 10vh 5vh;
+    font-size: 2vh;
 
 }
 .image_Op{
@@ -230,6 +232,7 @@ border-radius: 8vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: white;
+   font-size: 5vh;
    
 }
 
@@ -341,6 +344,19 @@ border-radius: 8vh;
     }
 
 }
+@media screen and (max-width: 900px) {
+    .Heading_Op{
+        padding-top: 30vh;
+    }
+    .Operationsbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .Awardsbox{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 @media screen and (max-width: 820px) {
@@ -405,7 +421,17 @@ border-radius: 8vh;
     
 }
 @media screen and (max-width: 530px) {
-    
+    .Heading_Op{
+        padding-top: 30vh;
+    }
+    .Operationsbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .Awardsbox{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
