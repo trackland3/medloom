@@ -99,7 +99,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #85bce1;
+    background-color: #0394c0e1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +136,7 @@
 
 .navlink:hover {
     background-color: white;
-    color: #85bce1;
+    color: #005a81;
     padding: 8px 10px;
     margin: 0px;
     
