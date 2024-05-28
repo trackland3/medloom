@@ -5,9 +5,9 @@ console.log(heighty);
 window.addEventListener('scroll', (e) => {
     const scrolly = window.scrollY
     if (scrolly > 200) {
-        document.querySelector('.navbar').style.backgroundColor = '#ffffff'
+        document.getElementById("navbar").style.backgroundColor = '#ffffff'
     } else {
-        document.querySelector('.navbar').style.backgroundColor = '#85bce100'
+        document.getElementById("navbar").style.backgroundColor = '#85bce100'
     }
 })
 
