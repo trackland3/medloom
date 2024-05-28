@@ -4,10 +4,15 @@ const heighty = window.innerHeight
 console.log(heighty);
 window.addEventListener('scroll', (e) => {
     const scrolly = window.scrollY
-    if (scrolly > 200) {
-        document.getElementById("navbar").style.backgroundColor = '#ffffff'
+    if (scrolly > 100) {
+        document.getElementById("navb").style.backgroundColor = '#ffffff'
     } else {
-        document.getElementById("navbar").style.backgroundColor = '#85bce100'
+        document.getElementById("navb").style.backgroundColor = '#85bce100'
+    }
+    if (scrolly > 100) {
+        document.getElementById("navba").style.backgroundColor = '#ffffff'
+    } else {
+        document.getElementById("navba").style.backgroundColor = '#85bce100'
     }
 })
 
