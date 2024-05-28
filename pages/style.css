@@ -203,6 +203,8 @@ border-radius: 8vh;
     height:30vh ;
     width: 50vh;
     object-fit: contain;
+    align-items: center;
+    justify-content: center;
 }
 /*Operations css styles go here ................*/
 
@@ -262,7 +264,7 @@ border-radius: 8vh;
 }
 .imgAw{
     height:50vh ;
-    width: 70vh;
+   
     padding: 10vh;
     
 }
@@ -400,6 +402,9 @@ border-radius: 8vh;
         align-items: center;
         object-fit: contain;
     }
+    
+}
+@media screen and (max-width: 530px) {
     
 }
 
