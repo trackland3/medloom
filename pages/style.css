@@ -165,6 +165,7 @@ border-radius: 8vh;
    padding-top: 20vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
+   color: white;
    
 }
 
@@ -181,11 +182,13 @@ border-radius: 8vh;
     padding:2vh;
     font-size: 3vh;
     color:white;
+    margin: 3vh;
 }
 .description_para{
     font-family: "Montserrat",sans-serif;
     text-align: center;
     color:white;
+    margin: 10vh 5vh;
 
 }
 .image_Op{
@@ -199,6 +202,7 @@ border-radius: 8vh;
 .imgop{
     height:30vh ;
     width: 50vh;
+    object-fit: contain;
 }
 /*Operations css styles go here ................*/
 
@@ -223,6 +227,7 @@ border-radius: 8vh;
    padding-top: 20vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
+   color: white;
    
 }
 
@@ -256,9 +261,10 @@ border-radius: 8vh;
 
 }
 .imgAw{
-    height:30vh ;
-    width: 50vh;
+    height:50vh ;
+    width: 70vh;
     padding: 10vh;
+    
 }
 /*Awards css styles go here ................*/
 /*Services page css styles go here ................*/
@@ -335,7 +341,7 @@ border-radius: 8vh;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .navbar{
         display: none;
     }
@@ -390,9 +396,11 @@ border-radius: 8vh;
     }
     .imgop{
         height:30vh ;
-        width: 50vh;
-        padding: 1vh;
+        width: 75vh;
+        align-items: center;
+        object-fit: contain;
     }
+    
 }
 
 
