@@ -5,6 +5,9 @@
     
 }
 
+html{
+    width: 100%;
+}
 
 
 .navbarm{
@@ -99,38 +102,45 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #85bce1;
+    background-color: #85bce100;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 100;
     transition: 500ms;
-
+    box-shadow: 0 4px 8px  rgba(35, 67, 83, 0.197);
+    backdrop-filter: blur(5px);
 }
 
 .logo{
     width: 120px;
     height: 80px;
-    background: white;
+    background: #ef4c69;
+    margin-right: 200px;
+    z-index: 100;
 }
 
 .navlinks{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 100;
     
 }
 
 .navlink{
     text-decoration: none;
-    color: white;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 800;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
     font-size: 1.1em;
     transition: 400ms;
     margin: 8px;
     border-radius: 15px;
+    color: #234353;
+    z-index: 100;
+
+
     
 }
 
@@ -146,11 +156,12 @@
 
 .landpage{
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(156, 215, 240, 0.8),rgba(156, 215,  240, 0.7)),url(assets/hero-bg.jpg);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.779), rgba(255, 255, 255, 0)),url(assets/bg4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,28 +169,42 @@
 }
 
 .heading{
-    /* border: 1px solid white; */
-    width: 100%;
-    height: 500px;
+    overflow-x: hidden;
+    width: 70%;
+    height: 600px;
     padding: 100px;
     position: absolute;
-    color: white;
     display: flex;
     flex-direction: column;
+    /* top: 100px; */
+    /* left : 200px; */
     justify-content: center;
-    align-items: center;
-    font-family:"Reddit Sans Condensed", sans-serif;
-    text-align: center;
+    /* align-items: center; */
+    text-align: justify;
+    z-index: 3;
+    
 }
 
 .heading p:nth-child(1){
-    font-size: 8rem;
+    font-family: "Antonio", sans-serif;
+    font-size: 200px;
     font-weight: 600;
+    color: rgb(35, 67, 83);
+    text-shadow: 2px 2px 4px #0000005a;
+    z-index: 3;
+    
 }
 
 .heading p:nth-child(2){
-    font-size: 3.4rem;
-    font-weight: 400;
+    padding-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #fe4964;
+    text-shadow: 1px 1px 4px #0000005a;
+    letter-spacing: 4px;
+    z-index: 3;
+    
 }
 
 .achive{
