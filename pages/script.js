@@ -4,34 +4,12 @@ const heighty = window.innerHeight
 console.log(heighty);
 window.addEventListener('scroll', (e) => {
     const scrolly = window.scrollY
-    if (scrolly > 200) {
-        document.querySelector('.navbar').style.backgroundColor = '#ffffff'
+    if (scrolly > 800) {
+        document.querySelector('.navbar').style.backgroundColor = '#427191'
     } else {
-        document.querySelector('.navbar').style.backgroundColor = '#85bce100'
+        document.querySelector('.navbar').style.backgroundColor = '#85bce1'
     }
 })
-
-//navbar color change ----------------------------------------------------------
-
-//responsive navbar ------------------------------------------------------------
-
-const navbox = document.getElementById("navbox") 
-
-document.getElementById("logo").addEventListener("click", () => {
-    navbox.classList.toggle('active')
-    if (navbox.style.right === "-200px") {
-    navbox.style.right = '0px'
-    console.log('hello');
-  } else {
-    navbox.style.right = '-200px'
-    console.log('helloo');
-  }
-
-});
-
-
-//responsive navbar ------------------------------------------------------------
-
 
 
 
