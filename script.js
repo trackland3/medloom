@@ -14,6 +14,7 @@ window.addEventListener('scroll', (e) => {
     } else {
         document.getElementById("navba").style.backgroundColor = '#85bce100'
     }
+    
 })
 
 //navbar color change ----------------------------------------------------------
@@ -26,12 +27,16 @@ document.getElementById("logo").addEventListener("click", () => {
     navbox.classList.toggle('active')
     if (navbox.style.right === "-200px") {
     navbox.style.right = '0px'
+    document.getElementById("cont").style.filter = 'blur(5px)';
     console.log('hello');
   } else {
     navbox.style.right = '-200px'
+    document.getElementById("cont").style.filter = 'blur(0px)';
     console.log('helloo');
+
   }
 
+    
 });
 
 

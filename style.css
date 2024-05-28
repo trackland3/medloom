@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
     
 }
 
@@ -35,10 +37,14 @@ html{
     width: 200px;
     height: calc(100vh - 100px);
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #234353;
     z-index: 101;
     transition: 400ms;
-    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.navlist .navlinks .navlink{
+    color: white;
 }
 
 #checkbox {
@@ -146,13 +152,23 @@ html{
     
 }
 
-.navlink:hover {
-    background-color: white;
-    color: #005a81;
-    padding: 8px 10px;
-    margin: 0px;
-    
-    
+.navlink::before {
+    margin-left: auto;
+}
+
+.navlink::after,
+.navlink::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #234353;
+    display: block;
+    transition: 0.5s;
+}
+
+.navlink:hover::after,
+.navlink:hover::before {
+    width: 100%;
 }
 
 
@@ -167,11 +183,16 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;transition: 400ms;
+    
+}
+
+#cont{
+    transition: 400ms;
 }
 
 .heading{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     overflow-x: hidden;
     width: 70%;
     height: 400px;
@@ -210,13 +231,50 @@ html{
 }
 
 .qaccess{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 70%;
     height: 100px;
+    padding: 0px 105px;
+    margin-top: 10px;
     transform: translateY(200px);
     display: flex;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
+
+.qchanel {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #ef4c69;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+.qchanel:hover {
+    background: #fe4964;
+}
+
+.qchanel>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.qchanel:hover svg {
+    transform: translateX(5px);
+}
+
+.qchanel:active {
+    transform: scale(0.95);
+}
+
 
 .achive{
     width: 100%;
@@ -281,6 +339,27 @@ html{
 
     .navlink{
         font-size: 1em;
+
+    }
+
+    .heading{
+        padding: 0;
+    }
+
+    .heading p:nth-child(1) {
+        font-size: 170px;
+        font-weight: 800;
+    }
+
+    .heading p:nth-child(2) {
+
+        font-weight: 600;
+        letter-spacing: 2px;
+
+    }
+
+    .qaccess{
+        padding: 0 10px;
     }
 
 }
@@ -313,20 +392,26 @@ html{
         flex-direction: column;
         align-items: center;
         /* justify-content: center; */
-        top: 00px;
+        top: 50px;
     }
 
 
     .heading p:nth-child(1) {
-        font-size: 4.5px;
+        font-size: 8rem;
         font-weight: 800;
     }
     .heading p:nth-child(2) {
-        font-size: 1rem;
-        font-weight: 400;
+        font-size: 1.15rem;
+        font-weight: 600;
         letter-spacing: 2px;
         padding: 0;
+        text-align: center;
     }
+
+    .qaccess{
+        display: none;
+    }
+    
 
 
 }
