@@ -196,17 +196,18 @@ border-radius: 8vh;
 .image_Op{
     align-items: center;
     justify-content: center;
-    padding: 15vh;
     background-color: aliceblue;
     border-radius: 5vh;
+    padding: 2.5vh;
 
 }
 .imgop{
     height:30vh ;
     width: 50vh;
-    object-fit: contain;
+    object-fit:cover;
     align-items: center;
     justify-content: center;
+  
 }
 /*Operations css styles go here ................*/
 
@@ -238,6 +239,7 @@ border-radius: 8vh;
 
 .description_Aw{
 
+   
     text-align: center;
     padding:10vh;
 
@@ -254,15 +256,17 @@ border-radius: 8vh;
     font-family: "Montserrat",sans-serif;
     text-align: center;
     color:white;
+    margin: 10vh 5vh;
+    font-size: 2vh;
 
 }
 .image_Aw{
     align-items: center;
     justify-content: center;
-    padding: 15vh;
+    
     background-color: aliceblue;
     border-radius: 5vh;
-    padding: 10vh;
+    
 
 }
 .imgAw{
@@ -411,6 +415,9 @@ border-radius: 8vh;
     }
     .image_Op{
         margin: 5px ;
+        align-items: center;
+        object-fit: contain;
+        
     }
     .imgop{
         height:30vh ;
