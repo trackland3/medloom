@@ -197,7 +197,7 @@ border-radius: 8vh;
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    border-radius: 5vh;
+    border-radius: 7.5vh;
     padding: 2.5vh;
 
 }
@@ -207,6 +207,7 @@ border-radius: 8vh;
     object-fit:cover;
     align-items: center;
     justify-content: center;
+    border-radius: 5vh;
   
 }
 /*Operations css styles go here ................*/
@@ -263,16 +264,15 @@ border-radius: 8vh;
 .image_Aw{
     align-items: center;
     justify-content: center;
-    
     background-color: aliceblue;
-    border-radius: 5vh;
+    border-radius: 7.5vh;
     
 
 }
 .imgAw{
     height:50vh ;
-   
-    padding: 10vh;
+    border-radius: 7.5vh;
+    padding: 2.0vh;
     
 }
 /*Awards css styles go here ................*/
@@ -414,18 +414,36 @@ border-radius: 8vh;
         flex-direction: column;
     }
     .image_Op{
-        margin: 5px ;
         align-items: center;
-        object-fit: contain;
-        
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 7.5vh;
+        padding: 2.5vh;
+    
     }
     .imgop{
         height:30vh ;
-        width: 75vh;
+        width: 50vh;
+        object-fit:cover;
         align-items: center;
-        object-fit: contain;
+        justify-content: center;
+        border-radius: 5vh;
+      
     }
+    .image_Aw{
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 7.5vh;
+        
     
+    }
+    .imgAw{
+        height:50vh ;
+        border-radius: 7.5vh;
+        padding: 2.0vh;
+        
+    }
 }
 @media screen and (max-width: 530px) {
     .Heading_Op{
