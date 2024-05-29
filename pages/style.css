@@ -463,9 +463,12 @@ width:35%;
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 790px) {
     .imgop{
         display: flex;
+        padding: 10px;
+        margin: 15px;
+
     
     }
     .description_para{
@@ -476,7 +479,14 @@ width:35%;
         font-size: 2vh;
     
     }
-
+    .Operations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Operationsbox{
+        
+    }
 }
 
 
@@ -492,6 +502,7 @@ width:35%;
         display: flex;
         flex-direction: column;
     }
+    
 }
 
 
@@ -503,4 +514,46 @@ width:35%;
 }
 
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 625px) {
+
+    .Operationsbox{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 10vh;
+        justify-content: center;
+        
+    }
+    .Awardsbox{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin:5px;
+        justify-content: center;
+    }
+    
+    .imgop{
+        height:40vh ;
+        width: 50vh;
+        object-fit:cover;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vh;
+      
+    }
+    .image_Aw{
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 7.5vh;
+        width: 50vh;
+        
+    
+    }
+    .imgAw{
+        height:50vh ;
+        border-radius: 7.5vh;
+        padding: 2.0vh;
+        
+    }
+}
