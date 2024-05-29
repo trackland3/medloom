@@ -463,16 +463,17 @@ width:35%;
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 765px) {
     .imgop{
-        width: min-content;
+        display: flex;
+    
     }
     .description_para{
         font-family: "Montserrat",sans-serif;
         text-align: center;
         color:white;
         margin: 10vh 5vh;
-        font-size: 1vh;
+        font-size: 2vh;
     
     }
 
