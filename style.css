@@ -12,6 +12,26 @@ html{
 }
 
 
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--verdigris);
+    display: grid;
+    place-items: center;
+    z-index: 6;
+    transition: var(--transition-1);
+}
+
+.preloader.loaded {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
 .navbarm{
     position: fixed;
     display: none;
@@ -326,8 +346,25 @@ html{
 
 
 
+/* scrolltrigger------------------------------------------------------------- */
 
+[scrollTrigger] {
+  opacity: 0;
+  transition: 0.5s ease;;
+}
 
+[scrollTrigger].trigger { opacity: 1; }
+
+[scrollTrigger="bottom"] { transform: translateY(50px); }
+
+[scrollTrigger="bottom"].trigger { transform: translateY(0); }
+
+[scrollTrigger="left"] { transform: translateX(-50px); }
+
+[scrollTrigger="right"] { transform: translateX(50px); }
+
+[scrollTrigger="left"].trigger,
+[scrollTrigger="right"].trigger { transform: translateX(0); }
 
 
 
@@ -401,7 +438,7 @@ html{
         font-weight: 800;
     }
     .heading p:nth-child(2) {
-        font-size: 1.15rem;
+        font-size: 1rem;
         font-weight: 600;
         letter-spacing: 2px;
         padding: 0;
@@ -426,3 +463,5 @@ html{
 
 
 @media screen and (max-width: 375px) {}
+
+

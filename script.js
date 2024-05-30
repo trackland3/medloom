@@ -1,3 +1,17 @@
+
+//preloader --------------------------------------------------------------------
+
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
+
+//preloader --------------------------------------------------------------------
+
+
+
 //navbar color change ----------------------------------------------------------
 
 const heighty = window.innerHeight
@@ -43,7 +57,7 @@ document.getElementById("logo").addEventListener("click", () => {
 //responsive navbar ------------------------------------------------------------
 
 
-
+//scroll --
 
 //horizontal scrolling ---------------------------------------------------------
 
@@ -71,3 +85,22 @@ function transform(section) {
 }
 
 //horizontal scrolling ---------------------------------------------------------
+
+//scroll reveal ----------------------------------------------------------------
+
+const scrollTriggers = document.querySelectorAll("[scrollTrigger]");
+
+const scrollTrigger = function () {
+  for (let i = 0, len = scrollTriggers.length; i < len; i++) {
+    if (scrollTriggers[i].getBoundingClientRect().top < window.innerHeight / 1.15) {
+      scrollTriggers[i].classList.add("trigger");
+    } else {
+      scrollTriggers[i].classList.remove("trigger");
+    }
+  }
+}
+
+window.addEventListener("scroll", scrollTrigger);
+
+window.addEventListener("load", scrollTrigger);
+
