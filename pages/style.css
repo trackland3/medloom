@@ -147,7 +147,7 @@ html{
 /*Operations css styles go here ................*/
 
 .Operations{
-    background-color: rgb(108, 194, 255);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 5vh;
     
 }
@@ -155,13 +155,16 @@ html{
 
 .Operationsbox{
 display: flex;
-flex-direction:column;
+flex-direction:row;
 padding:3vh 0.5vh 5vh 0.5vh;
-background-color: #0161b5;
-margin:10vh 40vh 10vh 40vh;
-border-radius: 8vh;
+background-color: #ccfcff;
+margin-top: 5vh;
+margin-right: 5vh;
+border-top-right-radius: 8vh;
+border-bottom-right-radius: 8vh;
 justify-content: center;
 align-items: center;
+height: 95vh;
 
 
 }
@@ -170,7 +173,7 @@ align-items: center;
    padding-top: 20vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
-   color: white;
+   color: #184f68;
    font-size: 5vh;
    
 }
@@ -185,31 +188,26 @@ align-items: center;
 .description_heading_Op{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    padding:2vh;
+    padding:1vh;
     font-size: 4vh;
-    color:white;
-    margin: 3vh;
+    color:#184f68;
+    margin: 1vh;
 }
 .description_para{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    color:white;
+    color:#126286;
     margin: 1vh 5vh;
     font-size: 2vh;
     padding: 0.5vh 0.1vh 0.1vh 0.1vh;
+    margin-top: 1px;
+    margin-bottom: 1px;
 
 }
-.image_Op{
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border-radius: 7.5vh;
-    padding: 2.5vh;
 
-}
 .imgop{
-    height:30vh ;
-    width: 50vh;
+    height:100% ;
+    width: 50%;
     object-fit:cover;
     align-items: center;
     justify-content: center;
@@ -220,7 +218,7 @@ align-items: center;
 
 /*Awards css styles go here ................*/
 .Awards{
-    background-color: rgb(0, 98, 255);
+    background-color: #ffffff;
     padding-bottom: 5vh;
 }
 
@@ -235,10 +233,11 @@ align-items: center;
 display: flex;
 flex-direction: column;
 padding:1vh 2vh 1vh 2vh;
-background-color: #38b6ff;
+background-color:#d4f9fe;
 margin: 5vh;
 border-radius: 8vh;
 width:35%;
+height: 100vh;
 
 
 }
@@ -247,7 +246,7 @@ width:35%;
    padding-top: 20vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
-   color: white;
+   color: #184f68;
    font-size: 5vh;
    
 }
@@ -265,27 +264,19 @@ width:35%;
     text-align: center;
     padding:2vh;
     font-size: 3vh;
-    color:white;
+    color:#184f68;
 }
 .description_para{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    color:white;
+    color:#184f68;
     margin: 10vh 5vh;
     font-size: 1.8vh;
 
 }
-.image_Aw{
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border-radius: 7.5vh;
-    
-    
 
-}
 .imgAw{
-    height:30vh ;
+    height:50vh ;
     border-radius: 7.5vh;
     padding: 2.0vh;
     
@@ -361,7 +352,21 @@ width:35%;
     .navlink{
         font-size: 1em;
     }
-
+    .imgop{
+        margin-right: 2rem;
+        height: 80vh;
+        width: 90vh;
+    }
+    .Operationsbox{
+        display: flex;
+        flex-direction: row;
+    }
+    .Awardsbox{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        
+}
 }
 @media screen and (max-width: 900px) {
     .Heading_Op{
@@ -369,14 +374,26 @@ width:35%;
     }
     .Operationsbox{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
     .Awardsbox{
         display: flex;
         flex-direction: column;
+        width: 500px;
     }
+    .imgop{
+        height:100% ;
+        width: 60%;
+        object-fit:cover;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5vh;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      
+    }
+    
 }
-
 
 @media screen and (max-width: 820px) {
     .navbar{
@@ -422,12 +439,15 @@ width:35%;
 
     .Operationsbox{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        padding-bottom: 1vh;
+        border-radius: 7.5vh;
         
     }
     .Awardsbox{
         display: flex;
         flex-direction: column;
+        width: 500px;
     }
     .image_Op{
         align-items: center;
@@ -438,7 +458,7 @@ width:35%;
     
     }
     .imgop{
-        height:40vh ;
+        height:80vh ;
         width: 50vh;
         object-fit:cover;
         align-items: center;
@@ -465,17 +485,20 @@ width:35%;
 
 @media screen and (max-width: 790px) {
     .imgop{
-        display: flex;
+        
         padding: 10px;
         margin: 15px;
+        height:400px;
+        width: 580px;
+        border-radius: 7.5vh;
 
     
     }
     .description_para{
         font-family: "Montserrat",sans-serif;
         text-align: center;
-        color:white;
-        margin: 10vh 5vh;
+        color:#184f68;
+        margin: 5vh 5vh;
         font-size: 2vh;
     
     }
@@ -485,36 +508,28 @@ width:35%;
         align-items: center;
     }
     .Operationsbox{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 700px;
+        margin-left: 0;
+        padding-left: 0;
+       
+       
+        
         
     }
-}
-
-
-@media screen and (max-width: 530px) {
-    .Heading_Op{
-        padding-top: 30vh;
-    }
-    .Operationsbox{
-        display: flex;
-        flex-direction: column;
-    }
     .Awardsbox{
+        margin: 10vh;
         display: flex;
         flex-direction: column;
+        width: 500px;
+        margin:5px;
+        justify-content: center;
     }
+}
     
-}
-
-
-@media screen and (max-width: 425px) {
-    .heading p:nth-child(1) {
-            font-size: 4.5rem;
-            font-weight: 800;
-        }
-}
-
-
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 640px) {
 
     .Operationsbox{
         display: flex;
@@ -522,6 +537,7 @@ width:35%;
         width: 300px;
         margin: 10vh;
         justify-content: center;
+        border-radius: 5vh;
         
     }
     .Awardsbox{
@@ -557,3 +573,24 @@ width:35%;
         
     }
 }
+
+
+
+@media screen and (max-width: 425px) {
+    .heading p:nth-child(1) {
+            font-size: 4.5rem;
+            font-weight: 800;
+        }
+        .Heading_Op{
+            padding-top: 30vh;
+        }
+        .Operationsbox{
+            display: flex;
+            flex-direction: column;
+        }
+        .Awardsbox{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
