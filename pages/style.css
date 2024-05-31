@@ -121,7 +121,7 @@ html{
 .logo{
     width: 220px;
     height: 80px;
-    background: url("./assets/logo.png");
+    background: url(".././assets/logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
