@@ -99,9 +99,12 @@ img {
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
     line-height: 3.0em;
+    justify-content: center;
     margin: 0;
+    padding:0;
+
 }
 
 i {
@@ -211,18 +214,18 @@ option {
 
 /*-----------------responsiveness-----------------*/
 
-@media (max-width:1200px) {
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:1000px) {
 
     .doctors{
-        height:100%;
+        height:auto;
     }
 
-    .mothersdiv {
-        overflow: hidden;
+    #motherdiv {
         height: 100vh;
-        flex-direction: column;
+        width: 100vw;
     }
-
+    
 
     .description {
         /* height:auto; */
@@ -231,90 +234,124 @@ option {
     }
     form {
         width: 50%;
-        height: auto;
+        height: 100%;
     }
 
     input,
     label,
     select {
         width: 100%;
-        height: auto;
     }
 }
 
-/* 
-@media (max-width:900px){
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:768px) {
 
-    .mothersdiv {
-        overflow: hidden;
+    .doctors{
         height:auto;
-        flex-direction: column;
     }
+
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+    
 
     .description {
-
+        display: flex;
         flex-direction: column;
-        height: 50%;
         overflow: hidden;
+        width: 400px;
+        margin: 10px;
 
-    }
-} */
-
-
-/* @media (max-width: 1200px) {
-    .doctors {
-        flex-direction: column;
-        width: 100vw;
-        height: auto;
-    }
-
-    .description {
-        width: 350px;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .internalform {
-        width: 100vw;
-        height: auto;
     }
 
     form {
         width: 50%;
-        height: auto;
+        height: 100%;
     }
 
     input,
     label,
     select {
         width: 100%;
-        height: auto;
     }
-} */
+}
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:500px) {
 
-/* Media query for screens smaller than 480px (mobile devices)
-@media (max-width: 480px) {
-    .doctors {
-        height: auto;
-        padding: 20px;
+    .doctors{
+        height:auto;
     }
-} */
+
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+    
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 60%;
+        margin: 10px;
+    }
+
+    form {
+        width: 50%;
+        height: 100%;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+}
+/*--------------------------------------------------------------------------*/
+
+@media screen and (max-width:500px) {
+
+    .doctors{
+        height:auto;
+    }
 
 
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+    
 
-/*
+    .description {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 60%;
+        margin: 5px;
+    }
 
- #234353;
- #85bce100
- rgba(35, 67, 83, 0.197) gray
- #ef4c69 red;
- background: linear-gradient(to right, rgba(255, 255, 255, 0.779), rgba(255, 255, 255, 0)),url(assets/bg4.jpg); 227
-#0000005a
-*/
-/* 
-.target{
-    background: #234353;
-    background: #85bce100;
-    background: #234353;
-    background: #234353;
-} */
+    .pictorial{
+        margin:0;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    i{
+        font-size: 15px;
+        margin-right: 8px;
+    }
+
+    li{
+        font-size: 13px;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+}
