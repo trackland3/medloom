@@ -22,6 +22,7 @@ html{
     z-index: 101;
     box-shadow: 0 4px 8px rgba(35, 67, 83, 0.197);
     backdrop-filter: blur(5px);
+    transition: 200ms ease-in;
 
     
 
@@ -34,10 +35,14 @@ html{
     width: 200px;
     height: calc(100vh - 100px);
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #234353;
     z-index: 101;
     transition: 400ms;
-    -webkit-tap-highlight-color: transparent;
+    
+}
+
+.navlist .navlinks .navlink{
+    color: white;
 }
 
 #checkbox {
@@ -93,54 +98,75 @@ html{
     transition-duration: .3s;
     transform-origin: left center;
 }
+
+
+
+
 .navbar{
     width: 100%;
     padding: 0px 100px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0394c0e1;
+    background-color: #85bce100;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 100;
-    transition: 500ms;
-
+    transition: 200ms ease-in;
+    box-shadow: 0 4px 8px  rgba(35, 67, 83, 0.197);
+    backdrop-filter: blur(5px);
 }
 
 .logo{
     width: 120px;
     height: 80px;
-    background: white;
+    background: #ef4c69;
+    margin-right: 200px;
+    z-index: 100;
 }
 
 .navlinks{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 100;
     
 }
 
 .navlink{
     text-decoration: none;
-    color: white;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 800;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
     font-size: 1.1em;
     transition: 400ms;
     margin: 8px;
     border-radius: 15px;
+    color: #234353;
+    z-index: 100;
+
+
     
 }
 
-.navlink:hover {
-    background-color: white;
-    color: #005a81;
-    padding: 8px 10px;
-    margin: 0px;
-    
-    
+.navlink::before {
+    margin-left: auto;
+}
+
+.navlink::after,
+.navlink::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #234353;
+    display: block;
+    transition: 0.5s;
+}
+
+.navlink:hover::after,
+.navlink:hover::before {
+    width: 100%;
 }
 
 /*Services page css styles go here ..............*/
@@ -282,6 +308,58 @@ height: 100vh;
     
 }
 /*Awards css styles go here ................*/
+
+/*reviews css styles go here ................*/
+.heading_review{
+    padding-top: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    color:#184f68;
+}
+.Reviews{
+   
+}
+.reviewbox{
+   background-color: #ccfcff; 
+   display: flex;
+   flex-direction: column;
+   margin-left: 30vh;
+   margin-right: 30vh;
+   border-radius: 7.5vh;
+   align-items: center;
+   margin: 5vh;
+   
+
+}
+
+.imgRe{
+    padding: 10vh;
+    background-image: url("R.jpg");
+    height: 20vh;
+    width: 25vh;
+    align-items: center;
+    margin-top: 10vh;
+    background-size:cover;
+    border-radius: 5vh;
+}
+   
+
+.description_Re{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    font-size:2vh ;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    color:#184f68;
+    
+
+}
+
+
+/*reviews css styles go here ................*/
+
 /*Services page css styles go here ................*/
 
 
