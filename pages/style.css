@@ -119,9 +119,12 @@ html{
 }
 
 .logo{
-    width: 120px;
+    width: 220px;
     height: 80px;
-    background: #ef4c69;
+    background: url("./assets/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 200px;
     z-index: 100;
 }
@@ -650,6 +653,54 @@ height: 100vh;
         padding: 2.0vh;
         
     }
+    .heading_review{
+        padding-top: 10vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        text-align: center;
+        font-family: "Montserrat",sans-serif;
+        color:#184f68;
+    }
+    .Reviews{
+       
+    }
+    .reviewbox{
+       background-color: #ccfcff; 
+       display: flex;
+       flex-direction: column;
+       margin-left: 40vh;
+       margin-right: 40vh;
+       border-radius: 7.5vh;
+       align-items: center;
+       margin: 5vh;
+       
+    
+    }
+    
+    .imgRe{
+        padding: 10vh;
+        background-image: url("R.jpg");
+        height: 20vh;
+        width: 25vh;
+        align-items: center;
+        margin-top: 10vh;
+        background-size:cover;
+        border-radius: 5vh;
+    }
+       
+    
+    .description_Re{
+        font-family: "Montserrat",sans-serif;
+        text-align: center;
+        font-size:2vh ;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        color:#184f68;
+        margin-left:6vh ;
+        margin-right:6vh ;
+        
+    
+    }
 }
 
 
@@ -672,3 +723,25 @@ height: 100vh;
 
         }
     }
+    [scrollTrigger] {
+        opacity: 0;
+        transition: 0.5s ease;;
+      }
+      
+      [scrollTrigger].trigger { opacity: 1; }
+      
+      [scrollTrigger="bottom"] { transform: translateY(50px); }
+      
+      [scrollTrigger="bottom"].trigger { transform: translateY(0); }
+      
+      [scrollTrigger="top"] { transform: translateY(-100px); }
+      
+      [scrollTrigger="top"].trigger { transform: translateY(0); }
+      
+      [scrollTrigger="left"] { transform: translateX(-50px); }
+      
+      [scrollTrigger="right"] { transform: translateX(50px); }
+      
+      [scrollTrigger="left"].trigger,
+      [scrollTrigger="right"].trigger { transform: translateX(0); }
+      
