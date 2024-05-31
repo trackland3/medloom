@@ -199,7 +199,7 @@ height: 95vh;
 }
 
 .Heading_Op{
-   padding-top: 20vh;
+   margin-top: 15vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: #184f68;
@@ -322,6 +322,8 @@ height: 100vh;
     color:#184f68;
 }
 .Reviews{
+    display: flex;
+    flex-direction: row;
    
 }
 .reviewbox{
@@ -338,7 +340,7 @@ height: 100vh;
 }
 
 .imgRe{
-    padding: 10vh;
+   
     background-image: url("R.jpg");
     height: 20vh;
     width: 25vh;
@@ -356,73 +358,18 @@ height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
     color:#184f68;
+    margin-left: 5vh;
+    margin-right: 5vh;
     
 
 }
-
-
-/*reviews css styles go here ................*/
-
-/*Services page css styles go here ................*/
-
-
-/*.landpage{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(156, 215, 240, 0.8),rgba(156, 215,  240, 0.7)),url(assets/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.achive{
-    width: 100%;
-    min-height: 100vh;
-}
-
-.sticky_parent{
-    min-height: 300vh;
-
-}
-
-.sticky{
-    overflow: hidden;
-    position: sticky;
-    top: 0px;
-    min-height: 100vh;
-    /* border: 1px solid red; 
-
-}
-
-.scrollsect{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 300vw;
-    will-change: transform;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-}
-
-.sect{
-    width: 100%;
-    height: 100vh;
-}
-
-
-
-
 
 .footer{
     width: 100%;
     min-height: 100vh;
     background-color: teal;
 }
-*/
+
 
 
 /* media quaries------------------------------------------------------------- */
@@ -661,9 +608,7 @@ height: 100vh;
         font-family: "Montserrat",sans-serif;
         color:#184f68;
     }
-    .Reviews{
-       
-    }
+
     .reviewbox{
        background-color: #ccfcff; 
        display: flex;
