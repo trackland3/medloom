@@ -166,9 +166,12 @@ html{
 }
 
 .logo{
-    width: 120px;
+    width: 220px;
     height: 80px;
-    background: #ef4c69;
+    background: url(./assets/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 200px;
     z-index: 100;
 }
@@ -384,6 +387,10 @@ html{
 
 [scrollTrigger="bottom"].trigger { transform: translateY(0); }
 
+[scrollTrigger="top"] { transform: translateY(-100px); }
+
+[scrollTrigger="top"].trigger { transform: translateY(0); }
+
 [scrollTrigger="left"] { transform: translateX(-50px); }
 
 [scrollTrigger="right"] { transform: translateX(50px); }
@@ -483,6 +490,10 @@ html{
     .heading p:nth-child(1) {
             font-size: 4.5rem;
             font-weight: 800;
+        }
+
+        .preloader span{
+            font-size: 30px;
         }
 }
 
