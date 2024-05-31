@@ -5,10 +5,10 @@ html {
 
 body {
     font-family: sans-serif;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     overflow-x: hidden;
-    background: url(pics/backgroung.jpg) no-repeat;
+    background: linear-gradient(#11546f86, #134558);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     padding: 0;
@@ -17,50 +17,71 @@ body {
 
 /*---------------------------------------Description of doctors---------------------------------------------------------------*/
 
-/* #main {
-    background: #1d4237;
-    height: 40px;
-    width: auto;
-    margin: 10px 0 10px 0;
-    text-align: center;
-    color: #fff;
-} */
-
 .doctors {
-    background: #011928a3;
-    /* width: 100vw; */
+    width: 100vw;
     height: 100vh;
-    text-align: center;
-    display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
+#motherdiv {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100vw;
+    justify-content: center;
+}
+
+
 .description {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50%;
     height: auto;
     margin: 10px 50px 10px 50px;
     padding: 10px;
-    background: #0c3327;
-    border: 2px solid #18f1a9cd;
-    border-radius: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #6dd6ee7b);
+    border: 2px solid #aac0cc;
+    border-radius: 25px;
+    transition: all 0.6s;
+}
+
+.description:hover {
+    background: #fff;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 0 #89a8aec7;
 }
 
 .pictorial {
     margin: 20px;
-    border: 2px solid #ffffff4f;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 250px;
+    /* width: 100%; */
+    background: none;
+    transition: all 0.6s;
+    border: 2px solid none;
+}
+
+
+.description:hover .pictorial {
+    background: #89a8aec7;
+    /* border: 2px solid #126081; */
 }
 
 .details {
     margin: 5px;
-    color: #ffffff;
+    color: #2f6986;
     height: auto;
     text-align: left;
 }
 
 h1 {
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
     font-size: 40px;
 }
 
@@ -84,7 +105,7 @@ ul {
 }
 
 i {
-    color: #b4fbf1;
+    color: #ef4c69;
     margin-right: 20px;
     font-size: 25px;
 }
@@ -101,9 +122,10 @@ button {
     width: 100px;
     height: 40px;
     align-items: center;
-    border: 2px solid #b4fbf1;
+    border: 2px solid;
+    border: 2px solid 2f6986;
     background: none;
-    color: #fff;
+    color: #2f6986;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
@@ -113,8 +135,8 @@ button {
 
 button:hover {
     width: 150px;
-    background-color: #ffffff14;
-    border: 2px solid #18f1a9cd;
+    border: 2px solid #ef4c69;
+    color: #ef4c69;
     border-radius: 5px;
 }
 
@@ -125,7 +147,7 @@ button:hover {
     padding: 10px 0 10px 0;
     width: auto;
     height: 100vh;
-    background: #011928a3;
+    /* background: #011928a3; */
 }
 
 .consulting h1 {
@@ -145,7 +167,7 @@ button:hover {
 form {
     width: 400px;
     background: #011928c8;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     border: 2px solid #fff;
     border-radius: 10px;
 }
@@ -189,7 +211,57 @@ option {
 
 /*-----------------responsiveness-----------------*/
 
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
+
+    .doctors{
+        height:100%;
+    }
+
+    .mothersdiv {
+        overflow: hidden;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+
+    .description {
+        /* height:auto; */
+        flex-direction: column;
+        overflow: hidden;
+    }
+    form {
+        width: 50%;
+        height: auto;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 
+@media (max-width:900px){
+
+    .mothersdiv {
+        overflow: hidden;
+        height:auto;
+        flex-direction: column;
+    }
+
+    .description {
+
+        flex-direction: column;
+        height: 50%;
+        overflow: hidden;
+
+    }
+} */
+
+
+/* @media (max-width: 1200px) {
     .doctors {
         flex-direction: column;
         width: 100vw;
@@ -218,7 +290,7 @@ option {
         width: 100%;
         height: auto;
     }
-}
+} */
 
 /* Media query for screens smaller than 480px (mobile devices)
 @media (max-width: 480px) {
@@ -226,4 +298,23 @@ option {
         height: auto;
         padding: 20px;
     }
+} */
+
+
+
+/*
+
+ #234353;
+ #85bce100
+ rgba(35, 67, 83, 0.197) gray
+ #ef4c69 red;
+ background: linear-gradient(to right, rgba(255, 255, 255, 0.779), rgba(255, 255, 255, 0)),url(assets/bg4.jpg); 227
+#0000005a
+*/
+/* 
+.target{
+    background: #234353;
+    background: #85bce100;
+    background: #234353;
+    background: #234353;
 } */
