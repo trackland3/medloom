@@ -394,9 +394,17 @@ height: 100vh;
         display: flex;
         flex-direction: column;
         width: 500px;
-        
+    }
+    .Reviews{
+        justify-content: center;
+        align-items: center;
+    }
+    .reviewbox{
+        width:400px;
+        display: flex; 
+        }     
 }
-}
+
 @media screen and (max-width: 900px) {
     .Heading_Op{
         padding-top: 30vh;
@@ -538,6 +546,7 @@ height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .Operationsbox{
         display: flex;
@@ -657,8 +666,11 @@ height: 100vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
-
+.reviewbox{
+    width:50vh;
+}
 
 }
 
@@ -701,11 +713,21 @@ height: 100vh;
         .description_Op{
             margin-left: 5vh;
             text-align:justify;
+            font-size: 0.4vh;
         }
 
         .operationsbox{
             border-radius: 5vh;
             margin: 10vh;
+           
+        }
+        .review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reviewbox{
+            width:50vh;
         }
     }
 
