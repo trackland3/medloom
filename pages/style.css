@@ -521,6 +521,26 @@ height: 100vh;
 }*/
 
 @media screen and (max-width: 790px) {
+    .navbar{
+        display: none;
+    }
+    .navbarm{
+        display: flex;
+        user-select: none;
+        
+    }
+
+    .navlinks{
+        position: absolute;
+        gap: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
     .Heading_Op{
         padding-top: 20vh;
     }
