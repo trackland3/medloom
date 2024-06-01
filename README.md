@@ -1,1 +1,1 @@
-<img href="./assets/favicon.png>
+<img href="./assets/favicon.png">
