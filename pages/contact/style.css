@@ -175,7 +175,7 @@ html{
 
 .contact{
 padding-top: 20vh;
-
+background-color: rgb(175, 237, 254);
 display: flex;
 flex-direction: column;
 justify-content:center;
@@ -186,8 +186,8 @@ justify-content:center;
    
    display: flex;
    flex-direction: row;
-   margin: 100px;
-   padding: 20px;
+   padding-left: 60px;
+   background-color: rgb(169, 215, 255);
   
 }
 .contactsub{
@@ -199,20 +199,22 @@ justify-content:center;
 .ContactH{
 margin-left:30vh;
 margin-top: 10vh;
+
 font-size: 5vh;
 }
 
 .contactD{
-    background-color: rgb(186, 240, 255);
+    background-color: rgb(175, 237, 254);
     width:100%;
 
 }
 .contact_box{
+    width:70vh;
+    margin-bottom: 5vh;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
    
-    margin-bottom: 5vh
-    display:flex;
-    flex-direction:row;
-    
 }
 
 .contact_block{
@@ -220,7 +222,7 @@ font-size: 5vh;
 }
 
 .img_contact4{
-    margin: 3vh;
+    margin: 20px;
 }
 .img1{
     height: 35px;
@@ -228,7 +230,7 @@ font-size: 5vh;
 }
 .desc_contact{
    
-    font-size: 3vh;
+    font-size: 16px;
     margin: 3vh;
     font-family: "Poppins",sans-serif;
     text-align: center;
@@ -245,12 +247,34 @@ font-size: 5vh;
     width: 50vh;
  
 }
+.img2{
+  width:850px;
+  
+}
 
 @media screen and (max-width: 1024px){
 
     .navlink{
         font-size: 1em;
 
+    }
+
+    .img2{
+        width:600px;
+        height:400px;
+    }
+
+    .ContactH{
+      text-align:left;
+      margin-left:10px;
+      margin-top: 0px;;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+    .img1{
+        height: 35px;
+        width: 35px;
+        
     }
 }
 
@@ -286,5 +310,40 @@ font-size: 5vh;
     .img_contact4{
         margin: 2vh;
     }
+    .img2{
+        width:400px;
+        height:320px;
+    }
+
+    .ContactH{
+      text-align:left;
+      margin-left:0px;
+      margin-top: 0px;;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+    .img1{
+        height: 25px;
+        width: 25px;
+        
+    }
+.desc_contact{
+    font-size: 15px;
+    padding:1px;
+}
+
+.contactsub{
+    height: 50px;
+}
+.contact_box{
+    padding-top: 60px;
+
+    margin-bottom: 9px;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+
     
 }
