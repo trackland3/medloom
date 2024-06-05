@@ -168,7 +168,7 @@ html{
 .logo{
     width: 220px;
     height: 80px;
-    background: url(./assets/logo.png);
+    background: url(../.././assets/logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -543,6 +543,73 @@ html{
 
 
 @media screen and (max-width: 375px) {}
+
+                          /* -------------- Services --------------*/
+#services{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 5vh;
+}
+
+.services_list{
+display: flex;
+flex-direction:row;
+padding:3vh 0.5vh 5vh 0.5vh;
+background-color: #ccfcff;
+justify-content: center;
+align-items: center;
+
+
+}
+.sub_title_ser{
+ padding-top: 20vh;
+font-family: "Montserrat",sans-serif;
+text-align: center;
+color: #184f68;
+font-size: 5vh;
+margin-bottom: 20px;
+   
+}
+.services_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding: 0px;
+
+}
+.services_list_pic{
+    background-color: #1198a1;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+}
+.services_list_pic h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services_list_pic img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.services_list_pic a{
+    text-decoration: none;
+    color: #55242d;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services_list_pic:hover{
+    background: #337b9f;
+    transform: translateY(-10px);
+}
 
 
 
