@@ -549,12 +549,13 @@ html{
     background-color: rgb(255, 255, 255);
     padding-bottom: 5vh;
 }
-
+.serback{
+    background: linear-gradient(145deg, #ffffff, #d7f5f7);
+}
 .services_list{
 display: flex;
 flex-direction:row;
 padding:3vh 0.5vh 5vh 0.5vh;
-background-color: #ccfcff;
 justify-content: center;
 align-items: center;
 
@@ -577,7 +578,7 @@ margin-bottom: 20px;
 
 }
 .services_list_pic{
-    background-color: #1198a1;
+    background-color: #d0f8ff;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -585,6 +586,7 @@ margin-bottom: 20px;
     margin: 30px;
     text-align: center;
     transition: background 0.5s, transform 0.5s;
+    height: 400px;
 }
 .services_list_pic h2{
     font-size: 30px;
@@ -593,8 +595,8 @@ margin-bottom: 20px;
 }
 
 .services_list_pic img{
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     margin-bottom: 20px;
     align-items: center;
 }
@@ -607,10 +609,39 @@ margin-bottom: 20px;
 }
 
 .services_list_pic:hover{
-    background: #337b9f;
+    background: #a2e3f7;
     transform: translateY(-10px);
 }
 
 
+@media  screen and (max-width: 1420px) {
+    .services_list h2{
+        font-size: 20px;
+    }
+}
 
+@media screen and (max-width: 1235px){
+    .services_list_pic img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .services_list{
+        grid-gap: 10px;
+    }
+    .services_list_pic{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .services_list_pic{
+        align-items: center;
+        gap: 20px;
+    }
+}
 
