@@ -6,69 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Consulting</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reddit+Sans+Condensed:wght@200..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="doctor.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <script src="form.js" defer></script>
 
 </head>
 
 <body>
 
+    <header>
+        <nav class="navbarm navb" id="navb">
+            <div class="logo"></div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle" id="logo">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+
+            <div class="navlist" id="navbox" style="right: -200px;">
+                <div class="navlinks">
+                    <a href="" class="navlink">HOME</a>
+                    <a href="" class="navlink">DOCTORS</a>
+                    <a href="" class="navlink">SERVICES</a>
+                    <a href="" class="navlink">ACHIVEMENTS</a>
+                    <a href="" class="navlink">CONTACT</a>
+                </div>
+            </div>
+
+
+        </nav>
+        <nav class="navbar navb" id="navba">
+            <div class="logo" scrollTrigger="top"></div>
+            <div class="navlinks" scrollTrigger="top">
+                <a href="" class="navlink">HOME</a>
+                <a href="./doctors.html" class="navlink">DOCTORS</a>
+                <a href="" class="navlink">SERVICES</a>
+                <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
+                <a href="" class="navlink">CONTACT</a>
+            </div>
+        </nav>
+    </header>
     <!-------------------------------1st division----------------------------------------------->
 
-    <div class="doctors">
-
+    <div class="doctors" style="padding-top: 80px;">
         <!------------------------------------------------------------->
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image1.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image1.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Maria Rodriguez</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Dentist</li>
+                    <li><i class="fa-regular fa-envelope"></i> maria@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. Maria Rodriguez</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>Dentist</li>
-                        <li><i class="fa-regular fa-envelope"></i> mariarodriguez@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
+        <!-- </div> -->
 
         <!------------------------------------------------------------->
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image2.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image2.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. James Carter</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Pediatric Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> jamescarter@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. James Carter</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>Pediatric Specialist</li>
-                        <li><i class="fa-regular fa-envelope"></i> jamescarter@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
-
     </div>
+
+    <!-- </div> -->
 
 
     <!-------------------------------2nd division----------------------------------------------->
@@ -76,53 +127,53 @@
 
     <div class="doctors">
 
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image3.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image3.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Michael Nguyen</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Dermatology Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i>michaeldoc@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. Michael Nguyen</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>Dermatology Specialist</li>
-                        <li><i class="fa-regular fa-envelope"></i>michaeldoc@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
+        <!-- </div> -->
 
         <!------------------------------------------------------------->
 
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image4.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image4.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Emily Thompson</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Cardiology Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> thompson@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. Emily Thompson</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>Cardiology Specialist</li>
-                        <li><i class="fa-regular fa-envelope"></i> thompsonemily@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
+        <!-- </div> -->
 
     </div>
 
@@ -130,62 +181,441 @@
 
 
     <div class="doctors">
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image5.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
-                        <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
+        <!-- </div> -->
 
         <!------------------------------------------------------------->
-        <div id="motherdiv">
-            <div class="description">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
 
-                <div class="pictorial">
-                    <img src="pics/image6.png" alt="image">
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
                 </div>
 
-                <div class="details">
-                    <ul>
-                        <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
-                        <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
-                        <li><i class="fa-regular fa-envelope"></i> david@gmail.com
-                        </li>
-                    </ul>
-
-                    <div class="buttondiv">
-                        <a href="#appoinment"><button>consult</button></a>
-                    </div>
-
-                </div>
             </div>
         </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------4th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
 
         <!------------------------------------------------------------->
     </div>
 
 
-    <!-------------------------------4th division0 (consulting form)------------------------------------------>
+    <!-------------------------------5th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------6th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------7th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+
+    <!-------------------------------8th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------9th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------10th division----------------------------------------------->
+
+
+    <div class="doctors">
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image5.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. Sarah Patel</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>Orthopedic Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> sarah123@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+        <!-- <div id="motherdiv"> -->
+        <div class="description">
+
+            <div class="pictorial">
+                <img src="pics/image6.png" alt="image">
+            </div>
+
+            <div class="details">
+                <ul>
+                    <li><i class="fa-regular fa-address-card"></i> Dr. David Kim</li>
+                    <li><i class="fa-solid fa-stethoscope"></i>General Specialist</li>
+                    <li><i class="fa-regular fa-envelope"></i> david@gmail.com
+                    </li>
+                </ul>
+
+                <div class="buttondiv">
+                    <a href="#appoinment"><button>consult</button></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!------------------------------------------------------------->
+    </div>
+
+    <!-------------------------------(consulting form)------------------------------------------>
     <div class="consulting" id="appoinment">
 
         <div>
-            <h1 style="margin: 50px 0 0 0;" >Consultation Form</h1>
+            <h1>Consultation Form</h1>
         </div>
 
         <div class="internalform">
@@ -217,18 +647,21 @@
                 </select>
                 <br><br>
 
-                <p>Once you submit the form you will receive a SMS including your channelling no. and time.</p>
+                <p>Once you submit the form you will receive a SMS including your channelling no. and time.
 
-                <p>If you have filled the form properly you will get an alert message. If not refresh the browswer and
-                    fill the form again</p>
-                <br>
+                    <br>
+                    <br>
+
 
                 <div style="display:flex; justify-content: center; align-items: center;">
                     <button type="submit">Submit</button>
 
                 </div>
+
                 <br>
                 <p id="errorMessages" class="error"></p>
+
+
             </form>
 
         </div>

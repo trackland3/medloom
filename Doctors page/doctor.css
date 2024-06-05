@@ -8,30 +8,34 @@ body {
     height: auto;
     width: 100vw;
     overflow-x: hidden;
-    background: linear-gradient(#11546f86, #134558);
+    background: linear-gradient(145deg, #ffffff, #d0f8ff);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     padding: 0;
     margin: 0;
 }
 
+
 /*---------------------------------------Description of doctors---------------------------------------------------------------*/
 
 .doctors {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    padding: 0 10px;
     align-items: center;
     text-align: center;
+    display: flex;
     justify-content: center;
+
 }
 
-#motherdiv {
+/* #motherdiv {
     display: flex;
     align-items: center;
     height: 50%;
     width: 100vw;
     justify-content: center;
-}
+} */
 
 
 .description {
@@ -39,37 +43,37 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 50%;
-    height: auto;
+    width: 40%;
+    height: 250px;
     margin: 10px 50px 10px 50px;
     padding: 10px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), #6dd6ee7b);
+    background: #d0f8ff;
     border: 2px solid #aac0cc;
     border-radius: 25px;
     transition: all 0.6s;
 }
 
 .description:hover {
-    background: #fff;
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 0 #89a8aec7;
+    background: #a2e3f7;
+    /* transform: translate(-10px, -10px); */
+    /* box-shadow: 10px 10px 0 0 #89a8aec7; */
 }
 
 .pictorial {
     margin: 20px;
     border-radius: 15px;
-    height: 250px;
+    height: 220px;
     /* width: 100%; */
     background: none;
     transition: all 0.6s;
     border: 2px solid none;
 }
 
-
+/* 
 .description:hover .pictorial {
-    background: #89a8aec7;
-    /* border: 2px solid #126081; */
-}
+    background: #a2e3f7;
+    /* border: 2px solid #126081; 
+} */
 
 .details {
     margin: 5px;
@@ -86,6 +90,7 @@ h1 {
 }
 
 li {
+    /* width: auto; */
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -103,7 +108,8 @@ ul {
     line-height: 3.0em;
     justify-content: center;
     margin: 0;
-    padding:0;
+    padding: 0;
+    width: auto;
 
 }
 
@@ -149,15 +155,16 @@ button:hover {
     margin: 0;
     padding: 10px 0 10px 0;
     width: auto;
-    height: 100vh;
+    height: 100%;
     /* background: #011928a3; */
 }
 
 .consulting h1 {
-    margin: 0;
-    margin: 0 0 50px 0;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 25px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 .internalform {
@@ -168,9 +175,12 @@ button:hover {
 }
 
 form {
-    width: 400px;
+    font-family: poppins;
+    width: 50%;
     background: #011928c8;
-    padding: 50px 50px 0 50px;
+    padding: 50px 40px 10px 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
     border: 2px solid #fff;
     border-radius: 10px;
 }
@@ -189,10 +199,19 @@ p {
     font-size: 12px;
 }
 
-input,
+input {
+    height: 20px;
+    width: 90%;
+    background: #ffffff52;
+    color: #ffffff;
+    border: 2px none;
+    border-radius: 4px;
+}
+
+
 select {
     height: 20px;
-    width: 400px;
+    width: 20%;
     background: #ffffff52;
     color: #ffffff;
     border: 2px none;
@@ -214,26 +233,78 @@ option {
 
 /*-----------------responsiveness-----------------*/
 
-/*--------------------------------------------------------------------------*/
-@media screen and (max-width:1000px) {
-
-    .doctors{
-        height:auto;
-    }
-
-    #motherdiv {
-        height: 100vh;
-        width: 100vw;
-    }
-    
+/*------------------------------media queries--------------------------------------------*/
+@media screen and (max-width:2800px) {
 
     .description {
-        /* height:auto; */
+        height: 300px;
+        width: 600px;
+        margin: 40px;
+        /* flex-direct
+        ion: column;
+        overflow: hidden; */
+    }
+
+    form {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1024px) {
+
+    li,
+    i {
+        font-size: 15px;
+        line-height: 2.0em;
+    }
+
+    button {
+        font-size: 15px;
+        width: auto;
+        height: auto;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:1220px) {
+
+    .description {
+        height: 500px;
+        width: 400px;
+        margin: 40px;
         flex-direction: column;
         overflow: hidden;
     }
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1000px) {
+
+    .doctors {
+        height: auto;
+    }
+
+    #motherdiv {
+        height: auto;
+        width: 100vw;
+    }
+
+    .description {
+        height: 500px;
+        width: 400px;
+        margin: 40px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
     form {
-        width: 50%;
+        width: 60%;
         height: 100%;
     }
 
@@ -242,28 +313,29 @@ option {
     select {
         width: 100%;
     }
+
 }
 
 /*--------------------------------------------------------------------------*/
 @media screen and (max-width:768px) {
 
-    .doctors{
-        height:auto;
+    .doctors {
+        height: auto;
     }
 
     #motherdiv {
         height: 100vh;
         width: auto;
     }
-    
+
 
     .description {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        width: 400px;
-        margin: 10px;
-
+        height: 500px;
+        width: 350px;
+        margin: 40px;
     }
 
     form {
@@ -276,31 +348,70 @@ option {
     select {
         width: 100%;
     }
-}
-/*--------------------------------------------------------------------------*/
-@media screen and (max-width:500px) {
 
-    .doctors{
-        height:auto;
+    button{
+        padding: 10px;
+    }
+
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width:610px) {
+    li,
+    i {
+        font-size: 13px;
+        line-height: 3.0em;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .doctors {
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #motherdiv {
         height: 100vh;
         width: auto;
     }
-    
 
     .description {
         display: flex;
         flex-direction: column;
         overflow: hidden;
         width: 60%;
-        margin: 10px;
+        height: 520px;
+        margin: 40px 20px 20px 20px;
     }
 
-    form {
-        width: 50%;
-        height: 100%;
+    .pictorial {
+        margin: 0;
+    }
+
+    .consulting h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    li,
+    i {
+        font-size: 17px;
+        line-height: 3.0em
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px;
+        width: auto;
+        height: auto;
     }
 
     input,
@@ -308,45 +419,62 @@ option {
     select {
         width: 100%;
     }
+
+    form {
+        height: auto;
+    }
 }
+
 /*--------------------------------------------------------------------------*/
 
 @media screen and (max-width:500px) {
 
-    .doctors{
-        height:auto;
+    .doctors {
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
 
     #motherdiv {
         height: 100vh;
         width: auto;
     }
-    
+
 
     .description {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        width: 60%;
-        margin: 5px;
+        width: 70%;
+        height: 520px;
+        margin: 40px 20px 20px 20px;
     }
 
-    .pictorial{
-        margin:0;
+    .pictorial {
+        margin: 0;
     }
 
-    h1{
+    h1 {
         font-size: 30px;
     }
 
-    i{
+    li,
+    i {
         font-size: 15px;
-        margin-right: 8px;
+        line-height: 3.0em;
     }
 
-    li{
-        font-size: 13px;
+    button {
+        font-size: 15px;
+        width: auto;
+        height: auto;
+    }
+
+    form {
+        width: 70%;
     }
 
     input,
@@ -354,4 +482,26 @@ option {
     select {
         width: 100%;
     }
+
 }
+
+@media screen and (max-width: 425px) {
+
+    li,
+    i {
+        font-size: 12px;
+        line-height: 3.0em;
+    }
+
+    .heading p:nth-child(1) {
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+
+    .preloader span {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {}
