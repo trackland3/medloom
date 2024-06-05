@@ -106,14 +106,4 @@ window.addEventListener("load", scrollTrigger);
 
 
 
-// Change scroll speed of an element
-const element = document.getElementById("yourElementId");
-let scrollSpeed = 2; // Adjust the scroll speed factor as needed
 
-element.addEventListener("scroll", function(event) {
-  // Calculate the new scroll position based on the scroll speed
-  const newScrollPosition = element.scrollTop + scrollSpeed;
-
-  // Set the new scroll position
-  element.scrollTop = newScrollPosition;
-});
