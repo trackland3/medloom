@@ -175,8 +175,7 @@ html{
 
 .contact{
 padding-top: 20vh;
-margin-left: 10vh;
-margin-right: 10vh;
+
 display: flex;
 flex-direction: column;
 justify-content:center;
@@ -184,44 +183,55 @@ justify-content:center;
 }
 
 .contact_details{
-   display: flex;
-   flex-direction: column;
-   margin-left: 10vh;
-   margin-right: 10vh;
-   margin-bottom: 10vh;
-   border-style:solid ;
-   border-color: #234353;
-   border-width: 1px;
-   text-align: center;
-   padding: 1vh 10vh 10vh 10vh;
-   width: 120vh;
-   height:65vh;
-  
    
+   display: flex;
+   flex-direction: row;
+   margin: 100px;
+   padding: 20px;
   
+}
+.contactsub{
+    display: flex;
+    flex-direction: row;
+
 }
 
 .ContactH{
-margin: 5vh;
+margin-left:30vh;
+margin-top: 10vh;
 font-size: 5vh;
-
 }
 
+.contactD{
+    background-color: rgb(186, 240, 255);
+    width:100%;
+
+}
 .contact_box{
-    margin-top: 10vh;
+   
+    margin-bottom: 5vh
+    display:flex;
+    flex-direction:row;
     
-    margin-bottom: 10vh;
 }
 
-.img_contact{
-  
+.contact_block{
+    margin-top: 69px;
 }
 
+.img_contact4{
+    margin: 3vh;
+}
+.img1{
+    height: 35px;
+    width: 35px;
+}
 .desc_contact{
-    text-align: left;
-    font-size: 2.5vh;
-    margin-bottom: 4vh;
+   
+    font-size: 3vh;
+    margin: 3vh;
     font-family: "Poppins",sans-serif;
+    text-align: center;
 }
 
 .contact_form{
@@ -255,6 +265,7 @@ font-size: 5vh;
         
     }
 
+
     .navlinks{
         position: absolute;
         gap: 20px;
@@ -265,4 +276,15 @@ font-size: 5vh;
     .logo{
         margin: 0;
     }
+    .desc_contact{
+   
+        font-size: 15px;
+        margin: 3vh;
+        font-family: "Poppins",sans-serif;
+        text-align: center;
+    }
+    .img_contact4{
+        margin: 2vh;
+    }
+    
 }
