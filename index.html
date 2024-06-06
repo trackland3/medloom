@@ -24,7 +24,10 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -55,13 +58,14 @@
                 <div class="bars" id="bar3"></div>
             </label>
     
-            <div class="navlist" id="navbox" style="right: -200px;">
-                <div class="navlinks">
+            <div class="navlist" id="navbox" style="right: -300px;">
+                <div class="navlinks navlinksm">
                     <a href="" class="navlink">HOME</a>
                     <a href="" class="navlink">DOCTORS</a>
                     <a href="" class="navlink">SERVICES</a>
                     <a href="" class="navlink">ACHIVEMENTS</a>
                     <a href="" class="navlink">CONTACT</a>
+                    <a href="" class="navlink loginm">LOGIN</a>
                 </div>
             </div>
 
@@ -75,6 +79,7 @@
                 <a href="" class="navlink">SERVICES</a>
                 <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
                 <a href="" class="navlink">CONTACT</a>
+                <a href="" class="login">LOGIN</a>
             </div>
         </nav>
     </header>
@@ -87,42 +92,44 @@
                 <p scrollTrigger="left" style="transition-delay: 0.1s;">Connect with healthcare professionals, <br> Anytime, Anywhere.</p>
             </div>
             <div class="qaccess">
-                <div class="qchanel" scrollTrigger="left" style="transition-delay: 0.2s;"><span>Find a Doctor</span>
+                <a class="qchanel" scrollTrigger="left" ><span>Find a Doctor</span>
                 <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
                     <path
                         d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
                         fill="white"></path>
-                </svg></div>
+                </svg></a>
             </div>
 
         </div>
         <div class="sendto">
 
+            <div class="intro" scrollTrigger="bottom">"Your Health, Our Priority: Book Appointments with Top Specialists Online"</div>
+
             <div class="ac-cont">
                 <div class="doc-box" scrollTrigger="bottom">
                     <div class="doc-img"></div>
                     <div class="doc-spec">Cardiologist</div>   
-                    <div class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</div>
-                    <div class="doc-btn">Make Appointment</div>
+                    <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
+                    <small class="doc-btn">Book now</small>
                 </div>
                 <div class="doc-box" scrollTrigger="bottom">
                     <div class="doc-img"></div>
                     <div class="doc-spec">Orthopedicx</div>
-                    <div class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</div>
-                    <div class="doc-btn">Make Appointment</div>
+                    <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
+                    <small class="doc-btn">Book now</small>
                 </div>
                 <div class="doc-box" scrollTrigger="bottom">
                     <div class="doc-img"></div>
                     <div class="doc-spec">Psychiatry</div>
-                    <div class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</div>
-                    <div class="doc-btn">Make Appointment</div>
+                <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
+                <small class="doc-btn">Book now</small>
                 </div>
                 <div class="doc-box" scrollTrigger="bottom">
                     <div class="doc-img"></div>
                     <div class="doc-spec">Pediatrics</div>
-                    <div class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</div>
-                    <div class="doc-btn">Make Appointment</div>
+                <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
+                <small class="doc-btn">Book now</small>
                 </div>
             </div>
         </div>
@@ -131,15 +138,86 @@
         <div class="sticky_parent">
             <div class="sticky">
                 <div class="scrollsect">
-                    <div class="sect" style="background-color: aquamarine;">
-                    <div class="s-cont">
-                        <div class="s-box">
+                    <div class="sect sectvis" >
+                        <div class="visbox" scrollTrigger="bottom">
+                        <div class="vision" scrollTrigger="left" style="transition-delay: 0.2s;">
+                            <div class="vishead">
+                                <div class="headtxt">VISION</div>
+                                <div class="headline"></div>
+                            </div>
+                            <div class="vistxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim nostrum quas, quisquam esse doloribus libero, nulla hic, veritatis eos tenetur. Odit error facilis, nemo aliquam vel praesentium eaque. Nihil?</div>
+                            <ul class="about-list">
                             
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            
+                                    <span class="span">Sonsectetur adipisicing elit</span>
+                                </li>
+                            
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            
+                                    <span class="span">Exercitation ullamco laboris</span>
+                                </li>
+                            
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            
+                                    <span class="span">Eiusmod tempor incididunt</span>
+                                </li>
+                            
+                                <li class="about-item" data-reveal="left">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            
+                                    <span class="span">Aolore magna aliqua</span>
+                                </li>
+                            
+                            </ul>
                         </div>
-                        <div class="s-box"></div>
-                    </div></div>
-                    <div class="sect" style="background-color: burlywood;"></div>
-                    <div class="sect" style="background-color: crimson;"></div>
+                        <div class="visimg" scrollTrigger="right" style="transition-delay: 0.2s;"></div>
+                        </div>
+                    </div>
+                    <div class="sect sectmis">
+                        <div class="visbox" scrollTrigger="bottom">
+                            <div class="vision" scrollTrigger="left" style="transition-delay: 0.2s;">
+                                <div class="vishead">
+                                    <div class="headtxt">MISSION</div>
+                                    <div class="headline"></div>
+                                </div>
+                                <div class="vistxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim nostrum quas, quisquam
+                                    esse doloribus libero, nulla hic, veritatis eos tenetur. Odit error facilis, nemo aliquam vel praesentium
+                                    eaque. Nihil?</div>
+                                <ul class="about-list">
+                        
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        
+                                        <span class="span">Sonsectetur adipisicing elit</span>
+                                    </li>
+                        
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        
+                                        <span class="span">Exercitation ullamco laboris</span>
+                                    </li>
+                        
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        
+                                        <span class="span">Eiusmod tempor incididunt</span>
+                                    </li>
+                        
+                                    <li class="about-item" data-reveal="left">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        
+                                        <span class="span">Aolore magna aliqua</span>
+                                    </li>
+                        
+                                </ul>
+                            </div>
+                            <div class="visimg" scrollTrigger="right" style="transition-delay: 0.2s;"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
