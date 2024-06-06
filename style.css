@@ -502,6 +502,19 @@ html{
 
 }
 
+.abhead{
+    position: sticky;
+    top: 80px;
+    font-size: 4rem;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    color: #e24965;
+    text-align: center;
+
+    z-index: 20;
+
+}
+
 .sticky{
     overflow: hidden;
     position: sticky;
@@ -763,6 +776,10 @@ html{
         letter-spacing: 2px;
         padding: 0px;
         text-align: left;
+    }
+
+    .abhead{
+        top: 100px;
     }
 
     .qaccess{
