@@ -569,12 +569,10 @@ height: 100vh;
         justify-content: center;
     }
     .Operationsbox{
-        display: flex;
-        flex-direction: column;
+       flex-direction: inherit;
         width: 600px;
         height: 700px;
-        margin-left: 0;
-        padding-left: 0;
+
         border-radius: 5vh;
        
        
@@ -582,12 +580,17 @@ height: 100vh;
         
     }
     .Awardsbox{
-        margin: 10vh;
+        padding: 10px;
+        margin: 40px;
         display: flex;
         flex-direction: column;
         width: 500px;
-        margin:5px;
+        
         justify-content: center;
+    }
+    .heading_review{
+        font-size: 25px;
+        margin-bottom: 45px;
     }
 }
     
@@ -704,16 +707,24 @@ height: 100vh;
             padding-top: 30vh;
         }
         .Operationsbox{
+            height: auto;
             display: flex;
             flex-direction:column;
-            padding-left: 10vh;
+            padding: 10vh;
+            width: 400px;
+            align-items: center;
+            margin-right: 30px;
         }
         .Awardsbox{
-            display: flex;
-            flex-direction: column;
-
+           width:300px;
         }
-        .
+        .description_para{
+            font-size: 10px;
+        }
+        .image_Aw{
+            width: 200px;
+            height: 100px;
+        }
     }
 
 @media screen and (max-width: 375px) {
@@ -747,7 +758,8 @@ height: 100vh;
             align-items: center;
         }
         .reviewbox{
-            width:50vh;
+            width:200px;
+            height: 200px;
         }
     }
 
