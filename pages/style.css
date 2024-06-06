@@ -320,6 +320,7 @@ height: 100vh;
     text-align: center;
     font-family: "Montserrat",sans-serif;
     color:#184f68;
+    font-size: 30px;
 }
 .Reviews{
     display: flex;
@@ -331,11 +332,13 @@ height: 100vh;
    background-color: #ccfcff; 
    display: flex;
    flex-direction: column;
-   margin-left: 30vh;
+   margin-top: 30px;
+   margin-left:50vh;
    margin-right: 30vh;
    border-radius: 7.5vh;
    align-items: center;
-   margin: 5vh;
+   
+   width: 600px;
    
 
 }
@@ -686,15 +689,21 @@ height: 100vh;
 }
 @media screen and (max-width: 540px) {
 .operationsbox{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 400px;
     
+    
+}
+.Heading_Aw{
+    font-size: 25px;
+    padding-bottom: 40px;
 }
 .reviewbox{
     width:50vh;
 }
-
+.Awardsbox{
+    width: 380px;
+    margin-bottom: 50px;
+}
 }
 
 
@@ -711,7 +720,7 @@ height: 100vh;
             display: flex;
             flex-direction:column;
             padding: 10vh;
-            width: 400px;
+            width: 300px;
             align-items: center;
             margin-right: 30px;
         }
@@ -724,6 +733,10 @@ height: 100vh;
         .image_Aw{
             width: 200px;
             height: 100px;
+        }
+        .heading_review{
+            
+            font-size: 15px;
         }
     }
 
@@ -750,16 +763,27 @@ height: 100vh;
         .operationsbox{
             border-radius: 5vh;
             margin: 10vh;
+          
            
         }
+        .Awardsbox{
+            
+            margin-top: 50px;
+            width: 280px;
+        }
+        .imgAw{
+            height: 300px;
+
+        }
+
         .review{
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .reviewbox{
-            width:200px;
-            height: 200px;
+            width:250px;
+            height: 400px;
         }
     }
 
