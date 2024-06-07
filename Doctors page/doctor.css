@@ -4,7 +4,7 @@ html {
 
 
 body {
-    font-family: sans-serif;
+    font-family: poppins;
     height: auto;
     width: 100vw;
     overflow-x: hidden;
@@ -13,6 +13,19 @@ body {
     background-attachment: fixed;
     padding: 0;
     margin: 0;
+}
+
+
+.logo{
+    background: url(../assets/logo.png);
+    width: 220px;
+    height: 80px;
+    /* background: url(./assets/logo.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    z-index: 100;
 }
 
 
@@ -47,14 +60,16 @@ body {
     height: 250px;
     margin: 10px 50px 10px 50px;
     padding: 10px;
-    background: #d0f8ff;
+    background: #a2e3f762;;
     border: 2px solid #aac0cc;
     border-radius: 25px;
     transition: all 0.6s;
 }
 
 .description:hover {
-    background: #a2e3f7;
+    background: #ffffff;
+    box-shadow: 10px 10px rgba(180, 180, 180, 0.539);
+   
     /* transform: translate(-10px, -10px); */
     /* box-shadow: 10px 10px 0 0 #89a8aec7; */
 }
@@ -63,17 +78,16 @@ body {
     margin: 20px;
     border-radius: 15px;
     height: 220px;
-    /* width: 100%; */
     background: none;
     transition: all 0.6s;
     border: 2px solid none;
 }
 
-/* 
+
 .description:hover .pictorial {
     background: #a2e3f7;
-    /* border: 2px solid #126081; 
-} */
+    /* border: 2px solid #126081; */
+}
 
 .details {
     margin: 5px;
@@ -155,16 +169,16 @@ button:hover {
     margin: 0;
     padding: 10px 0 10px 0;
     width: auto;
-    height: 100%;
+    height: auto;
     /* background: #011928a3; */
 }
 
 .consulting h1 {
-    margin-top: 25px;
-    margin-bottom: 5px;
-    font-size: 25px;
+    /* margin-top: 25px;
+    margin-bottom: 5px; */
+    font-size: 20px;
     text-align: center;
-    color: #000000;
+    color: #006779;
 }
 
 .internalform {
@@ -172,28 +186,29 @@ button:hover {
     align-items: center;
     justify-content: center;
     height: auto;
+    margin-top: 10px;
 }
 
 form {
     font-family: poppins;
-    width: 50%;
-    background: #011928c8;
-    padding: 50px 40px 10px 40px;
+    width: 80%;
+    background: #ffffff;
+    padding: 20px 40px 10px 40px;
     margin-bottom: 5px;
-    margin-top: 20px;
-    border: 2px solid #fff;
+    margin-top: 10px;
+    border: 2px solid #006779;
     border-radius: 10px;
 }
 
 label {
-    color: #fff;
+    color: #006779;
     line-height: 1.5em;
     width: 200px;
     margin-right: 10px;
 }
 
 p {
-    color: #fff;
+    color: #006779;
     font-style: italic;
     text-align: left;
     font-size: 12px;
@@ -202,9 +217,10 @@ p {
 input {
     height: 20px;
     width: 90%;
+    padding-left: 3px;
     background: #ffffff52;
-    color: #ffffff;
-    border: 2px none;
+    color: #000000;
+    border: 1px solid #006779;
     border-radius: 4px;
 }
 
@@ -213,18 +229,18 @@ select {
     height: 20px;
     width: 20%;
     background: #ffffff52;
-    color: #ffffff;
-    border: 2px none;
+    color: #006779;
+    border: 1px solid #006779;
     border-radius: 4px;
 }
 
 option {
-    background: #011928a3;
+    background: #ffffffa3;
 }
 
 
 .error {
-    color: #18f1a9;
+    color: #ef4c69;
     text-align: center;
     font-family: sans-serif;
     font-size: 12px;
@@ -262,11 +278,16 @@ option {
         line-height: 2.0em;
     }
 
-    button {
+    /* button {
+        cursor: pointer;
+        transition: 0.3s;
         font-size: 15px;
+        padding: 10px;
         width: auto;
         height: auto;
-    }
+    } */
+
+
 }
 
 /*--------------------------------------------------------------------------*/
@@ -278,7 +299,7 @@ option {
         margin: 40px;
         flex-direction: column;
         overflow: hidden;
-    }
+    }  
 }
 
 /*--------------------------------------------------------------------------*/
@@ -314,6 +335,11 @@ option {
         width: 100%;
     }
 
+    /* button{
+        padding: 10px;
+    }
+ */
+
 }
 
 /*--------------------------------------------------------------------------*/
@@ -334,12 +360,14 @@ option {
         flex-direction: column;
         overflow: hidden;
         height: 500px;
-        width: 350px;
-        margin: 40px;
+        width: 70%;
+        margin: 20px;
     }
 
+    
+
     form {
-        width: 50%;
+        width: 70%;
         height: 100%;
     }
 
@@ -348,10 +376,10 @@ option {
     select {
         width: 100%;
     }
-
+/* 
     button{
         padding: 10px;
-    }
+    } */
 
 }
 
@@ -397,21 +425,21 @@ option {
     }
 
     .consulting h1 {
-        font-size: 30px;
+        font-size: 20px;
         margin-top: 20px;
     }
 
     li,
     i {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 3.0em
     }
 
     button {
         font-size: 15px;
-        padding: 10px;
+        /* padding: 10px;
         width: auto;
-        height: auto;
+        height: auto; */ 
     }
 
     input,
@@ -469,8 +497,8 @@ option {
 
     button {
         font-size: 15px;
-        width: auto;
-        height: auto;
+        /* width: auto;
+        height: auto; */
     }
 
     form {
@@ -501,7 +529,26 @@ option {
     .preloader span {
         font-size: 30px;
     }
+
+    .description{
+        width: 85%;
+    }
+
+
+    ul,li{
+        font-size:15px;
+    }
+
+    .consulting h1 {
+        /* margin-top: 25px;
+        margin-bottom: 5px; */
+        font-size: 20px;
+        text-align: center;
+        color: #006779;
+    }
+    
+
 }
 
 
-@media screen and (max-width: 375px) {}
+/* @media screen and (max-width: 375px) {} */
