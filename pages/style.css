@@ -8,6 +8,51 @@ html{
     width: 100%;
     scroll-behavior: smooth;
 }
+/* operations ease-in when scrolling down*/
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Initially hide elements */
+  .Operationsbox {
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+  
+  /* Apply the animation when in view */
+  .Operationsbox.in-view {
+    animation: slideInLeft 1s forwards; /* Adjust duration as needed */
+  }
+
+
+@keyframes fadeInUp{
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+/* Initially hide elements */
+.Awardsbox {
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Apply the animation when in view */
+.Awardsbox.in-view {
+  animation: fadeInUp 1s forwards; /* You can adjust the duration as needed */
+}
 
 
 .navbarm{
@@ -199,7 +244,7 @@ height: 95vh;
 }
 
 .Heading_Op{
-   padding-top: 20vh;
+   margin-top: 20vh;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: #184f68;
@@ -320,25 +365,31 @@ height: 100vh;
     text-align: center;
     font-family: "Montserrat",sans-serif;
     color:#184f68;
+    font-size: 30px;
 }
 .Reviews{
+    display: flex;
+    flex-direction: column;
+   
    
 }
 .reviewbox{
    background-color: #ccfcff; 
    display: flex;
    flex-direction: column;
-   margin-left: 30vh;
+   margin-top: 30px;
+   margin-left:50vh;
    margin-right: 30vh;
    border-radius: 7.5vh;
    align-items: center;
-   margin: 5vh;
+   
+   width: 600px;
    
 
 }
 
 .imgRe{
-    padding: 10vh;
+   
     background-image: url("R.jpg");
     height: 20vh;
     width: 25vh;
@@ -356,73 +407,18 @@ height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
     color:#184f68;
+    margin-left: 5vh;
+    margin-right: 5vh;
     
 
 }
-
-
-/*reviews css styles go here ................*/
-
-/*Services page css styles go here ................*/
-
-
-/*.landpage{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(rgba(156, 215, 240, 0.8),rgba(156, 215,  240, 0.7)),url(assets/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.achive{
-    width: 100%;
-    min-height: 100vh;
-}
-
-.sticky_parent{
-    min-height: 300vh;
-
-}
-
-.sticky{
-    overflow: hidden;
-    position: sticky;
-    top: 0px;
-    min-height: 100vh;
-    /* border: 1px solid red; 
-
-}
-
-.scrollsect{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 300vw;
-    will-change: transform;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-}
-
-.sect{
-    width: 100%;
-    height: 100vh;
-}
-
-
-
-
 
 .footer{
     width: 100%;
     min-height: 100vh;
     background-color: teal;
 }
-*/
+
 
 
 /* media quaries------------------------------------------------------------- */
@@ -446,9 +442,17 @@ height: 100vh;
         display: flex;
         flex-direction: column;
         width: 500px;
-        
+    }
+    .Reviews{
+        justify-content: center;
+        align-items: center;
+    }
+    .reviewbox{
+        width:400px;
+        display: flex; 
+        }     
 }
-}
+
 @media screen and (max-width: 900px) {
     .Heading_Op{
         padding-top: 30vh;
@@ -475,7 +479,7 @@ height: 100vh;
     }
     
 }
-
+/*
 @media screen and (max-width: 820px) {
     .navbar{
         display: none;
@@ -502,7 +506,7 @@ height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
+        /* justify-content: center; 
         top: 00px;
     }
 
@@ -562,9 +566,32 @@ height: 100vh;
         padding: 2.0vh;
         
     }
-}
+}*/
 
 @media screen and (max-width: 790px) {
+    .navbar{
+        display: none;
+    }
+    .navbarm{
+        display: flex;
+        user-select: none;
+        
+    }
+
+    .navlinks{
+        position: absolute;
+        gap: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+    .Heading_Op{
+        padding-top: 20vh;
+    }
     .imgop{
         
         padding: 10px;
@@ -587,26 +614,31 @@ height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .Operationsbox{
-        display: flex;
-        flex-direction: column;
+       flex-direction: inherit;
         width: 600px;
         height: 700px;
-        margin-left: 0;
-        padding-left: 0;
+
+        border-radius: 5vh;
        
        
         
         
     }
     .Awardsbox{
-        margin: 10vh;
+        padding: 10px;
+        margin: 40px;
         display: flex;
         flex-direction: column;
         width: 500px;
-        margin:5px;
+        
         justify-content: center;
+    }
+    .heading_review{
+        font-size: 25px;
+        margin-bottom: 45px;
     }
 }
     
@@ -615,7 +647,7 @@ height: 100vh;
     .Operationsbox{
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 500px;
         margin: 10vh;
         justify-content: center;
         border-radius: 5vh;
@@ -624,7 +656,7 @@ height: 100vh;
     .Awardsbox{
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 500px;
         margin:5px;
         justify-content: center;
     }
@@ -661,9 +693,7 @@ height: 100vh;
         font-family: "Montserrat",sans-serif;
         color:#184f68;
     }
-    .Reviews{
-       
-    }
+
     .reviewbox{
        background-color: #ccfcff; 
        display: flex;
@@ -702,7 +732,24 @@ height: 100vh;
     
     }
 }
-
+@media screen and (max-width: 540px) {
+.operationsbox{
+    width: 400px;
+    
+    
+}
+.Heading_Aw{
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+.reviewbox{
+    width:50vh;
+}
+.Awardsbox{
+    width: 380px;
+    margin-bottom: 50px;
+}
+}
 
 
 @media screen and (max-width: 425px) {
@@ -714,15 +761,87 @@ height: 100vh;
             padding-top: 30vh;
         }
         .Operationsbox{
+            height: 640px;
             display: flex;
-            flex-direction: column;
+            flex-direction:column;
+            padding: 10vh;
+            width: 300px;
+            align-items: center;
+            margin-right: 30px;
+            margin-left: 30px;
         }
         .Awardsbox{
-            display: flex;
-            flex-direction: column;
-
+           width:300px;
+        }
+        .description_heading_Op{
+            margin-top: 30px;
+        }
+        .description_para{
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+        .imgop{
+            margin-bottom: 10px;
+            width: 280px;
+        }
+        .image_Aw{
+            width: 200px;
+            height: 100px;
+        }
+        .heading_review{
+            
+            font-size: 15px;
         }
     }
+
+@media screen and (max-width: 375px) {
+
+
+
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .Operations{
+
+        justify-content:center;
+        align-items: center;
+        }
+
+        .description_Op{
+            margin-left: 5vh;
+            text-align:justify;
+            font-size: 0.4vh;
+        }
+
+        .operationsbox{
+            border-radius: 5vh;
+            margin: 10vh;
+          
+           
+        }
+        .Awardsbox{
+            
+            margin-top: 50px;
+            width: 280px;
+        }
+        .imgAw{
+            height: 300px;
+
+        }
+
+        .review{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reviewbox{
+            width:250px;
+            height: 400px;
+        }
+    }
+
+    /*
     [scrollTrigger] {
         opacity: 0;
         transition: 0.5s ease;;
