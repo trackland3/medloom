@@ -7,7 +7,9 @@
 html{
     width: 100%;
     scroll-behavior: smooth;
+    
 }
+
 /* operations ease-in when scrolling down*/
 @keyframes slideInLeft {
     from {
@@ -221,7 +223,8 @@ html{
 /*Operations css styles go here ................*/
 
 .Operations{
-    background-color: rgb(255, 255, 255);
+   background-color: rgb(255, 255, 255);
+   
     padding-bottom: 5vh;
     
 }
@@ -232,6 +235,7 @@ display: flex;
 flex-direction:row;
 padding:3vh 0.5vh 5vh 0.5vh;
 background-color: rgb(226, 248, 255);
+
 margin-top: 5vh;
 margin-right: 5vh;
 border-top-right-radius: 8vh;
@@ -249,7 +253,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: #184f68;
-   font-size: 5vh;
+   font-size: 6vh;
    
 }
 
@@ -766,10 +770,10 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
             font-weight: 800;
         }
         .Heading_Op{
-            padding-top: 30vh;
+            padding-top: 50px;
         }
         .Operationsbox{
-            height: 640px;
+            height: 700px;
             display: flex;
             flex-direction:column;
             padding: 10vh;
@@ -780,16 +784,16 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         }
         .Awardsbox{
            width:300px;
+           height:500px
         }
         .description_heading_Op{
             margin-top: 30px;
         }
         .description_para{
             font-size: 10px;
-            margin-bottom: 10px;
         }
         .imgop{
-            margin-bottom: 10px;
+            margin-bottom: 60px;
             width: 280px;
         }
         .image_Aw{
@@ -802,73 +806,3 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         }
     }
 
-@media screen and (max-width: 375px) {
-
-
-
-    }
-
-    @media screen and (max-width: 320px) {
-
-        .Operations{
-
-        justify-content:center;
-        align-items: center;
-        }
-
-        .description_Op{
-            margin-left: 5vh;
-            text-align:justify;
-            font-size: 0.4vh;
-        }
-
-        .operationsbox{
-            border-radius: 5vh;
-            margin: 10vh;
-          
-           
-        }
-        .Awardsbox{
-            
-            margin-top: 50px;
-            width: 280px;
-        }
-        .imgAw{
-            height: 300px;
-
-        }
-
-        .review{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .reviewbox{
-            width:250px;
-            height: 400px;
-        }
-    }
-
-    /*
-    [scrollTrigger] {
-        opacity: 0;
-        transition: 0.5s ease;;
-      }
-      
-      [scrollTrigger].trigger { opacity: 1; }
-      
-      [scrollTrigger="bottom"] { transform: translateY(50px); }
-      
-      [scrollTrigger="bottom"].trigger { transform: translateY(0); }
-      
-      [scrollTrigger="top"] { transform: translateY(-100px); }
-      
-      [scrollTrigger="top"].trigger { transform: translateY(0); }
-      
-      [scrollTrigger="left"] { transform: translateX(-50px); }
-      
-      [scrollTrigger="right"] { transform: translateX(50px); }
-      
-      [scrollTrigger="left"].trigger,
-      [scrollTrigger="right"].trigger { transform: translateX(0); }
-      
