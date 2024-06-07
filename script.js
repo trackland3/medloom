@@ -39,12 +39,12 @@ const navbox = document.getElementById("navbox")
 
 document.getElementById("logo").addEventListener("click", () => {
     navbox.classList.toggle('active')
-    if (navbox.style.right === "-200px") {
+    if (navbox.style.right === "-300px") {
     navbox.style.right = '0px'
     document.getElementById("cont").style.filter = 'blur(5px)';
     console.log('hello');
   } else {
-    navbox.style.right = '-200px'
+    navbox.style.right = '-300px'
     document.getElementById("cont").style.filter = 'blur(0px)';
     console.log('helloo');
 
@@ -79,7 +79,7 @@ function transform(section) {
     let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
     // console.log(window.scrollY);
     // console.log(percentage);
-    percentage = percentage < 0 ? 0 : percentage > 200 ? 200 : percentage; 
+    percentage = percentage < 0 ? 0 : percentage > 100 ? 100 : percentage; 
     scrollsect.style.transform = `translate3d(${-(percentage)}vw, 0, 0)`
 
 }
@@ -103,4 +103,7 @@ const scrollTrigger = function () {
 window.addEventListener("scroll", scrollTrigger);
 
 window.addEventListener("load", scrollTrigger);
+
+
+
 
