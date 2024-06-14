@@ -1,0 +1,554 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: poppins;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(145deg, #ffffff, #d0f8ff);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+
+.logo{
+    background: url(../assets/logo.png);
+    width: 220px;
+    height: 80px;
+    /* background: url(./assets/logo.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 200px;
+    z-index: 100;
+}
+
+
+/*---------------------------------------Description of doctors---------------------------------------------------------------*/
+
+.doctors {
+    width: 100vw;
+    height: auto;
+    padding: 0 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* #motherdiv {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100vw;
+    justify-content: center;
+} */
+
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+    height: 250px;
+    margin: 10px 50px 10px 50px;
+    padding: 10px;
+    background: #a2e3f762;;
+    border: 2px solid #aac0cc;
+    border-radius: 25px;
+    transition: all 0.6s;
+}
+
+.description:hover {
+    background: #ffffff;
+    box-shadow: 10px 10px rgba(180, 180, 180, 0.539);
+   
+    /* transform: translate(-10px, -10px); */
+    /* box-shadow: 10px 10px 0 0 #89a8aec7; */
+}
+
+.pictorial {
+    margin: 20px;
+    border-radius: 15px;
+    height: 220px;
+    background: none;
+    transition: all 0.6s;
+    border: 2px solid none;
+}
+
+
+.description:hover .pictorial {
+    background: #a2e3f7;
+    /* border: 2px solid #126081; */
+}
+
+.details {
+    margin: 5px;
+    color: #2f6986;
+    height: auto;
+    text-align: left;
+}
+
+h1 {
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+li {
+    /* width: auto; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    /* list-style: none; */
+    line-height: 3.0em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: auto;
+
+}
+
+i {
+    color: #ef4c69;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.buttondiv {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border: 2px solid;
+    border: 2px solid 2f6986;
+    background: none;
+    color: #2f6986;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    width: 150px;
+    border: 2px solid #ef4c69;
+    color: #ef4c69;
+    border-radius: 5px;
+}
+
+/*---------------------------------------Consulting---------------------------------------------------------------*/
+
+.consulting {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: auto;
+    height: auto;
+    /* background: #011928a3; */
+}
+
+.consulting h1 {
+    /* margin-top: 25px;
+    margin-bottom: 5px; */
+    font-size: 20px;
+    text-align: center;
+    color: #006779;
+}
+
+.internalform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+}
+
+form {
+    font-family: poppins;
+    width: 80%;
+    background: #ffffff;
+    padding: 20px 40px 10px 40px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border: 2px solid #006779;
+    border-radius: 10px;
+}
+
+label {
+    color: #006779;
+    line-height: 1.5em;
+    width: 200px;
+    margin-right: 10px;
+}
+
+p {
+    color: #006779;
+    font-style: italic;
+    text-align: left;
+    font-size: 12px;
+}
+
+input {
+    height: 20px;
+    width: 90%;
+    padding-left: 3px;
+    background: #ffffff52;
+    color: #000000;
+    border: 1px solid #006779;
+    border-radius: 4px;
+}
+
+
+select {
+    height: 20px;
+    width: 20%;
+    background: #ffffff52;
+    color: #006779;
+    border: 1px solid #006779;
+    border-radius: 4px;
+}
+
+option {
+    background: #ffffffa3;
+}
+
+
+.error {
+    color: #ef4c69;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+
+/*-----------------responsiveness-----------------*/
+
+/*------------------------------media queries--------------------------------------------*/
+@media screen and (max-width:2800px) {
+
+    .description {
+        height: 300px;
+        width: 600px;
+        margin: 40px;
+        /* flex-direct
+        ion: column;
+        overflow: hidden; */
+    }
+
+    form {
+        width: 600px;
+        height: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1024px) {
+
+    li,
+    i {
+        font-size: 15px;
+        line-height: 2.0em;
+    }
+
+    /* button {
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 15px;
+        padding: 10px;
+        width: auto;
+        height: auto;
+    } */
+
+
+}
+
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:1220px) {
+
+    .description {
+        height: 500px;
+        width: 400px;
+        margin: 40px;
+        flex-direction: column;
+        overflow: hidden;
+    }  
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:1000px) {
+
+    .doctors {
+        height: auto;
+    }
+
+    #motherdiv {
+        height: auto;
+        width: 100vw;
+    }
+
+    .description {
+        height: 500px;
+        width: 400px;
+        margin: 40px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    form {
+        width: 60%;
+        height: 100%;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+
+    /* button{
+        padding: 10px;
+    }
+ */
+
+}
+
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:768px) {
+
+    .doctors {
+        height: auto;
+    }
+
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 500px;
+        width: 70%;
+        margin: 20px;
+    }
+
+    
+
+    form {
+        width: 70%;
+        height: 100%;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+/* 
+    button{
+        padding: 10px;
+    } */
+
+}
+
+/*--------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width:610px) {
+    li,
+    i {
+        font-size: 13px;
+        line-height: 3.0em;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .doctors {
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 60%;
+        height: 520px;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .pictorial {
+        margin: 0;
+    }
+
+    .consulting h1 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    li,
+    i {
+        font-size: 15px;
+        line-height: 3.0em
+    }
+
+    button {
+        font-size: 15px;
+        /* padding: 10px;
+        width: auto;
+        height: auto; */ 
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+
+    form {
+        height: auto;
+    }
+}
+
+/*--------------------------------------------------------------------------*/
+
+@media screen and (max-width:500px) {
+
+    .doctors {
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #motherdiv {
+        height: 100vh;
+        width: auto;
+    }
+
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 70%;
+        height: 520px;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .pictorial {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    li,
+    i {
+        font-size: 15px;
+        line-height: 3.0em;
+    }
+
+    button {
+        font-size: 15px;
+        /* width: auto;
+        height: auto; */
+    }
+
+    form {
+        width: 70%;
+    }
+
+    input,
+    label,
+    select {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    li,
+    i {
+        font-size: 12px;
+        line-height: 3.0em;
+    }
+
+    .heading p:nth-child(1) {
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+
+    .preloader span {
+        font-size: 30px;
+    }
+
+    .description{
+        width: 85%;
+    }
+
+
+    ul,li{
+        font-size:15px;
+    }
+
+    .consulting h1 {
+        /* margin-top: 25px;
+        margin-bottom: 5px; */
+        font-size: 20px;
+        text-align: center;
+        color: #006779;
+    }
+    
+
+}
+
+
+/* @media screen and (max-width: 375px) {} */
