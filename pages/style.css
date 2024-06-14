@@ -260,7 +260,8 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 .description_Op{
 
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -268,7 +269,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     font-family: "Montserrat",sans-serif;
     text-align: center;
     padding:1vh;
-    font-size: 4vh;
+    font-size: 5vh;
     color:#184f68;
     margin: 1vh;
 }
@@ -277,7 +278,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     text-align: center;
     color:#126286;
     margin: 1vh 5vh;
-    font-size: 2vh;
+    font-size: 1vh;
     padding: 0.5vh 0.1vh 0.1vh 0.1vh;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -291,7 +292,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     align-items: center;
     justify-content: center;
     border-radius: 5vh;
-  
+    height:200
 }
 /*Operations css styles go here ................*/
 
