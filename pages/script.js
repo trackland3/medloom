@@ -1,4 +1,4 @@
-//preloader --------------------------------------------------------------------
+/*//preloader --------------------------------------------------------------------
 
 const preloader = document.getElementById("preloader");
 
@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 });
 
 //preloader --------------------------------------------------------------------
-
+*/
 
 
 //navbar color change ----------------------------------------------------------
@@ -102,4 +102,58 @@ const scrollTrigger = function () {
 window.addEventListener("scroll", scrollTrigger);
 
 window.addEventListener("load", scrollTrigger);
+
+/*scroll down animation for operations */
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.Operationsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // Optionally stop observing the element after it is in view
+      }
+    });
+  }, observerOptions);
+
+  boxes.forEach(box => {
+    observer.observe(box);
+  });
+});
+/*.......................................................*/
+
+/*scroll down animation for awards */
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes1 = document.querySelectorAll('.Awardsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // Optionally stop observing the element after it is in view
+      }
+    });
+  }, observerOptions);
+
+  boxes1.forEach(box1 => {
+    observer.observe(box1);
+  });
+});
+
+/*.......................................................*/
+
+/*reviews selector*/
+
 
