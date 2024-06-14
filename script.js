@@ -11,6 +11,113 @@ window.addEventListener("load", function () {
 //preloader --------------------------------------------------------------------
 
 
+//lenis scroll -----------------------------------------------------------------
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+
+
+const logo = document.querySelectorAll('.logo')
+const landpage = document.querySelectorAll('.landpage')
+const heading = document.querySelectorAll('.heading')
+
+gsap.from(logo, {
+  y: -100,
+  ease: 'power2.out',
+  duration: 0.7,
+})
+
+gsap.from(".navlink", {
+  y: -50,
+  ease: 'power2.out',
+  duration: 0.5,
+  stagger: 0.05
+
+})
+
+gsap.from(".login", {
+  y: -100,
+  ease: 'power2.out',
+  duration: 0.7,
+
+})
+
+gsap.from(".qaccess", {
+  x: -100,
+  ease: 'power2.out',
+  duration: 0.7,
+
+})
+
+gsap.from(".heading", {
+  x: -100,
+  ease: 'power2.out',
+  duration: 0.7,
+  stagger: 0.5
+
+})
+
+gsap.from(".emgnzbox", {
+  opacity: 0,
+  y: 50,
+  ease: 'power2.out',
+  duration: 0.7
+
+})
+
+
+  gsap.set(heading, { 
+    y: 0,
+    // opacity: 0,
+  })
+
+  gsap.to(heading, {
+    scrollTrigger: {
+      trigger: landpage,
+      start: 'top top',
+      end: 'bottom 40%',
+      markers: false,
+      scrub: true
+      
+    },
+    scale:0.9,
+    y: 100,
+    // opacity: 1
+  })
+
+
+
+
+
+
+
+
+
+// const lenis = new Lenis()
+
+// lenis.on('scroll', (e) => {
+//   console.log(e)
+// })
+
+// function raf(time) {
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
+
+// requestAnimationFrame(raf)
+
+//lenis scroll -----------------------------------------------------------------
+
 
 //navbar color change ----------------------------------------------------------
 
@@ -41,11 +148,11 @@ document.getElementById("logo").addEventListener("click", () => {
     navbox.classList.toggle('active')
     if (navbox.style.right === "-300px") {
     navbox.style.right = '0px'
-    document.getElementById("cont").style.filter = 'blur(5px)';
+    document.getElementById("land").style.filter = 'blur(5px)';
     console.log('hello');
   } else {
     navbox.style.right = '-300px'
-    document.getElementById("cont").style.filter = 'blur(0px)';
+    document.getElementById("land").style.filter = 'blur(0px)';
     console.log('helloo');
 
   }

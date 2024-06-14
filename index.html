@@ -26,6 +26,12 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
+
+    <script defer src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
@@ -47,7 +53,7 @@
         </div>
     </div>
     
-    <!--This is a comment on HTML to check git push-->
+    </div>
     <header>
         <nav class="navbarm navb" id="navb">
             <div class="logo" ></div>
@@ -72,8 +78,9 @@
 
         </nav>
         <nav class="navbar navb" id="navba">
-            <div class="logo" scrollTrigger="top"></div>
-            <div class="navlinks" scrollTrigger="top">
+            <div class="navcont">
+                <div class="logo" ></div>
+            <div class="navlinks" >
                 <a href="" class="navlink">HOME</a>
                 <a href="./doctors.html" class="navlink">DOCTORS</a>
                 <a href="" class="navlink">SERVICES</a>
@@ -81,18 +88,19 @@
                 <a href="" class="navlink">CONTACT</a>
                 <a href="" class="login">LOGIN</a>
             </div>
+            </div>
+            
         </nav>
     </header>
     
-    <main id="cont">
+    <main id="smooth-wrapper" class="main">
 
         <div class="landpage" id="land">
             <div class="heading">
-                <p scrollTrigger="left">MEDLooM</p>
-                <p scrollTrigger="left" style="transition-delay: 0.1s;">Connect with healthcare professionals, <br> Anytime, Anywhere.</p>
-            </div>
-            <div class="qaccess">
-                <a class="qchanel" scrollTrigger="left" ><span>Find a Doctor</span>
+                <p>MEDLooM</p>
+                <p style="transition-delay: 0.1s;">Connect with healthcare professionals, <br> Anytime, Anywhere.</p>
+                <div class="qaccess">
+                <a class="qchanel"><span>Find a Doctor</span>
                 <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="37" cy="37" r="35.5" stroke="white" stroke-width="3"></circle>
                     <path
@@ -100,133 +108,55 @@
                         fill="white"></path>
                 </svg></a>
             </div>
+            </div>
+            
+            <div class="emgnz-wrapper">
+                <div class="emgnzbox">
+                    <div class="emgnzhead"><img src="./assets/Top-icon1.png" alt=""><p>Emergency Service</p></p></div>
+                    <div class="emgnzdes">An emergency department (ED), also known as an accident & emergency department (A&E), emergency room (ER),
+                        emergency
+                        ward (EW) or casualty department, is a medical treatment.
+                    </div>
+                    <div class="emgnznum">Call : +94 76 038 8510</div>
+                </div>
+                <div class="emgnzbox">
+                    <div class="emgnzhead"><img src="./assets/Top-icon2.png" alt="">
+                        <p>Opening hours</p>
+                        </p>
+                    </div>
+                    <div class="emgnzdes">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+                    </div>
+                    <div class="emgnztime">
+                        <div class="timewrp">
+                            <div>Mon - Fri</div>
+                            <div style="font-weight: 600;">08:00 - 22:00</div>
+                        </div>
+                        <div class="timewrp">
+                            <div>Sat - Sun</div>
+                            <div style="font-weight: 600;">08:00 - 21:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="sendto">
 
-            <div class="intro" scrollTrigger="bottom">"Your Health, Our Priority: Book Appointments with Top Specialists Online"</div>
-
-            <div class="ac-cont">
-                <div class="doc-box" scrollTrigger="bottom">
-                    <div class="doc-img"></div>
-                    <div class="doc-spec">Cardiologist</div>   
-                    <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
-                    <small class="doc-btn">Book now</small>
-                </div>
-                <div class="doc-box" scrollTrigger="bottom">
-                    <div class="doc-img"></div>
-                    <div class="doc-spec">Orthopedicx</div>
-                    <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
-                    <small class="doc-btn">Book now</small>
-                </div>
-                <div class="doc-box" scrollTrigger="bottom">
-                    <div class="doc-img"></div>
-                    <div class="doc-spec">Psychiatry</div>
-                <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
-                <small class="doc-btn">Book now</small>
-                </div>
-                <div class="doc-box" scrollTrigger="bottom">
-                    <div class="doc-img"></div>
-                    <div class="doc-spec">Pediatrics</div>
-                <small class="doc-des">Lorem ipsum dolor sit amet consectetur adipisicing elit, Consequatur debitis.</small>
-                <small class="doc-btn">Book now</small>
-                </div>
+            <div class="sheader">
+                <div class="shead">Our Services</div>
+                <div class="sheadshadow">Our Services</div>
+            </div>
+            <div class="svcwrapper">
+                
             </div>
         </div>
 
 
-        <div class="sticky_parent">
-            
-            <div class="sticky">
-                <div class="abhead" scrollTrigger="bottom">About us</div>
-                <div class="scrollsect">
-                    <div class="sect sectvis" >
-                        <div class="visbox" scrollTrigger="bottom">
-                        <div class="vision" scrollTrigger="left" style="transition-delay: 0.2s;">
-                            <div class="vishead">
-                                <div class="headtxt">VISION</div>
-                                <div class="headline"></div>
-                            </div>
-                            <div class="vistxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim nostrum quas, quisquam esse doloribus libero, nulla hic, veritatis eos tenetur. Odit error facilis, nemo aliquam vel praesentium eaque. Nihil?</div>
-                            <ul class="about-list">
-                            
-                                <li class="about-item" data-reveal="left">
-                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
-                            
-                                    <span class="span">Sonsectetur adipisicing elit</span>
-                                </li>
-                            
-                                <li class="about-item" data-reveal="left">
-                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
-                            
-                                    <span class="span">Exercitation ullamco laboris</span>
-                                </li>
-                            
-                                <li class="about-item" data-reveal="left">
-                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
-                            
-                                    <span class="span">Eiusmod tempor incididunt</span>
-                                </li>
-                            
-                                <li class="about-item" data-reveal="left">
-                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
-                            
-                                    <span class="span">Aolore magna aliqua</span>
-                                </li>
-                            
-                            </ul>
-                        </div>
-                        <div class="visimg" scrollTrigger="right" style="transition-delay: 0.2s;"></div>
-                        </div>
-                    </div>
-                    <div class="sect sectmis">
-                        <div class="visbox" scrollTrigger="bottom">
-                            <div class="vision" scrollTrigger="left" style="transition-delay: 0.2s;">
-                                <div class="vishead">
-                                    <div class="headtxt">MISSION</div>
-                                    <div class="headline"></div>
-                                </div>
-                                <div class="vistxt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta enim nostrum quas, quisquam
-                                    esse doloribus libero, nulla hic, veritatis eos tenetur. Odit error facilis, nemo aliquam vel praesentium
-                                    eaque. Nihil?</div>
-                                <ul class="about-list">
-                        
-                                    <li class="about-item" data-reveal="left">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        
-                                        <span class="span">Sonsectetur adipisicing elit</span>
-                                    </li>
-                        
-                                    <li class="about-item" data-reveal="left">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        
-                                        <span class="span">Exercitation ullamco laboris</span>
-                                    </li>
-                        
-                                    <li class="about-item" data-reveal="left">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        
-                                        <span class="span">Eiusmod tempor incididunt</span>
-                                    </li>
-                        
-                                    <li class="about-item" data-reveal="left">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                        
-                                        <span class="span">Aolore magna aliqua</span>
-                                    </li>
-                        
-                                </ul>
-                            </div>
-                            <div class="visimg" scrollTrigger="right" style="transition-delay: 0.2s;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         
         <div class="footer">
-            
+            <div class="table" data-speed="0.5"></div>
         </div>
 
     </main>
