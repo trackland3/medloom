@@ -8,7 +8,7 @@ body {
     height: auto;
     width: 100vw;
     overflow-x: hidden;
-    background: linear-gradient(145deg, #ffffff, #d0f8ff);
+    background: linear-gradient(145deg, #ffffff,  #2f6986);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     padding: 0;
@@ -20,7 +20,6 @@ body {
     background: url(../assets/logo.png);
     width: 220px;
     height: 80px;
-    /* background: url(./assets/logo.png); */
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,45 +52,55 @@ body {
 
 .description {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 40%;
-    height: 250px;
+    width: 28%;
+    height:800px;
     margin: 10px 50px 10px 50px;
     padding: 10px;
-    background: #a2e3f762;;
-    border: 2px solid #aac0cc;
+    background: #a2e3f71f;;
+    border: 2px solid #ffffff;
     border-radius: 25px;
     transition: all 0.6s;
 }
 
 .description:hover {
     background: #ffffff;
-    box-shadow: 10px 10px rgba(180, 180, 180, 0.539);
-   
-    /* transform: translate(-10px, -10px); */
-    /* box-shadow: 10px 10px 0 0 #89a8aec7; */
 }
 
 .pictorial {
-    margin: 20px;
-    border-radius: 15px;
     height: 220px;
-    background: none;
+    margin: 0 0 5px 0;
+    width: 100%;
+    background: url(../assets/pictorialbground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     transition: all 0.6s;
-    border: 2px solid none;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
 }
 
 
 .description:hover .pictorial {
-    background: #a2e3f7;
-    /* border: 2px solid #126081; */
+    border:none;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .details {
-    margin: 5px;
+    margin:5px;
+    background: rgba(255, 255, 255, 0.187);
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
     color: #2f6986;
+    border: 2px solid #ffffff;
+    border-radius:15px;
+    width: 100%;
     height: auto;
     text-align: left;
 }
@@ -104,8 +113,9 @@ h1 {
 }
 
 li {
-    /* width: auto; */
+    padding-left: 20px;
     text-decoration: none;
+    font-weight: bold ;
     display: flex;
     align-items: center;
     margin: 5px;
@@ -113,12 +123,12 @@ li {
 
 img {
     object-fit: contain;
+    padding: 10px 0 10px 0;
     width: 100%;
     height: 100%;
 }
 
 ul {
-    /* list-style: none; */
     line-height: 3.0em;
     justify-content: center;
     margin: 0;
@@ -170,12 +180,9 @@ button:hover {
     padding: 10px 0 10px 0;
     width: auto;
     height: auto;
-    /* background: #011928a3; */
 }
 
 .consulting h1 {
-    /* margin-top: 25px;
-    margin-bottom: 5px; */
     font-size: 20px;
     text-align: center;
     color: #006779;
@@ -192,7 +199,7 @@ button:hover {
 form {
     font-family: poppins;
     width: 80%;
-    background: #ffffff;
+    background: #ffffffc5;
     padding: 20px 40px 10px 40px;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -253,18 +260,27 @@ option {
 @media screen and (max-width:2800px) {
 
     .description {
-        height: 300px;
-        width: 600px;
+        height: auto;
+        width: 500px;
         margin: 40px;
-        /* flex-direct
-        ion: column;
-        overflow: hidden; */
     }
 
     form {
         width: 600px;
         height: 100%;
     }
+}
+
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width:1220px) {
+
+    .description {
+        height: 500px;
+        width: 400px;
+        margin: 40px;
+        flex-direction: column;
+        overflow: hidden;
+    }  
 }
 
 /*--------------------------------------------------------------------------*/
@@ -278,28 +294,15 @@ option {
         line-height: 2.0em;
     }
 
-    /* button {
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 15px;
-        padding: 10px;
-        width: auto;
-        height: auto;
+    /* .pictorial{
+        margin-top: 10px;
+        height: 50%;
+    }
+
+    .details{
+        height: 50%;
+        margin-bottom: 10px;
     } */
-
-
-}
-
-/*--------------------------------------------------------------------------*/
-@media screen and (max-width:1220px) {
-
-    .description {
-        height: 500px;
-        width: 400px;
-        margin: 40px;
-        flex-direction: column;
-        overflow: hidden;
-    }  
 }
 
 /*--------------------------------------------------------------------------*/
@@ -335,11 +338,6 @@ option {
         width: 100%;
     }
 
-    /* button{
-        padding: 10px;
-    }
- */
-
 }
 
 /*--------------------------------------------------------------------------*/
@@ -347,6 +345,8 @@ option {
 
     .doctors {
         height: auto;
+        display: flex;
+        flex-direction:column;
     }
 
     #motherdiv {
@@ -354,17 +354,19 @@ option {
         width: auto;
     }
 
-
     .description {
         display: flex;
         flex-direction: column;
         overflow: hidden;
         height: 500px;
-        width: 70%;
+        width: 50%;
         margin: 20px;
     }
 
-    
+    li,i{
+        font-size: 15px;
+    }
+
 
     form {
         width: 70%;
@@ -376,10 +378,6 @@ option {
     select {
         width: 100%;
     }
-/* 
-    button{
-        padding: 10px;
-    } */
 
 }
 
@@ -416,13 +414,13 @@ option {
         flex-direction: column;
         overflow: hidden;
         width: 60%;
-        height: 520px;
+        height: 530px;
         margin: 40px 20px 20px 20px;
     }
 
-    .pictorial {
-        margin: 0;
-    }
+    /* .pictorial {
+        margin: 5px;
+    } */
 
     .consulting h1 {
         font-size: 20px;
@@ -436,10 +434,7 @@ option {
     }
 
     button {
-        font-size: 15px;
-        /* padding: 10px;
-        width: auto;
-        height: auto; */ 
+        font-size: 15px; 
     }
 
     input,
@@ -477,13 +472,17 @@ option {
         flex-direction: column;
         overflow: hidden;
         width: 70%;
-        height: 520px;
+        height: 545px;
         margin: 40px 20px 20px 20px;
     }
 
-    .pictorial {
-        margin: 0;
+    .pictoria{
+        margin-top: 25px;
     }
+    
+    .details{
+        margin: 0;
+    } 
 
     h1 {
         font-size: 30px;
@@ -497,8 +496,6 @@ option {
 
     button {
         font-size: 15px;
-        /* width: auto;
-        height: auto; */
     }
 
     form {
@@ -517,7 +514,8 @@ option {
 
     li,
     i {
-        font-size: 12px;
+        font-size: 15px;
+        font-weight: bold;
         line-height: 3.0em;
     }
 
@@ -532,23 +530,27 @@ option {
 
     .description{
         width: 85%;
+        height:545px;
     }
 
+    .pictoria{
+        margin-top: 25px;
+    }
+    
+    .details{
+        margin: 0;
+    } 
 
     ul,li{
         font-size:15px;
     }
-
+/* 
     .consulting h1 {
-        /* margin-top: 25px;
-        margin-bottom: 5px; */
         font-size: 20px;
         text-align: center;
-        color: #006779;
-    }
-    
+        /* color: #006779; 
+    } */
 
 }
 
 
-/* @media screen and (max-width: 375px) {} */
