@@ -71,6 +71,7 @@ form {
     background-color: rgb(223, 250, 255);
    
 }
+
 .navbarm{
     position: fixed;
     display: none;
@@ -309,14 +310,36 @@ font-size: 5vh;
     align-items: center;
     justify-content: center;
 }
+.e-app{
+   margin-left: 10%;
+   margin-top: 4%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
 .e-app h2{
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .e-app h1{
     font-size: 70px;
+    margin-bottom: 50px;
 }
+.imgstore{
+    margin-top: 18px;
+    height: 105px;
+    width: 260px;
+    
+}
+.imgstore1{
+    height: 140px;
+    width: 260px;
+}
+
 .qr-code{
     font-size: 200px;
+    margin-left: 1%;
 }
 @media screen and (max-width: 1024px){
 
