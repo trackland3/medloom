@@ -31,6 +31,8 @@ const logo = document.querySelectorAll('.logo')
 const landpage = document.querySelectorAll('.landpage')
 const heading = document.querySelectorAll('.heading')
 
+const containers = document.querySelectorAll('.svc-container')
+
 gsap.from(logo, {
   y: -100,
   ease: 'power2.out',
@@ -94,6 +96,113 @@ gsap.from(".emgnzbox", {
     y: 100,
     // opacity: 1
   })
+
+    gsap.set(".shead", { 
+    y: 40,
+    opacity: 0,
+  })
+
+  gsap.to(".shead", {
+    scrollTrigger: {
+      trigger: ".sheader",
+      start: 'top 90%',
+      end: 'bottom 60%',
+      markers: false,
+      repeat: false,
+      scrub: true
+      
+    },
+    y: 0,
+    opacity: 1
+  }) 
+
+    gsap.set(".sheadshadow", { 
+    opacity: 0,
+  })
+
+  gsap.to(".sheadshadow", {
+    scrollTrigger: {
+      trigger: ".sheader",
+      start: 'top 90%',
+      end: 'bottom 60%',
+      markers: false,
+      scrub: true
+      
+    },
+    opacity: 1
+  }) 
+
+
+
+
+
+containers.forEach(container => {
+
+  const svcwrapper = container.querySelectorAll('.svcwrapper')
+  const svcphoto = container.querySelectorAll('.svcphoto')
+
+  
+  gsap.set(svcwrapper, { 
+    x: -100,
+    opacity: 0,
+  })
+
+  gsap.to(svcwrapper, {
+    scrollTrigger: {
+      trigger: container,
+      start: 'top 90%',
+      end: 'bottom 70%',
+      markers: false,
+      repeat: false,
+      scrub: true
+      
+    },
+    x: 0,
+    opacity: 1
+  })    
+
+
+  gsap.set(svcphoto, { 
+    x: 100,
+    opacity: 0,
+  })
+
+  gsap.to(svcphoto, {
+    scrollTrigger: {
+      trigger: container,
+      start: 'top 90%',
+      end: 'bottom 70%',
+      markers: false,
+      repeat: false,
+      scrub: true
+      
+    },
+    x: 0,
+    opacity: 1
+  }) 
+
+});
+
+gsap.set(".extrbox", { 
+    y: 50,
+    opacity: 0,
+  })
+
+  gsap.to(".extrbox", {
+    scrollTrigger: {
+      trigger: ".extrsvc-wrapper",
+      start: 'top 90%',
+      end: 'bottom 70%',
+      markers: true,
+      scrub: true
+      
+    },
+    y: 0,
+    opacity: 1
+  })
+
+
+
 
 
 
