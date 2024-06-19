@@ -235,14 +235,14 @@ display: flex;
 flex-direction:row;
 padding:3vh 0.5vh 5vh 0.5vh;
 background-color: rgb(226, 248, 255);
-
-margin-top: 5vh;
+margin-top: 15vh;
+margin-bottom: 15vh;
 margin-right: 5vh;
 border-top-right-radius: 8vh;
 border-bottom-right-radius: 8vh;
 justify-content: center;
 align-items: center;
-height: 95vh;
+height: 65vh;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
@@ -271,14 +271,14 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     padding:1vh;
     font-size: 5vh;
     color:#184f68;
-    margin: 1vh;
+    margin-bottom: 6vh;
 }
 .description_para{
     font-family: "Montserrat",sans-serif;
     text-align: center;
     color:#126286;
     margin: 1vh 5vh;
-    font-size: 1vh;
+    font-size: 16px;
     padding: 0.5vh 0.1vh 0.1vh 0.1vh;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -287,7 +287,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 .imgop{
     height:100% ;
-    width: 50%;
+    width: 650px;
     object-fit:cover;
     align-items: center;
     justify-content: center;
@@ -317,7 +317,7 @@ background-color:rgb(226, 248, 255);
 margin: 5vh;
 border-radius: 8vh;
 width:35%;
-height: 100vh;
+height: 105vh;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
@@ -346,14 +346,6 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     padding:2vh;
     font-size: 3vh;
     color:#184f68;
-}
-.description_para{
-    font-family: "Montserrat",sans-serif;
-    text-align: center;
-    color:#184f68;
-    margin: 10vh 5vh;
-    font-size: 1.8vh;
-
 }
 
 .imgAw{
@@ -439,6 +431,21 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 
 /* media quaries------------------------------------------------------------- */
+@media screen and (max-width: 1440px){
+.imgop{
+    width:500px;
+}
+.operationsbox{
+    width: auto;
+}
+.description_Op{
+    width: 600px;
+}
+.Awardsbox{
+    height: 750px;
+    width: 600px;
+}
+}
 
 
 @media screen and (max-width: 1024px){
@@ -448,12 +455,23 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     }
     .imgop{
         margin-right: 2rem;
-        height: 80vh;
-        width: 90vh;
+        height: 50vh;
+        width: 50vh;
     }
     .Operationsbox{
         display: flex;
         flex-direction: row;
+    }
+    .description_Op{
+        height: 50vh;
+    }
+    .description_para{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        font-size: 14px;
+    }
+    .description_heading_Op{
+        margin-bottom: 10px;
     }
     .Awardsbox{
         display: flex;
@@ -470,7 +488,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         }     
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
     .Heading_Op{
         padding-top: 30vh;
     }
@@ -611,10 +629,10 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     }
     .imgop{
         
-        padding: 10px;
-        margin: 15px;
-        height:400px;
-        width: 580px;
+        padding: 35px;
+        margin: 40px;
+        height:300px;
+        width: 450px;
         border-radius: 7.5vh;
 
     
@@ -623,7 +641,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         font-family: "Montserrat",sans-serif;
         text-align: center;
         color:#184f68;
-        margin: 5vh 5vh;
+        margin-bottom: 5vh;
         font-size: 2vh;
     
     }
@@ -634,15 +652,27 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         justify-content: center;
     }
     .Operationsbox{
-       flex-direction: inherit;
-        width: 600px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
         height: 700px;
+        padding-bottom: 5px;
+        border-radius: 5vh; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .description_heading_Op{
+        margin-top:80px;
+        width: 400px;
+    }
+    .description_para{
+        width: 400px;
 
-        border-radius: 5vh;
-       
-       
-        
-        
+    }
+    .description_Op{
+        justify-content: center;
+        align-items: center;
     }
     .Awardsbox{
         padding: 10px;
@@ -658,6 +688,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         font-size: 25px;
         margin-bottom: 45px;
     }
+    
 }
     
 @media screen and (max-width: 640px) {
@@ -671,6 +702,12 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         border-radius: 5vh;
         height:650px;
         
+    }
+    .description_Op{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .Awardsbox{
