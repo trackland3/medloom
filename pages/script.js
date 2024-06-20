@@ -138,11 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1
   };
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
-        observer.unobserve(entry.target); // Optionally stop observing the element after it is in view
+      } else {
+        entry.target.classList.remove('in-view');
       }
     });
   }, observerOptions);
@@ -151,7 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(box1);
   });
 });
-
 /*.......................................................*/
 
 /*reviews selector*/

@@ -9,6 +9,16 @@ html{
     scroll-behavior: smooth;
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+
+
 
 /* operations ease-in when scrolling down*/
 @keyframes slideInLeft {
@@ -30,7 +40,7 @@ html{
   
   /* Apply the animation when in view */
   .Operationsbox.in-view {
-    animation: slideInLeft 1s forwards; /* Adjust duration as needed */
+    animation: slideInLeft 1s forwards; 
   }
 
 
@@ -53,7 +63,7 @@ html{
 
 /* Apply the animation when in view */
 .Awardsbox.in-view {
-  animation: fadeInUp 1s forwards; /* You can adjust the duration as needed */
+  animation: fadeInUp 1s forwards; 
 }
 
 
@@ -304,7 +314,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 .Awardsouterbox{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     
 }
@@ -316,8 +326,8 @@ padding:1vh 2vh 1vh 2vh;
 background-color:rgb(226, 248, 255);
 margin: 5vh;
 border-radius: 8vh;
-width:35%;
-height: 105vh;
+width:400px;
+height: 110vh;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
@@ -349,7 +359,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 }
 
 .imgAw{
-    height:50vh ;
+    height:300px ;
     border-radius: 7.5vh;
     padding: 2.0vh;
     
@@ -368,64 +378,170 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 }
 .Reviews{
     display: flex;
-    flex-direction: column;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    flex-direction:column;
     align-items: center;
+   /* background-image: url("../pages/505714.webp");*/
    
    
 }
-.reviewbox{
-   background-color: rgb(226, 248, 255); 
-   display: flex;
-   flex-direction: column;
-   margin-top: 30px;
-   border-radius: 7.5vh;
-   align-items: center;
-   border: 2px solid #2a668437;
-   width: 600px;
-   box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
-
-}
-
-.imgRe{
-   
-    background-image: url("R.jpg");
-    height: 20vh;
-    width: 25vh;
-    align-items: center;
-    margin-top: 30px;
-    background-size:cover;
-    border-radius: 5vh;
-    
-}
-   
-
-.description_Re{
-    font-family: "Montserrat",sans-serif;
-    text-align: center;
-    font-size:2vh ;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color:#184f68;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    
-
-}
-
-.name{
-    font-size: 12px;
-    font-family: "Montserrat",sans-serif;
-    margin-bottom: 50px;
-    color:#184f68;
-}
-  
  
 .footer{
     width: 100%;
     min-height: 100vh;
     background-color: teal;
+}
+.container{
+  position: relative;
+}
+
+.container .card{
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: rgb(226, 248, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  border-style: solid;
+  border-color: #126286;
+  border-width: 1px;
+ 
+}
+
+.container .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #29a9c9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.8s ease-in-out;
+}
+
+.container .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+
+
+.container .card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  border-radius: 10%;
+}
+
+.container .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx{
+  height: 210px;
+}
+
+.container .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #006e86;
+  margin: 0;
+}
+
+.container .card .contentBx .size, .container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3, .container .card .contentBx .color h3{
+  color: #006f75;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container .card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
 }
 
 
@@ -433,7 +549,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 /* media quaries------------------------------------------------------------- */
 @media screen and (max-width: 1440px){
 .imgop{
-    width:500px;
+    width:650px;
 }
 .operationsbox{
     width: auto;
@@ -442,7 +558,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     width: 600px;
 }
 .Awardsbox{
-    height: 750px;
+    height: 950px;
     width: 600px;
 }
 }
@@ -477,6 +593,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         display: flex;
         flex-direction: column;
         width: 500px;
+        height: 700px;
     }
     .Reviews{
         justify-content: center;
@@ -674,6 +791,10 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
         justify-content: center;
         align-items: center;
     }
+    .Awardsouterbox{
+        display: flex;
+        flex-direction: column;
+    }
     .Awardsbox{
         padding: 10px;
         margin: 40px;
@@ -754,7 +875,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     }
 
     .reviewbox{
-       background-color: #ccfcff; 
+       background-color: #e1fdff; 
        display: flex;
        flex-direction: column;
        margin-left: 40vh;
@@ -828,26 +949,28 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
             display: flex;
             flex-direction:column;
             padding: 10vh;
-            width: 300px;
+            width: 430px;
             align-items: center;
             margin-right: 30px;
             margin-left: 30px;
         }
         .Awardsbox{
-           width:300px;
-           height:500px
+           height: 520px;
         }
         .description_heading_Op{
             margin-top: 30px;
         }
         .description_para{
             font-size: 10px;
+            padding: 10px;
+           
+
         }
         .imgop{
-            margin-bottom: 60px;
-            width: 280px;
+           height: 200px;
+           
         }
-        .image_Aw{
+        .imageAw{
             width: 200px;
             height: 100px;
         }
