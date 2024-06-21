@@ -7,6 +7,7 @@
 html{
     width: 100%;
     scroll-behavior: smooth;
+   
     
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -248,8 +249,8 @@ background-color: rgb(226, 248, 255);
 margin-top: 15vh;
 margin-bottom: 15vh;
 margin-right: 5vh;
-border-top-right-radius: 8vh;
-border-bottom-right-radius: 8vh;
+border-top-right-radius:15px;
+border-bottom-right-radius: 15px;
 justify-content: center;
 align-items: center;
 height: 65vh;
@@ -301,7 +302,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     object-fit:cover;
     align-items: center;
     justify-content: center;
-    border-radius: 5vh;
+    border-radius: 10px;
     margin: 10px;
 }
 /*Operations css styles go here ................*/
@@ -325,7 +326,7 @@ flex-direction: column;
 padding:1vh 2vh 1vh 2vh;
 background-color:rgb(226, 248, 255);
 margin: 5vh;
-border-radius: 8vh;
+border-radius: 15px;
 width:600px;
 height: 95vh;
 border: 2px solid #2a668437;
@@ -361,7 +362,7 @@ align-items: center;
 .imgAw{
     height:300px ;
     width: 400px;
-    border-radius: 7.5vh;
+    border-radius: 30px;
     padding: 2.0vh;
     
 }
@@ -574,13 +575,16 @@ align-items: center;
 }
 @media screen and (max-width: 1060px){
 
+    .description_Op{
+
+  }
     .Operationsbox{
-        height: 80vh;
+        height: 70vh;
         
     }
     .imgop{
-        width: 300px;
-        height: 480px;
+        width: 350px;
+        height: 380px;
         margin-right: 20px;
     }
     .Awardsouterbox{
@@ -612,12 +616,16 @@ align-items: center;
     .logo{
         margin: 0;
     }
+    .Operationsbox{
+      height: 520px; 
+     
+   }
 }
 
 @media screen and (max-width: 690px) {
 
     .Operationsbox{
-       height: 400px; 
+       height: 420px; 
     }
 
     .description_para{
@@ -637,10 +645,18 @@ align-items: center;
         flex-direction: column;
         height: 500px; 
      }
- 
-     .description_para{
-         font-size:9px;
+     .description_heading_Op{
+      margin-bottom: 10px;
      }
+     .description_para{
+         font-size:11px;
+         margin-left:40px ;
+         margin-right:40px ;
+     }
+     .Awardsbox{
+      width: 420px;
+      height: 610px;
+  }
 
  }
 
@@ -650,17 +666,20 @@ align-items: center;
             font-weight: 800;
         }
         .description_heading_Op{
-            margin-top: 20px;
+            margin-top: 15px;
             margin-bottom: 5px;
         }
         .Awardsbox{
-            width: 360px;
+            width: 340px;
             height: 610px;
         }
       .imgAw{
         width: 300px;
-        height: 250px;
+        height: 230px;
       }
+
+      .imgop{
+        height: 160px;
     }
     @media screen and (max-width: 375px) {
         .description_heading_Op{
@@ -681,6 +700,12 @@ align-items: center;
       .imgAw{
         width: 290px;
         height: 250px;
+      }
+      .container .card{
+        width: 250px;
+      }
+      .container .card .imgBx img {
+        width: 200px;
       }
    
     }
