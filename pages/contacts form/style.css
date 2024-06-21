@@ -8,7 +8,69 @@ html{
     width: 100%;
     scroll-behavior: smooth;
 }
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 235, 235, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.form-group input[type="submit"]:hover {
+    background: #0056b3;
+}
+.error {
+    color: red;
+    margin-top: 5px;
+}
+.contact{
+    font-family: "Poppins",sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form{
+    margin-left:10vh;
+    margin-right: 10vh;
+    margin-bottom: 20vh;
+    border-style:solid ;
+    border-color: #003854;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 5vh;
+    width: 50vh;
+    background-color: rgb(223, 250, 255);
+ 
+}
 
+.submit_button{
+    font-family:"Poppins",sans-serif;
+    padding: 5px 40px 5px 40px;
+    border-style:solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #003854;
+}
+#userForm{
+    background-color: rgb(223, 250, 255);
+   
+}
 
 .navbarm{
     position: fixed;
@@ -175,7 +237,7 @@ html{
 
 .contact{
 padding-top: 20vh;
-background-color: rgb(175, 237, 254);
+background: linear-gradient(145deg, #ffffff, #d7f5f7);
 display: flex;
 flex-direction: column;
 justify-content:center;
@@ -186,8 +248,9 @@ justify-content:center;
    
    display: flex;
    flex-direction: row;
+   gap: 30px;
    padding-left: 60px;
-   background-color: rgb(169, 215, 255);
+   background-color: #d0f8ff;
   
 }
 .contactsub{
@@ -197,9 +260,8 @@ justify-content:center;
 }
 
 .ContactH{
-margin-left:30vh;
 margin-top: 10vh;
-
+margin-bottom: 5vh;
 font-size: 5vh;
 }
 
@@ -211,7 +273,6 @@ font-size: 5vh;
 .contact_box{
     width:70vh;
     margin-bottom: 5vh;
-    padding-top: 10vh;
     justify-content: center;
     align-items: center;
    
@@ -223,7 +284,13 @@ font-size: 5vh;
 
 .img_contact4{
     margin: 20px;
+
 }
+.img_contact4 i{
+    font-size: 40px;
+    color: rgb(25, 54, 79);
+}
+
 .img1{
     height: 35px;
     width: 35px;
@@ -236,22 +303,44 @@ font-size: 5vh;
     text-align: center;
 }
 
-.contact_form{
-    margin-left:10vh;
-    margin-right: 10vh;
-    margin-bottom: 20vh;
-    border-style:solid ;
-    border-color: #234353;
-    border-width: 1px;
-    padding: 5vh;
-    width: 50vh;
- 
+
+.contact-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.img2{
-  width:850px;
-  
+.e-app{
+   margin-left: 10%;
+   margin-top: 4%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+.e-app h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.e-app h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.imgstore{
+    margin-top: 18px;
+    height: 105px;
+    width: 260px;
+    
+}
+.imgstore1{
+    height: 140px;
+    width: 260px;
 }
 
+.qr-code{
+    font-size: 200px;
+    margin-left: 1%;
+}
 @media screen and (max-width: 1024px){
 
     .navlink{
@@ -277,7 +366,20 @@ font-size: 5vh;
         
     }
 }
+.dowstore{
+    display: flex;
+}
+.playstore img{
+    width: 350px;
+    height 50px;
+    margin-top: 25px;
 
+}
+.appstore img{
+    width: 350px;
+    height 50px;
+
+}
 
 @media screen and (max-width: 768px) {
     .navbar{
