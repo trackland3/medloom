@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- <script src="form.js" defer></script> -->
     <script defer src="../script.js"></script>
-    <script defer src="form.js"></script>
+    <!-- <script defer src="form.js"></script> -->
 
 </head>
 
@@ -835,7 +835,7 @@
 
         <div class="internalform">
 
-            <form id="myform">
+            <!-- <form id="myform">
 
                 <h1>Consultation Form</h1>
 
@@ -880,7 +880,116 @@
                 <p id="errorMessages" class="error"></p>
 
 
+            </form> -->
+
+            <form id="myform">
+
+                <h1>Consultation Form</h1>
+        
+                <label>Patient Name:</label>
+                <br>
+                <input id="patientName" type="text" name="patientName">
+                <span class="error" id="errorPatientName"></span>
+                <br><br>
+        
+                <label>Patient Email:</label><br>
+                <input id="patientEmail" type="email" name="patientEmail">
+                <span class="error" id="errorPatientEmail"></span>
+                <br><br>
+        
+                <label>Contact Number:</label><br>
+                <input id="contactNumber" type="number" name="contactNumber">
+                <span class="error" id="errorContactNumber"></span>
+                <br><br>
+        
+                <label>Doctor Name:</label><br>
+                <input id="doctorName" type="text" name="doctorName">
+                <span class="error" id="errorDoctorName"></span>
+                <br><br>
+        
+                <label>Select Hospital:</label><br>
+                <select id="hospitalSelect" name="hospital">
+                    <option value="Hospital_1">Hospital_1</option>
+                    <option value="Hospital_2">Hospital_2</option>
+                    <option value="Hospital_3">Hospital_3</option>
+                    <option value="Hospital_4">Hospital_4</option>
+                </select>
+                <span class="error" id="errorHospitalSelect"></span>
+                <br><br>
+        
+                <p>Once you submit the form you will receive a SMS including your channelling no. and time.
+        
+                <br>
+                <br>
+        
+                <div style="display:flex; justify-content: center; align-items: center;">
+                    <button type="submit">Submit</button>
+                </div>
+        
+                <br>
+                <p id="errorMessages" class="error"></p>
+        
             </form>
+        
+            <script>
+                document.getElementById('myform').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    let isValid = true;
+        
+                    // Clear previous error messages
+                    document.querySelectorAll('.error').forEach(e => e.textContent = '');
+        
+                    // Validate Patient Name
+                    const patientName = document.getElementById('patientName').value;
+                    if (!patientName) {
+                        document.getElementById('errorPatientName').textContent = 'Patient Name is required';
+                        isValid = false;
+                    }
+        
+                    // Validate Patient Email
+                    const patientEmail = document.getElementById('patientEmail').value;
+                    if (!patientEmail) {
+                        document.getElementById('errorPatientEmail').textContent = 'Patient Email is required';
+                        isValid = false;
+                    } else {
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        if (!emailPattern.test(patientEmail)) {
+                            document.getElementById('errorPatientEmail').textContent = 'Invalid email format';
+                            isValid = false;
+                        }
+                    }
+        
+                    // Validate Contact Number
+                    const contactNumber = document.getElementById('contactNumber').value;
+                    if (!contactNumber) {
+                        document.getElementById('errorContactNumber').textContent = 'Contact Number is required';
+                        isValid = false;
+                    }
+        
+                    // Validate Doctor Name
+                    const doctorName = document.getElementById('doctorName').value;
+                    if (!doctorName) {
+                        document.getElementById('errorDoctorName').textContent = 'Doctor Name is required';
+                        isValid = false;
+                    }
+        
+                    // Validate Hospital Selection
+                    const hospitalSelect = document.getElementById('hospitalSelect').value;
+                    if (!hospitalSelect) {
+                        document.getElementById('errorHospitalSelect').textContent = 'Please select a hospital';
+                        isValid = false;
+                    }
+        
+                    if (isValid) {
+                        // Clear all error messages before form submission
+                        document.querySelectorAll('.error').forEach(e => e.textContent = '');
+                        
+                        // Simulate form submission
+                        alert('Form submitted successfully!');
+                        document.getElementById('myform').reset();
+                    }
+                });
+            </script>
 
         </div>
 

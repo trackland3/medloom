@@ -221,6 +221,7 @@ p {
 }
 
 input {
+    font-family: poppins;
     height: 20px;
     width: 100%;
     padding-left: 3px;
@@ -247,7 +248,7 @@ option {
 
 .error {
     color: #ef4c69;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
     font-size: 12px;
     font-style: normal;
