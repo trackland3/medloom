@@ -302,7 +302,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     align-items: center;
     justify-content: center;
     border-radius: 5vh;
-    height:200
+    margin: 10px;
 }
 /*Operations css styles go here ................*/
 
@@ -314,7 +314,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 .Awardsouterbox{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     
 }
@@ -326,11 +326,11 @@ padding:1vh 2vh 1vh 2vh;
 background-color:rgb(226, 248, 255);
 margin: 5vh;
 border-radius: 8vh;
-width:400px;
-height: 110vh;
+width:600px;
+height: 95vh;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
-
+align-items: center;
 }
 
 .Heading_Aw{
@@ -360,6 +360,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 .imgAw{
     height:300px ;
+    width: 400px;
     border-radius: 7.5vh;
     padding: 2.0vh;
     
@@ -547,20 +548,20 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 
 /* media quaries------------------------------------------------------------- */
-@media screen and (max-width: 1440px){
-.imgop{
-    width:650px;
+@media screen and (max-width: 1220px){
+
+.description_heading_Op{
+    font-size: 25px;
 }
-.operationsbox{
-    width: auto;
+.description_para{
+    font-size: 14px;
 }
-.description_Op{
-    width: 600px;
-}
+
 .Awardsbox{
-    height: 950px;
-    width: 600px;
+    height: 100vh;
+    width:80vh;
 }
+
 }
 
 
@@ -569,424 +570,117 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     .navlink{
         font-size: 1em;
     }
-    .imgop{
-        margin-right: 2rem;
-        height: 50vh;
-        width: 50vh;
-    }
-    .Operationsbox{
-        display: flex;
-        flex-direction: row;
-    }
-    .description_Op{
-        height: 50vh;
-    }
-    .description_para{
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        font-size: 14px;
-    }
-    .description_heading_Op{
-        margin-bottom: 10px;
-    }
-    .Awardsbox{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        height: 700px;
-    }
-    .Reviews{
-        justify-content: center;
-        align-items: center;
-    }
-    .reviewbox{
-        width:400px;
-        display: flex; 
-        }     
+     
 }
-
-@media screen and (max-width: 910px) {
-    .Heading_Op{
-        padding-top: 30vh;
-    }
-    .Operationsbox{
-        display: flex;
-        flex-direction: row;
-    }
-    .Awardsbox{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-    }
-    .imgop{
-        height:100% ;
-        width: 60%;
-        object-fit:cover;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5vh;
-        margin-right: 10px;
-        margin-bottom: 10px;
-      
-    }
-    
-}
-/*
-@media screen and (max-width: 820px) {
-    .navbar{
-        display: none;
-    }
-    .navbarm{
-        display: flex;
-        user-select: none;
-        
-    }
-
-    .navlinks{
-        position: absolute;
-        gap: 20px;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .logo{
-        margin: 0;
-    }
-
-    .heading{
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: center; 
-        top: 00px;
-    }
-
-
-    .heading p:nth-child(1) {
-        font-size: 4.5px;
-        font-weight: 800;
-    }
-    .heading p:nth-child(2) {
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        padding: 0;
-    }
+@media screen and (max-width: 1060px){
 
     .Operationsbox{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 1vh;
-        border-radius: 7.5vh;
+        height: 80vh;
         
-    }
-    .Awardsbox{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-    }
-    .image_Op{
-        align-items: center;
-        justify-content: center;
-        background-color: aliceblue;
-        border-radius: 7.5vh;
-        padding: 2.5vh;
-    
     }
     .imgop{
-        height:80vh ;
-        width: 50vh;
-        object-fit:cover;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5vh;
-      
-    }
-    .image_Aw{
-        align-items: center;
-        justify-content: center;
-        background-color: aliceblue;
-        border-radius: 7.5vh;
-        width: 50vh;
-        
-    
-    }
-    .imgAw{
-        height:50vh ;
-        border-radius: 7.5vh;
-        padding: 2.0vh;
-        
-    }
-}*/
-
-@media screen and (max-width: 790px) {
-    .navbar{
-        display: none;
-    }
-    .navbarm{
-        display: flex;
-        user-select: none;
-        
-    }
-
-    .navlinks{
-        position: absolute;
-        gap: 20px;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .logo{
-        margin: 0;
-    }
-
-    .Heading_Op{
-        padding-top: 20vh;
-    }
-    .imgop{
-        
-        padding: 35px;
-        margin: 40px;
-        height:300px;
-        width: 450px;
-        border-radius: 7.5vh;
-
-    
-    }
-    .description_para{
-        font-family: "Montserrat",sans-serif;
-        text-align: center;
-        color:#184f68;
-        margin-bottom: 5vh;
-        font-size: 2vh;
-    
-    }
-    .Operations{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .Operationsbox{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        height: 700px;
-        padding-bottom: 5px;
-        border-radius: 5vh; 
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .description_heading_Op{
-        margin-top:80px;
-        width: 400px;
-    }
-    .description_para{
-        width: 400px;
-
-    }
-    .description_Op{
-        justify-content: center;
-        align-items: center;
+        width: 300px;
+        height: 480px;
+        margin-right: 20px;
     }
     .Awardsouterbox{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .navbarm{
+        display: flex;
+        user-select: none;
+        
+    }
+
+    .navlinks{
+        position: absolute;
+        gap: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logo{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    .Operationsbox{
+       height: 400px; 
+    }
+
+    .description_para{
+        font-size:10px;
+    }
+    .imgop{
+        height: 300px;
     }
     .Awardsbox{
-        padding: 10px;
-        margin: 40px;
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        height:660px;
-        
-        justify-content: center;
+        width: 420px;
+        height: 610px;
     }
-    .heading_review{
-        font-size: 25px;
-        margin-bottom: 45px;
-    }
-    
 }
-    
-@media screen and (max-width: 640px) {
-
+@media screen and (max-width: 630px) {
     .Operationsbox{
         display: flex;
         flex-direction: column;
-        width: 500px;
-        margin: 10vh;
-        justify-content: center;
-        border-radius: 5vh;
-        height:650px;
-        
-    }
-    .description_Op{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        height: 500px; 
+     }
+ 
+     .description_para{
+         font-size:9px;
+     }
 
-    .Awardsbox{
-        display: flex;
-        flex-direction: column;
-        width: 500px;
-        margin:50px;
-        justify-content: center;
-        height:750px;
-        
-    }
-    
-    .imgop{
-        height:40vh ;
-        width: 50vh;
-        object-fit:cover;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5vh;
-      
-    }
-    .image_Aw{
-        align-items: center;
-        justify-content: center;
-        background-color: aliceblue;
-        border-radius: 7.5vh;
-        width: 50vh;
-        
-    
-    }
-    .imgAw{
-        height:50vh ;
-        border-radius: 7.5vh;
-        padding: 2.0vh;
-        
-    }
-    .heading_review{
-        padding-top: 10vh;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-        text-align: center;
-        font-family: "Montserrat",sans-serif;
-        color:#184f68;
-    }
-
-    .reviewbox{
-       background-color: #e1fdff; 
-       display: flex;
-       flex-direction: column;
-       margin-left: 40vh;
-       margin-right: 40vh;
-       border-radius: 7.5vh;
-       align-items: center;
-       margin: 5vh;
-       height: 420px;
-       
-    
-    }
-    
-    .imgRe{
-        padding: 10vh;
-        background-image: url("R.jpg");
-        height: 20vh;
-        width: 25vh;
-        align-items: center;
-        margin-top: 10vh;
-        background-size:cover;
-        border-radius: 5vh;
-    }
-       
-    
-    .description_Re{
-        font-family: "Montserrat",sans-serif;
-        text-align: center;
-        font-size:2vh ;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        color:#184f68;
-        margin-left:6vh ;
-        margin-right:6vh ;
-        
-    
-    }
-    .description_Re{
-        padding-bottom: 10px;
-    }
-}
-@media screen and (max-width: 540px) {
-.operationsbox{
-    width: 400px;
-    
-    
-}
-.Heading_Aw{
-    font-size: 25px;
-    padding-bottom: 40px;
-}
-.reviewbox{
-    width:50vh;
-}
-.Awardsbox{
-    width: 380px;
-    margin-bottom: 50px;
-}
-}
-
+ }
 
 @media screen and (max-width: 425px) {
     .heading p:nth-child(1) {
             font-size: 4.5rem;
             font-weight: 800;
         }
-        .Heading_Op{
-            padding-top: 50px;
-        }
-        .Operationsbox{
-            height: 700px;
-            display: flex;
-            flex-direction:column;
-            padding: 10vh;
-            width: 430px;
-            align-items: center;
-            margin-right: 30px;
-            margin-left: 30px;
+        .description_heading_Op{
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
         .Awardsbox{
-           height: 520px;
+            width: 360px;
+            height: 610px;
         }
+      .imgAw{
+        width: 300px;
+        height: 250px;
+      }
+    }
+    @media screen and (max-width: 375px) {
         .description_heading_Op{
-            margin-top: 30px;
-        }
-        .description_para{
-            font-size: 10px;
-            padding: 10px;
-           
-
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
         .imgop{
-           height: 200px;
-           
+            height: 280px;
+            width:240px
         }
-        .imageAw{
-            width: 200px;
-            height: 100px;
+        .description_para{
+            font-size:10px;
         }
-        .heading_review{
-            
-            font-size: 15px;
-        }
-        .reviewbox{
-            height: 400px;
-        }
-        .description_Re{
-           padding-top: 40px;
-        }
-
         .Awardsbox{
-            height: 550px;
+            width: 300px;
+            height: 580px;
         }
+      .imgAw{
+        width: 290px;
+        height: 250px;
+      }
+   
     }
-
