@@ -229,7 +229,18 @@ html{
 .navlink:hover::before {
     width: 100%;
 }
+.comma{
+  margin: 0px 0px 0px 50px;
+  height:1px;
+  color:#004a72;
+}
+.intro{
 
+  margin: 50px;
+  padding: 10px;
+  color: #004a72;
+  font-weight: 600;
+}
 /*Services page css styles go here ..............*/
 /*Operations css styles go here ................*/
 
