@@ -68,11 +68,7 @@ html{
 }
 
 
-<<<<<<< HEAD
-.services{
-  width: 100%;
-}
-=======
+
 .navbarm{
     position: fixed;
     display: none;
@@ -246,7 +242,7 @@ html{
   color: #004a72;
   font-weight: 600;
 }
->>>>>>> 362a9d16ec0920778b78f506e11cc69c35c8fb8b
+
 /*Services page css styles go here ..............*/
 /*Operations css styles go here ................*/
 
