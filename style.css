@@ -188,7 +188,6 @@ html{
 
 
 
-
 .navbar{
     width: 100%;
     position: fixed;
@@ -291,6 +290,10 @@ html{
 
 .navlinksm a{
     color: white;
+}
+
+.main{
+    transition: 400ms;
 }
 
 
@@ -408,18 +411,17 @@ html{
     background-color: #0077b6;
     border-radius: 40px;
     width: var(--initwidth);
-    height: 300px;
+    min-height: 300px;
     bottom: -150px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 
 }
 .emgnzbox{
     width: 50%;
     height: 100%;
     display: flex;
-    
     flex-direction: column;
     gap: 20px;
     padding: 50px;
@@ -471,6 +473,7 @@ html{
 
 .sendto{
     width: 100%;
+    overflow-x: hidden;
     min-height: 100vh;
     background: linear-gradient(0deg, #f3f3fa, #faffff);
     display: flex;
@@ -482,9 +485,10 @@ html{
 
 }
 
-.sendto .sheader{
+ .sheader{
 
     /* border: 1px solid red; */
+    
     width: var(--initwidth);
     font-family: "Poppins", sans-serif;
 
@@ -523,6 +527,7 @@ html{
     justify-content: center;
     flex-direction: column;
     gap: 100px;
+    
 }
 
 .svc-container{
@@ -576,13 +581,12 @@ html{
 
 
 .extrsvc-container{
-    position: relative;
     margin-top: 150px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 20;
+    z-index: 10;
 }
 
 .extrsvc-wrapper{
@@ -640,10 +644,11 @@ footer{
     position: relative;
     width: 100%;
     min-height: 400px;
-    margin-top: 400px;
+    margin-top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+ 
     gap: 50px;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -661,6 +666,7 @@ footer *{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     
     
 }
@@ -772,29 +778,6 @@ td a:hover{
     right: 50px;
 }
 
-/* scrolltrigger------------------------------------------------------------- */
-
-[scrollTrigger] {
-  opacity: 0;
-  transition: 0.5s ease;;
-}
-
-[scrollTrigger].trigger { opacity: 1; }
-
-[scrollTrigger="bottom"] { transform: translateY(50px); }
-
-[scrollTrigger="bottom"].trigger { transform: translateY(0); }
-
-[scrollTrigger="top"] { transform: translateY(-100px); }
-
-[scrollTrigger="top"].trigger { transform: translateY(0); }
-
-[scrollTrigger="left"] { transform: translateX(-50px); }
-
-[scrollTrigger="right"] { transform: translateX(50px); }
-
-[scrollTrigger="left"].trigger,
-[scrollTrigger="right"].trigger { transform: translateX(0); }
 
 
 
@@ -812,6 +795,11 @@ td a:hover{
 
 
 @media screen and (max-width: 1024px){
+    
+    :root {
+  --initwidth: 900px;
+    }
+    
     .logo{
         scale: .8;
     }
@@ -863,12 +851,20 @@ td a:hover{
         width: 800px;
         
     }
+
+    .footercont{
+        scale: 0.8;
+    }
     
 
 }
 
 
 @media screen and (max-width: 768px) {
+    :root {
+  --initwidth: 700px;
+}
+    
     .navbar{
         display: none;
     }
@@ -911,7 +907,7 @@ td a:hover{
         font-size: 1rem;
         font-weight: 600;
         letter-spacing: 2px;
-        padding: 0px;
+        padding: 8px;
         text-align: left;
     }
 
@@ -920,7 +916,7 @@ td a:hover{
     }
 
     .qaccess{
-        margin-top: -100px;
+        margin-top: -20px;
         font-size: 1rem;
         
     }
@@ -958,8 +954,26 @@ td a:hover{
     .about-item ion-icon{
         font-size: 0.9rem
     }
-    
 
+    .emgnzbox{
+        padding: 0;
+        scale: 0.8;
+    }
+    
+    .copyr{
+        font-size: 12px;
+    }
+
+    .dateandtime{
+        right: 20px;
+    }
+
+    .svc-container{
+        gap: 0;
+        scale: 0.73;
+    }
+
+   
 
 }
 
@@ -970,19 +984,20 @@ td a:hover{
   --initwidth: 350px;
 }
 
-    .heading p:nth-child(1) {
-            font-size: 4.5rem;
-            font-weight: 800;
-        }
-
         .preloader span{
             font-size: 30px;
         }
 
-        .qaccess{
-        /* margin-top: -150px; */
-        
+        .heading p:nth-child(1) {
+            font-size: 4.5rem;
+            font-weight: 800;
+            
         }
+
+        .heading{
+            margin: 10px 0px ;
+        }
+
 
         .sendto .intro{
             font-size: 1.1rem;
@@ -993,7 +1008,75 @@ td a:hover{
         }
 
         .visimg{
+            /* display: none; */
+        }
+
+        .shead{
+            margin-top: 50px;
+        }
+
+        .sheadshadow{
+            transform: translateY(-50px);
+        }
+
+        .services section{
+            gap: 20px;
+        }
+
+        .emgnz-wrapper{
+            bottom: -200px;
+
+            flex-direction: column;
+            
+        }
+
+        .emgnzbox{
+
+            width: 80%;
+            scale: 0.8;
+        }
+
+        .sheadshadow{
+            font-size: 50px;
+        }
+
+        .footercont{
+            flex-direction: column;
+            gap: 30px;
+            scale: 0.7;
+        }
+
+        .copyr{
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .dateandtime{
+            right: 20px;
             display: none;
+        }
+
+        .svc-container{
+            scale: 0.9;
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .extrsvc-wrapper{
+            /* display: none; */
+            padding: 0;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        th:last-child{
+            padding-left: 0px;
+        }
+
+        td{
+            /* border: 1px solid white; */
+            height: 40px;
+            padding-left: 60px;
         }
 }
 
@@ -1016,6 +1099,7 @@ td a:hover{
     .visbox{
         width: 350px;
     }
+
 
 }
 

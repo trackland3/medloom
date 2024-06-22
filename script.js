@@ -257,11 +257,11 @@ document.getElementById("logo").addEventListener("click", () => {
     navbox.classList.toggle('active')
     if (navbox.style.right === "-300px") {
     navbox.style.right = '0px'
-    document.getElementById("land").style.filter = 'blur(5px)';
+    document.querySelector('.main').style.filter = 'blur(5px)';
     console.log('hello');
   } else {
     navbox.style.right = '-300px'
-    document.getElementById("land").style.filter = 'blur(0px)';
+    document.querySelector('.main').style.filter = 'blur(0px)';
     console.log('helloo');
 
   }
