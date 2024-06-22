@@ -245,7 +245,7 @@ html{
 display: flex;
 flex-direction:row;
 padding:3px 0.5px 5px 0.5px;
-background-color: rgb(226, 248, 255);
+background-color: #0077b6;
 margin-top: 15px;
 margin-bottom: 75px;
 margin-right: 5px;
@@ -263,7 +263,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
    margin-top: 150px;
    font-family: "Montserrat",sans-serif;
    text-align: center;
-   color: #184f68;
+   color: #004a72;
    font-size: 45px;
    margin-bottom: 40px;
    
@@ -282,14 +282,14 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     text-align: center;
     padding:10px;
     font-size: 32px;
-    color:#184f68;
+    color:#ffffff;
     margin-bottom: 30px;
 }
 
 .description_para1{
   font-family: "Montserrat",sans-serif;
   text-align: center;
-  color:#126286;
+  color:#ffffff;
   margin: 10px 25px;
   font-size: 16px;
   padding: 0.5px 0.1px 0.1px 0.1px;
@@ -300,7 +300,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 .description_para{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    color:#126286;
+    color:#ffffff;
     margin: 1px 5px;
     font-size: 16px;
     padding: 0.5px 0.1px 0.1px 0.1px;
@@ -336,7 +336,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 display: flex;
 flex-direction: column;
 padding:10px 40px 10px 40px;
-background-color:rgb(226, 248, 255);
+background-color:#0077b6;
 margin: 5vh;
 border-radius: 15px;
 width:580px;
@@ -350,7 +350,7 @@ align-items: center;
    padding-top: 20px;
    font-family: "Montserrat",sans-serif;
    text-align: center;
-   color: #184f68;
+   color: #004a72;
    font-size: 40px;
    
 }
@@ -366,7 +366,7 @@ align-items: center;
     text-align: center;
     padding:30px;
     font-size: 20px;
-    color:#184f68;
+    color:#ffffff;
 }
 
 .imgAw{
@@ -427,7 +427,7 @@ align-items: center;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #29a9c9;
+  background: #0077b6;
   clip-path: circle(150px at 80% 20%);
   transition: 0.8s ease-in-out;
 }
@@ -481,7 +481,7 @@ align-items: center;
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #006e86;
+  color: #004a72;
   margin: 0;
 }
 
@@ -509,7 +509,7 @@ align-items: center;
 }
 
 .container .card .contentBx .size h3, .container .card .contentBx .color h3{
-  color: #006f75;
+  color: #004a72;
   font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
