@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -22,6 +24,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
     
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -52,27 +59,33 @@
                 <div class="bars" id="bar3"></div>
             </label>
     
-            <div class="navlist" id="navbox" style="right: -200px;">
-                <div class="navlinks">
+            <div class="navlist" id="navbox" style="right: -300px;">
+                <div class="navlinks navlinksm">
                     <a href="" class="navlink">HOME</a>
                     <a href="" class="navlink">DOCTORS</a>
                     <a href="" class="navlink">SERVICES</a>
                     <a href="" class="navlink">ACHIVEMENTS</a>
                     <a href="" class="navlink">CONTACT</a>
+                    <a href="" class="navlink loginm">LOGIN</a>
                 </div>
             </div>
+            
 
 
         </nav>
         <nav class="navbar navb" id="navba">
-            <div class="logo" scrollTrigger="top"></div>
-            <div class="navlinks" scrollTrigger="top">
+            <div class="navcont">
+                <div class="logo" ></div>
+            <div class="navlinks" >
                 <a href="" class="navlink">HOME</a>
-                <a href="" class="navlink">DOCTORS</a>
-                <a href="" class="navlink">SERVICES</a>
+                <a href="./doctors.html" class="navlink">DOCTORS</a>
+                <a href="./pages/Services/hiru.html" class="navlink">SERVICES</a>
                 <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
                 <a href="" class="navlink">CONTACT</a>
+                <a href="" class="login">LOGIN</a>
             </div>
+            </div>
+            
         </nav>
     </header>
     
@@ -259,4 +272,53 @@
 </div>
 
 </body>
+
+<footer>
+    <div class="footercont">
+    <div class="finfo">
+        <div class="flogo">
+            <div class="fico"></div>
+            <div class="fdes">
+                <p>MEDLooM</p>
+                <p>e-Channeling</p>
+            </div>
+        </div>
+        <div><p> <span class="material-symbols-outlined">call</span> +94 71 895 3623</p></div>
+        <div><a href="mailto:"><p> <span class="material-symbols-outlined">mail</span> contact@medloom.org</p></a></div>
+    
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Visit</th>
+                <th>Our Services</th>
+            </tr>
+            <tr>
+                <td><a href="#">► Home</a></td>
+                <td><a href="#">► Heart Diseases</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">► Doctors</a></td>
+                <td><a href="#">► Lung Diseases</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">► Services</a></td>
+                <td><a href="#">► General surgery</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">► Achievements</a></td>
+                <td><a href="#">► Sport Medics</a></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="copyr">
+        <div>Copyright © 2024 TRACKLand3. All Rights Reserved.</div>
+        <div class="dateandtime" id="datetime">
+            
+        </div>
+    </div>
+    
+</footer>
+
 </html>
