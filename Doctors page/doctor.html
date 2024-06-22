@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -25,6 +27,16 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    
+    <script defer src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="doctor.css">
@@ -60,7 +72,7 @@
                 <div class="bars" id="bar2"></div>
                 <div class="bars" id="bar3"></div>
             </label>
-
+    
             <div class="navlist" id="navbox" style="right: -300px;">
                 <div class="navlinks navlinksm">
                     <a href="" class="navlink">HOME</a>
@@ -71,930 +83,992 @@
                     <a href="" class="navlink loginm">LOGIN</a>
                 </div>
             </div>
-
-
+    
+    
+    
         </nav>
         <nav class="navbar navb" id="navba">
-            <div class="logo" scrollTrigger="top"></div>
-            <div class="navlinks" scrollTrigger="top">
-                <a href="" class="navlink">HOME</a>
-                <a href="./doctors.html" class="navlink">DOCTORS</a>
-                <a href="" class="navlink">SERVICES</a>
-                <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
-                <a href="" class="navlink">CONTACT</a>
-                <a href="" class="login">LOGIN</a>
+            <div class="navcont">
+                <div class="logo"></div>
+                <div class="navlinks">
+                    <a href="" class="navlink">HOME</a>
+                    <a href="./Doctors page/doctor.html" class="navlink">DOCTORS</a>
+                    <a href="./pages/Services/hiru.html" class="navlink">SERVICES</a>
+                    <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
+                    <a href="" class="navlink">CONTACT</a>
+                    <a href="" class="login">LOGIN</a>
+                </div>
             </div>
+    
         </nav>
     </header>
     <!-------------------------------1st division----------------------------------------------->
+    <main>
+        
+        
 
-    <div class="doctors" style="padding-top: 80px;">
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
+        <div class="doctors" style="padding-top: 180px;">
+            <!------------------------------------------------------------->
 
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <!-- <li><i class="fa-regular fa-address-card"></i> Dr. Maria Rodriguez</li>
-                    <li><i class="fa-solid fa-stethoscope"></i>Cardiologist</li>
-                    <li><i class="fa-regular fa-envelope"></i> maria@gmail.com
-                    </li> -->
-
-                    <li style="font-size: 20px;">Dr. Maria Rodriguez</li>
-                    <li style="font-weight: normal;">Physician</li>
-                    <!-- <li>maria@gmail.com -->
-                    </li>
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
+        
+                <div class="details">
+                    <ul>
+                        <!-- <li><i class="fa-regular fa-address-card"></i> Dr. Maria Rodriguez</li>
+                            <li><i class="fa-solid fa-stethoscope"></i>Cardiologist</li>
+                            <li><i class="fa-regular fa-envelope"></i> maria@gmail.com
+                            </li> -->
+        
+                        <li style="font-size: 20px;">Dr. Maria Rodriguez</li>
+                        <li style="font-weight: normal;">Physician</li>
+                        <!-- <li>maria@gmail.com -->
+                        </li>
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
             </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. James Anderson</li>
+                        <li style="font-weight: normal;">Cardiologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!------------------------------------------------------------->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Sophia Johnson</li>
+                        <li style="font-weight: normal;">Gynecologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+        
+        
         </div>
+        
+        <!---->
+        
+        
+        
         <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. James Anderson</li>
-                    <li style="font-weight: normal;">Cardiologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        
+        <!-------------------------------2nd division----------------------------------------------->
+        
+        
+        <div class="doctors">
+        
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Michael Brown
+                        </li>
+                        <li style="font-weight: normal;">Pediatrician</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Amelia Brown</li>
+                        <li style="font-weight: normal;">Neurologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!--------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. David Campbell</li>
+                        <li style="font-weight: normal;">Ophthalmologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!-- </div> -->
+        
+        </div>
+        
+        <!-------------------------------3rd division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Ria Davis</li>
+                        <li style="font-weight: normal;">Dentist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. John Davis</li>
+                        <li style="font-weight: normal;">Orthopedic</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Abigail Miller</li>
+                        <li style="font-weight: normal;">Nephrologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
             </div>
         </div>
-        <!------------------------------------------------------------->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Sophia Johnson</li>
-                    <li style="font-weight: normal;">Gynecologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        <!-------------------------------4th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Robert Evans</li>
+                        <li style="font-weight: normal;">Ayurvedic</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Charlotte Wilson</li>
+                        <li style="font-weight: normal;">Dermatologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Charles Green</li>
+                        <li style="font-weight: normal;">Physician</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
             </div>
         </div>
-
-
-    </div>
-
-    <!---->
-
-
-
-    <!-- </div> -->
-
-
-    <!-------------------------------2nd division----------------------------------------------->
-
-
-    <div class="doctors">
-
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Michael Brown
-                    </li>
-                    <li style="font-weight: normal;">Pediatrician</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        
+        <!-------------------------------5th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Lily Moore</li>
+                        <li style="font-weight: normal;">Cardiologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Thomas Harris</li>
+                        <li style="font-weight: normal;">Gynecologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Emily Adams</li>
+                        <li style="font-weight: normal;">Pediatrician</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+        
+        </div>
+        
+        <!-------------------------------6th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Joseph Jackson</li>
+                        <li style="font-weight: normal;">Neurologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Sarah Baker</li>
+                        <li style="font-weight: normal;">Ophthalmologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Daniel King</li>
+                        <li style="font-weight: normal;">Dentist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
             </div>
         </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Amelia Brown</li>
-                    <li style="font-weight: normal;">Neurologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        <!-------------------------------7th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Jessica Clark</li>
+                        <li style="font-weight: normal;">Orthopedic</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Matthew Lewis</li>
+                        <li style="font-weight: normal;">Nephrologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
+            </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
+                </div>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Jennifer Foster</li>
+                        <li style="font-weight: normal;">Ayurvedic</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
+                </div>
             </div>
         </div>
-        <!--------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. David Campbell</li>
-                    <li style="font-weight: normal;">Ophthalmologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        
+        <!-------------------------------8th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-
-        <!-- </div> -->
-
-    </div>
-
-    <!-------------------------------3rd division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Ria Davis</li>
-                    <li style="font-weight: normal;">Dentist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Christopher Martin</li>
+                        <li style="font-weight: normal;">Dermatologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. John Davis</li>
-                    <li style="font-weight: normal;">Orthopedic</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+        
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Abigail Miller</li>
-                    <li style="font-weight: normal;">Nephrologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Michelle Garcia
+                        </li>
+                        <li style="font-weight: normal;">Physician</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-    </div>
-
-    <!-------------------------------4th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Robert Evans</li>
-                    <li style="font-weight: normal;">Ayurvedic</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Charlotte Wilson</li>
-                    <li style="font-weight: normal;">Dermatologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Anthony Nelson</li>
+                        <li style="font-weight: normal;">Cardiologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
         </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Charles Green</li>
-                    <li style="font-weight: normal;">Physician</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        <!-------------------------------9th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!-------------------------------5th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Lily Moore</li>
-                    <li style="font-weight: normal;">Cardiologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Laura Jackson</li>
+                        <li style="font-weight: normal;">Gynecologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Thomas Harris</li>
-                    <li style="font-weight: normal;">Gynecologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Emily Adams</li>
-                    <li style="font-weight: normal;">Pediatrician</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Andrew Parker</li>
+                        <li style="font-weight: normal;">Pediatrician</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-
-    </div>
-
-    <!-------------------------------6th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Joseph Jackson</li>
-                    <li style="font-weight: normal;">Neurologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Sarah Baker</li>
-                    <li style="font-weight: normal;">Ophthalmologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Stephanie Lewis</li>
+                        <li style="font-weight: normal;">Neurologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
+        
         </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Daniel King</li>
-                    <li style="font-weight: normal;">Dentist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+        <!-------------------------------10th division----------------------------------------------->
+        
+        
+        <div class="doctors">
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-------------------------------7th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Jessica Clark</li>
-                    <li style="font-weight: normal;">Orthopedic</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Brian Quinn</li>
+                        <li style="font-weight: normal;">Ophthalmologist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Matthew Lewis</li>
-                    <li style="font-weight: normal;">Nephrologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <!-- <div id="motherdiv"> -->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Jennifer Foster</li>
-                    <li style="font-weight: normal;">Ayurvedic</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Angela Miller</li>
+                        <li style="font-weight: normal;">Dentist</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
-        </div>
-    </div>
-
-
-    <!-------------------------------8th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Christopher Martin</li>
-                    <li style="font-weight: normal;">Dermatologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+            <!-- </div> -->
+        
+            <!------------------------------------------------------------->
+            <div class="description">
+        
+                <div class="pictorial">
+                    <img src="pics/pic1.webp" alt="image">
                 </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Michelle Garcia
-                    </li>
-                    <li style="font-weight: normal;">Physician</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
+        
+                <div class="details">
+                    <ul>
+                        <li style="font-size: 20px;">Dr. Kevin Roberts</li>
+                        <li style="font-weight: normal;">Orthopedic</li>
+                        <!-- <li>maria@gmail.com -->
+                    </ul>
+        
+                    <div class="buttondiv">
+                        <a href="#appoinment"><button>consult</button></a>
+                    </div>
+        
                 </div>
-
             </div>
+        
         </div>
-        <!-------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Anthony Nelson</li>
-                    <li style="font-weight: normal;">Cardiologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-    </div>
-
-    <!-------------------------------9th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Laura Jackson</li>
-                    <li style="font-weight: normal;">Gynecologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Andrew Parker</li>
-                    <li style="font-weight: normal;">Pediatrician</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Stephanie Lewis</li>
-                    <li style="font-weight: normal;">Neurologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-------------------------------10th division----------------------------------------------->
-
-
-    <div class="doctors">
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Brian Quinn</li>
-                    <li style="font-weight: normal;">Ophthalmologist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <!-- <div id="motherdiv"> -->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Angela Miller</li>
-                    <li style="font-weight: normal;">Dentist</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!------------------------------------------------------------->
-        <div class="description">
-
-            <div class="pictorial">
-                <img src="pics/pic1.webp" alt="image">
-            </div>
-
-            <div class="details">
-                <ul>
-                    <li style="font-size: 20px;">Dr. Kevin Roberts</li>
-                    <li style="font-weight: normal;">Orthopedic</li>
-                    <!-- <li>maria@gmail.com -->
-                </ul>
-
-                <div class="buttondiv">
-                    <a href="#appoinment"><button>consult</button></a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-------------------------------(consulting form)------------------------------------------>
-    <div class="consulting" id="appoinment">
-        <!-- 
-        <div>
-            <h1>Consultation Form</h1>
-        </div> -->
-
-        <div class="internalform">
-
-            <!-- <form id="myform">
-
-                <h1>Consultation Form</h1>
-
-                <label>Patient Name:</label>
-                <br>
-                <input id="patientName" type="text" name="patientName">
-                <br><br>
-
-                <label>Patient Email:</label><br>
-                <input id="patientEmail" type="email" name="patientEmail">
-                <br><br>
-
-                <label>Contact Number:</label><br>
-                <input id="contactNumber" type="number" name="contactNumber">
-                <br><br>
-
-                <label>Doctor Name:</label><br>
-                <input id="doctorName" type="text" name="doctorName">
-                <br><br>
-
-                <label>Select Hospital:</label><br>
-                <select id="hospitalSelect" name="hospital">
-                    <option value="Hospital_1">Hospital_1</option>
-                    <option value="Hospital_2">Hospital_2</option>
-                    <option value="Hospital_3">Hospital_3</option>
-                    <option value="Hospital_4">Hospital_4</option>
-                </select>
-                <br><br>
-
-                <p>Once you submit the form you will receive a SMS including your channelling no. and time.
-
+        
+        <!-------------------------------(consulting form)------------------------------------------>
+        <div class="consulting" id="appoinment">
+            <!-- 
+                <div>
+                    <h1>Consultation Form</h1>
+                </div> -->
+        
+            <div class="internalform">
+        
+                <!-- <form id="myform">
+        
+                        <h1>Consultation Form</h1>
+        
+                        <label>Patient Name:</label>
+                        <br>
+                        <input id="patientName" type="text" name="patientName">
+                        <br><br>
+        
+                        <label>Patient Email:</label><br>
+                        <input id="patientEmail" type="email" name="patientEmail">
+                        <br><br>
+        
+                        <label>Contact Number:</label><br>
+                        <input id="contactNumber" type="number" name="contactNumber">
+                        <br><br>
+        
+                        <label>Doctor Name:</label><br>
+                        <input id="doctorName" type="text" name="doctorName">
+                        <br><br>
+        
+                        <label>Select Hospital:</label><br>
+                        <select id="hospitalSelect" name="hospital">
+                            <option value="Hospital_1">Hospital_1</option>
+                            <option value="Hospital_2">Hospital_2</option>
+                            <option value="Hospital_3">Hospital_3</option>
+                            <option value="Hospital_4">Hospital_4</option>
+                        </select>
+                        <br><br>
+        
+                        <p>Once you submit the form you will receive a SMS including your channelling no. and time.
+        
+                            <br>
+                            <br>
+        
+        
+                        <div style="display:flex; justify-content: center; align-items: center;">
+                            <button type="submit">Submit</button>
+        
+                        </div>
+        
+                        <br>
+                        <p id="errorMessages" class="error"></p>
+        
+        
+                    </form> -->
+        
+                <form id="myform">
+        
+                    <h1>Consultation Form</h1>
+        
+                    <label>Patient Name:</label>
                     <br>
+                    <input id="patientName" type="text" name="patientName">
+                    <span class="error" id="errorPatientName"></span>
+                    <br><br>
+        
+                    <label>Patient Email:</label><br>
+                    <input id="patientEmail" type="email" name="patientEmail">
+                    <span class="error" id="errorPatientEmail"></span>
+                    <br><br>
+        
+                    <label>Contact Number:</label><br>
+                    <input id="contactNumber" type="number" name="contactNumber">
+                    <span class="error" id="errorContactNumber"></span>
+                    <br><br>
+        
+                    <label>Doctor Name:</label><br>
+                    <input id="doctorName" type="text" name="doctorName">
+                    <span class="error" id="errorDoctorName"></span>
+                    <br><br>
+        
+                    <label>Select Hospital:</label><br>
+                    <select id="hospitalSelect" name="hospital">
+                        <option value="Hospital_1">Hospital_1</option>
+                        <option value="Hospital_2">Hospital_2</option>
+                        <option value="Hospital_3">Hospital_3</option>
+                        <option value="Hospital_4">Hospital_4</option>
+                    </select>
+                    <span class="error" id="errorHospitalSelect"></span>
+                    <br><br>
+        
+                    <p class="errorp">Once you submit the form you will receive a SMS including your channelling no. and time.
+        
+                        <br>
+                        <br>
+        
+                    <div style="display:flex; justify-content: center; align-items: center;">
+                        <button type="submit">Submit</button>
+                    </div>
+        
                     <br>
+                    <p id="errorMessages" class="error"></p>
+        
+                </form>
+        
+                <script>
+                    document.getElementById('myform').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        let isValid = true;
 
+                        // Clear previous error messages
+                        document.querySelectorAll('.error').forEach(e => e.textContent = '');
 
-                <div style="display:flex; justify-content: center; align-items: center;">
-                    <button type="submit">Submit</button>
-
-                </div>
-
-                <br>
-                <p id="errorMessages" class="error"></p>
-
-
-            </form> -->
-
-            <form id="myform">
-
-                <h1>Consultation Form</h1>
-        
-                <label>Patient Name:</label>
-                <br>
-                <input id="patientName" type="text" name="patientName">
-                <span class="error" id="errorPatientName"></span>
-                <br><br>
-        
-                <label>Patient Email:</label><br>
-                <input id="patientEmail" type="email" name="patientEmail">
-                <span class="error" id="errorPatientEmail"></span>
-                <br><br>
-        
-                <label>Contact Number:</label><br>
-                <input id="contactNumber" type="number" name="contactNumber">
-                <span class="error" id="errorContactNumber"></span>
-                <br><br>
-        
-                <label>Doctor Name:</label><br>
-                <input id="doctorName" type="text" name="doctorName">
-                <span class="error" id="errorDoctorName"></span>
-                <br><br>
-        
-                <label>Select Hospital:</label><br>
-                <select id="hospitalSelect" name="hospital">
-                    <option value="Hospital_1">Hospital_1</option>
-                    <option value="Hospital_2">Hospital_2</option>
-                    <option value="Hospital_3">Hospital_3</option>
-                    <option value="Hospital_4">Hospital_4</option>
-                </select>
-                <span class="error" id="errorHospitalSelect"></span>
-                <br><br>
-        
-                <p>Once you submit the form you will receive a SMS including your channelling no. and time.
-        
-                <br>
-                <br>
-        
-                <div style="display:flex; justify-content: center; align-items: center;">
-                    <button type="submit">Submit</button>
-                </div>
-        
-                <br>
-                <p id="errorMessages" class="error"></p>
-        
-            </form>
-        
-            <script>
-                document.getElementById('myform').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    let isValid = true;
-        
-                    // Clear previous error messages
-                    document.querySelectorAll('.error').forEach(e => e.textContent = '');
-        
-                    // Validate Patient Name
-                    const patientName = document.getElementById('patientName').value;
-                    if (!patientName) {
-                        document.getElementById('errorPatientName').textContent = 'Patient Name is required';
-                        isValid = false;
-                    }
-        
-                    // Validate Patient Email
-                    const patientEmail = document.getElementById('patientEmail').value;
-                    if (!patientEmail) {
-                        document.getElementById('errorPatientEmail').textContent = 'Patient Email is required';
-                        isValid = false;
-                    } else {
-                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        if (!emailPattern.test(patientEmail)) {
-                            document.getElementById('errorPatientEmail').textContent = 'Invalid email format';
+                        // Validate Patient Name
+                        const patientName = document.getElementById('patientName').value;
+                        if (!patientName) {
+                            document.getElementById('errorPatientName').textContent = 'Patient Name is required';
                             isValid = false;
                         }
-                    }
-        
-                    // Validate Contact Number
-                    const contactNumber = document.getElementById('contactNumber').value;
-                    if (!contactNumber) {
-                        document.getElementById('errorContactNumber').textContent = 'Contact Number is required';
-                        isValid = false;
-                    }
-        
-                    // Validate Doctor Name
-                    const doctorName = document.getElementById('doctorName').value;
-                    if (!doctorName) {
-                        document.getElementById('errorDoctorName').textContent = 'Doctor Name is required';
-                        isValid = false;
-                    }
-        
-                    // Validate Hospital Selection
-                    const hospitalSelect = document.getElementById('hospitalSelect').value;
-                    if (!hospitalSelect) {
-                        document.getElementById('errorHospitalSelect').textContent = 'Please select a hospital';
-                        isValid = false;
-                    }
-        
-                    if (isValid) {
-                        // Clear all error messages before form submission
-                        document.querySelectorAll('.error').forEach(e => e.textContent = '');
-                        
-                        // Simulate form submission
-                        alert('Form submitted successfully!');
-                        document.getElementById('myform').reset();
-                    }
-                });
-            </script>
 
+                        // Validate Patient Email
+                        const patientEmail = document.getElementById('patientEmail').value;
+                        if (!patientEmail) {
+                            document.getElementById('errorPatientEmail').textContent = 'Patient Email is required';
+                            isValid = false;
+                        } else {
+                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (!emailPattern.test(patientEmail)) {
+                                document.getElementById('errorPatientEmail').textContent = 'Invalid email format';
+                                isValid = false;
+                            }
+                        }
+
+                        // Validate Contact Number
+                        const contactNumber = document.getElementById('contactNumber').value;
+                        if (!contactNumber) {
+                            document.getElementById('errorContactNumber').textContent = 'Contact Number is required';
+                            isValid = false;
+                        }
+
+                        // Validate Doctor Name
+                        const doctorName = document.getElementById('doctorName').value;
+                        if (!doctorName) {
+                            document.getElementById('errorDoctorName').textContent = 'Doctor Name is required';
+                            isValid = false;
+                        }
+
+                        // Validate Hospital Selection
+                        const hospitalSelect = document.getElementById('hospitalSelect').value;
+                        if (!hospitalSelect) {
+                            document.getElementById('errorHospitalSelect').textContent = 'Please select a hospital';
+                            isValid = false;
+                        }
+
+                        if (isValid) {
+                            // Clear all error messages before form submission
+                            document.querySelectorAll('.error').forEach(e => e.textContent = '');
+
+                            // Simulate form submission
+                            alert('Form submitted successfully!');
+                            document.getElementById('myform').reset();
+                        }
+                    });
+                </script>
+        
+            </div>
+        
         </div>
-
-    </div>
+    </main>
     <!-----------------------------------end---------------------------------------------------->
+
+    <footer>
+        <div class="footercont">
+            <div class="finfo">
+                <div class="flogo">
+                    <div class="fico"></div>
+                    <div class="fdes">
+                        <p>MEDLooM</p>
+                        <p>e-Channeling</p>
+                    </div>
+                </div>
+                <div>
+                    <p> <span class="material-symbols-outlined">call</span> +94 71 895 3623</p>
+                </div>
+                <div><a href="mailto:">
+                        <p> <span class="material-symbols-outlined">mail</span> contact@medloom.org</p>
+                    </a></div>
+    
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Visit</th>
+                        <th>Our Services</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">► Home</a></td>
+                        <td><a href="#">► Heart Diseases</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">► Doctors</a></td>
+                        <td><a href="#">► Lung Diseases</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">► Services</a></td>
+                        <td><a href="#">► General surgery</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">► Achievements</a></td>
+                        <td><a href="#">► Sport Medics</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="copyr">
+            <div>Copyright © 2024 TRACKLand3. All Rights Reserved.</div>
+            <div class="dateandtime" id="datetime">
+    
+            </div>
+        </div>
+    
+    </footer>
 
 </body>
 

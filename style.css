@@ -707,6 +707,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    color: white;
 }
 .flogo p:nth-child(1){
     font-weight: 600;
