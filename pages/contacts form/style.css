@@ -16,6 +16,8 @@ form {
 }
 .form-group {
     margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
 }
 .form-group label {
     display: block;
@@ -46,27 +48,44 @@ form {
     align-items: center;
 }
 .contact_form{
-    margin-left:10vh;
-    margin-right: 10vh;
-    margin-bottom: 20vh;
+    margin: 60px 150px 30px 190px;
     border-style:solid ;
     border-color: #003854;
-    border-width: 3px;
-    border-radius: 10px;
+    border-width: 2px;
+    border-radius: 5px;
     padding: 5vh;
-    width: 50vh;
+    width: 160vh;
     background-color: rgb(223, 250, 255);
  
 }
 
 .submit_button{
     font-family:"Poppins",sans-serif;
-    padding: 5px 40px 5px 40px;
+    width: 100px;
     border-style:solid;
-    border-radius: 10px;
+    border-radius: 3px;
+    padding: 10px;
     border-width: 2px;
     border-color: #003854;
+    margin-left: 25%;
+    background-color: rgb(247, 254, 255);
+    font-size: 15px;
 }
+.submit_button :hover{
+    width: 130px;
+    transition: 1s;
+}
+
+.contact1{
+    
+    background: linear-gradient(145deg, #ffffff, #d7f5f7);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    }
+
+
 #userForm{
     background-color: rgb(223, 250, 255);
    
@@ -236,7 +255,7 @@ form {
 
 
 .contact{
-padding-top: 20vh;
+
 background: linear-gradient(145deg, #ffffff, #d7f5f7);
 display: flex;
 flex-direction: column;
@@ -249,7 +268,7 @@ justify-content:center;
    display: flex;
    flex-direction: row;
    gap: 30px;
-   padding-left: 60px;
+  
    background-color: #d0f8ff;
   
 }
@@ -266,15 +285,26 @@ font-size: 5vh;
 }
 
 .contactD{
-    background-color: rgb(175, 237, 254);
+    margin:0px 0px 10px 30px;
+    background-color: #d7f5f7;
     width:100%;
-
-}
-.contact_box{
-    width:70vh;
-    margin-bottom: 5vh;
     justify-content: center;
     align-items: center;
+    
+    padding: 10px 5px 1px 10px;
+
+
+}
+.contactc{
+    margin:10px 80px 10px 100px;
+    background-color: rgb(233, 250, 255);
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact_box1{
+    width:130%;
+    background-image: url("./R.jpg");
    
 }
 
@@ -339,7 +369,7 @@ font-size: 5vh;
 
 .qr-code{
     font-size: 200px;
-    margin-left: 1%;
+    margin-left: 10%;
 }
 @media screen and (max-width: 1024px){
 
@@ -371,13 +401,13 @@ font-size: 5vh;
 }
 .playstore img{
     width: 350px;
-    height 50px;
+    height: 50px;
     margin-top: 25px;
 
 }
 .appstore img{
     width: 350px;
-    height 50px;
+    height: 50px;
 
 }
 

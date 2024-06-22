@@ -45,5 +45,16 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
 
     if (!isValid) {
         event.preventDefault();
+
+        
+    }
+
+    if (isValid) {
+
+        
+
+        alert('Form submitted successfully!');
+        document.getElementById('userForm').reset();
+
     }
 });
