@@ -76,12 +76,12 @@ body {
 .pictorial {
     height: 300px;
     width: 100%;
-    background: url(../assets/pictorialbground.jpg);
+    /* background: url(../assets/pictorialbground.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.6s;
-    border: 2px solid #ffffff00;
+    /* border: 2px solid #ffffff00; */
 }
 
 
@@ -124,9 +124,9 @@ li {
 
 img {
     object-fit: contain;
-    padding: 10px 0 0 0;
+    /* padding: 10px 0 0 0; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 ul {
@@ -260,10 +260,15 @@ option {
 @media screen and (max-width:2800px) {
 
     .description {
-        height: 450px;
+        height: auto;
         width: 400px;
         margin: 40px;
     }
+
+    .pictorial {
+        height: auto;
+    }
+
 
     form {
         width: 600px;
@@ -272,10 +277,10 @@ option {
 }
 
 /*--------------------------------------------------------------------------*/
-@media screen and (max-width:1220px) {
+@media screen and (max-width:1440px) {
 
     .description {
-        height: 500px;
+        height: auto;
         width: 400px;
         padding: 0;
         margin: 40px;
@@ -284,7 +289,7 @@ option {
     }
 
     .pictorial {
-        height: 350px;
+        height: auto;
     }
 
     .details {
@@ -305,7 +310,7 @@ option {
 
 
     .description {
-        height: 500px;
+        height: auto;
         width: 400px;
         padding: 0;
         margin: 40px;
@@ -314,7 +319,7 @@ option {
     }
 
     .pictorial {
-        height: 300px;
+        height: auto;
     }
 
     .details {
@@ -347,11 +352,16 @@ option {
         width: auto;
     } */
 
+    .pictorial{
+        height: auto;
+        width: auto;
+    }
+
     .description {
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        height: 500px;
+        height: auto;
         width: 400px;
         margin: 40px 20px 20px 20px;
     }
@@ -411,9 +421,9 @@ option {
         height: 545px;
     } */
 
-    .pictoria {
+    /* .pictoria {
         margin-top: 25px;
-    }
+    } */
 
     .details {
         margin: 0;
@@ -468,5 +478,3 @@ option {
 
 
 }
-
-
