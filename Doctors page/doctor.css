@@ -13,15 +13,29 @@ body {
     /* background: linear-gradient(145deg, #a2e3f799,  #a2e3f799); */
     /* background: #a2e3f799; */
     background: #ffffff;
-    background-size: 100vw 100vh;
+    /* background-size: 100vw 100vh; */
     /* background-attachment: fixed; */
     padding: 0;
     margin: 0;
 }
 
 
+/*---------------------------------------Heading String---------------------------------------------------------------*/
+.headstring{
+    text-align: center;
+    font-family: poppins;
+    font-weight: 600;
+    color: #00346e;
+    padding-top: 120px;
+    font-size: 40px;
+    width: 100vw;
+}
 
-
+.slogan{
+    text-align: center;
+    color: #05050553;
+    width: 100vw;
+}
 
 /*---------------------------------------Description of doctors---------------------------------------------------------------*/
 
@@ -32,8 +46,6 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    
-
 }
 
 /* #motherdiv {
@@ -146,14 +158,14 @@ i {
 }
 
 button {
-    width: 80px;
-    height: 30px;
+    width: 85px;
+    height: 35px;
     align-items: center;
     border: 2px solid #00346e;
     background: none;
     color: #00346e;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
 }
