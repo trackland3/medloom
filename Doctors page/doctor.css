@@ -11,9 +11,10 @@ body {
     width: 100vw;
     overflow-x: hidden;
     /* background: linear-gradient(145deg, #a2e3f799,  #a2e3f799); */
-    background: #a2e3f799;
+    /* background: #a2e3f799; */
+    background: #ffffff;
     background-size: 100vw 100vh;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     padding: 0;
     margin: 0;
 }
@@ -62,15 +63,16 @@ body {
     height: 450px;
     margin: 10px 50px 10px 50px;
     /* padding: 10px; */
-    background: #a2e3f799;
-    ;
+    /* background: #a2e3f799; */
+    background: #ebf7f9;
     border: 2px solid #ffffff00;
     border-radius: 5px;
     transition: all 0.6s;
 }
 
 .description:hover {
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: #d7f0f8;
 }
 
 .pictorial {
@@ -159,7 +161,7 @@ button {
     background: none;
     color: #00346e;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
