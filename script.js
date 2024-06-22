@@ -193,7 +193,7 @@ gsap.set(".extrbox", {
       trigger: ".extrsvc-wrapper",
       start: 'top 90%',
       end: 'bottom 70%',
-      markers: true,
+      markers: false,
       scrub: true
       
     },
@@ -323,3 +323,30 @@ window.addEventListener("load", scrollTrigger);
 
 
 
+const currentDate = new Date();
+ 
+const hours = currentDate.getHours().toString().padStart(2, '0');
+const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+const day = currentDate.getDate().toString().padStart(2, '0');
+const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+const year = currentDate.getFullYear().toString();
+
+const formattedDateTime = `${hours}:${minutes} ${day}${month}${year}`;
+
+document.getElementById("datetime").innerHTML = formattedDateTime;
+
+setInterval(() => {
+  const currentDate = new Date();
+ 
+const hours = currentDate.getHours().toString().padStart(2, '0');
+const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+const seconds = currentDate.getSeconds().toString().padStart(2, '0');
+const day = currentDate.getDate().toString().padStart(2, '0');
+const monthindex = (currentDate.getMonth());
+const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const year = currentDate.getFullYear().toString();
+
+const formattedDateTime = `${day}\-${month[monthindex]}\-${year}, ${hours}:${minutes}`;
+
+document.getElementById("datetime").innerHTML = formattedDateTime;
+}, 1000);
