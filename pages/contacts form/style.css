@@ -48,14 +48,15 @@ form {
     align-items: center;
 }
 .contact_form{
-    margin: 60px 150px 30px 190px;
+    margin: 60px 100px 30px 150px;
     border-style:solid ;
-    border-color: #003854;
+    border-color: #001667;
     border-width: 2px;
     border-radius: 5px;
     padding: 5vh;
     width: 160vh;
-    background-color: rgb(223, 250, 255);
+    background-color: #0077b6;
+    
  
 }
 
@@ -67,7 +68,6 @@ form {
     padding: 10px;
     border-width: 2px;
     border-color: #003854;
-    margin-left: 25%;
     background-color: rgb(247, 254, 255);
     font-size: 15px;
 }
@@ -87,8 +87,14 @@ form {
 
 
 #userForm{
-    background-color: rgb(223, 250, 255);
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
+}
+.form-group label {
+    color: #fff;
 }
 
 .navbarm{
@@ -267,44 +273,49 @@ justify-content:center;
    
    display: flex;
    flex-direction: row;
-   gap: 30px;
-  
-   background-color: #d0f8ff;
+   
+   background-color: #0077b6;
   
 }
 .contactsub{
     display: flex;
     flex-direction: row;
+    margin-left: 80px;
+    color: #0077b6;
 
 }
 
 .ContactH{
+color: #004a72;
+margin-left: 160px;
 margin-top: 10vh;
 margin-bottom: 5vh;
 font-size: 5vh;
 }
 
 .contactD{
-    margin:0px 0px 10px 30px;
-    background-color: #d7f5f7;
+    margin:0px 10px 10px 30px;
+    background-color: #ffffff;
     width:100%;
     justify-content: center;
     align-items: center;
-    
-    padding: 10px 5px 1px 10px;
+    padding:10px 5px 1px 10px;
 
 
 }
-.contactc{
-    margin:10px 80px 10px 100px;
+.contactc{ 
     background-color: rgb(233, 250, 255);
     width:100%;
     justify-content: center;
     align-items: center;
 }
+.desc_contact{
+    color: #004a72;
+}
 .contact_box1{
-    width:130%;
+    width:110%;
     background-image: url("./R.jpg");
+    margin: 0px;
    
 }
 
@@ -339,14 +350,16 @@ font-size: 5vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 .e-app{
-   margin-left: 10%;
+   
    margin-top: 4%;
    justify-content: center;
    align-items: center;
    display: flex;
    flex-direction: column;
+   padding: 30px;
 }
 .e-app h2{
     font-size: 40px;
@@ -355,6 +368,9 @@ font-size: 5vh;
 .e-app h1{
     font-size: 70px;
     margin-bottom: 50px;
+}
+.e-app p{
+    font-size: 15px;
 }
 .imgstore{
     margin-top: 18px;
@@ -368,8 +384,14 @@ font-size: 5vh;
 }
 
 .qr-code{
-    font-size: 200px;
-    margin-left: 10%;
+    font-size: 180px;
+    background-color:#ffffff; 
+    width: 250px;
+    height:250px; 
+    border-radius: 10px; 
+    margin-bottom:20px; 
+    padding: 0px 0px 20px 45px;
+   
 }
 @media screen and (max-width: 1024px){
 
