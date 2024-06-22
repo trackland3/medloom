@@ -244,27 +244,28 @@ html{
 .Operationsbox{
 display: flex;
 flex-direction:row;
-padding:3vh 0.5vh 5vh 0.5vh;
+padding:3px 0.5px 5px 0.5px;
 background-color: rgb(226, 248, 255);
-margin-top: 15vh;
-margin-bottom: 15vh;
-margin-right: 5vh;
+margin-top: 15px;
+margin-bottom: 75px;
+margin-right: 5px;
 border-top-right-radius:15px;
 border-bottom-right-radius: 15px;
 justify-content: center;
 align-items: center;
-height: 65vh;
+height: 500px;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 
 }
 
 .Heading_Op{
-   margin-top: 20vh;
+   margin-top: 150px;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: #184f68;
-   font-size: 6vh;
+   font-size: 45px;
+   margin-bottom: 40px;
    
 }
 
@@ -279,19 +280,19 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 .description_heading_Op{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    padding:1vh;
-    font-size: 5vh;
+    padding:10px;
+    font-size: 32px;
     color:#184f68;
-    margin-bottom: 6vh;
+    margin-bottom: 30px;
 }
 
 .description_para1{
   font-family: "Montserrat",sans-serif;
   text-align: center;
   color:#126286;
-  margin: 1vh 5vh;
+  margin: 10px 25px;
   font-size: 16px;
-  padding: 0.5vh 0.1vh 0.1vh 0.1vh;
+  padding: 0.5px 0.1px 0.1px 0.1px;
   margin-top: 1px;
   margin-bottom: 1px;
 
@@ -300,9 +301,9 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
     font-family: "Montserrat",sans-serif;
     text-align: center;
     color:#126286;
-    margin: 1vh 5vh;
+    margin: 1px 5px;
     font-size: 16px;
-    padding: 0.5vh 0.1vh 0.1vh 0.1vh;
+    padding: 0.5px 0.1px 0.1px 0.1px;
     margin-top: 1px;
     margin-bottom: 1px;
 
@@ -321,7 +322,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 /*Awards css styles go here ................*/
 .Awards{
     background-color: #ffffff;
-    padding-bottom: 5vh;
+    padding-bottom: 5px;
 }
 
 .Awardsouterbox{
@@ -334,39 +335,37 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 .Awardsbox{
 display: flex;
 flex-direction: column;
-padding:1vh 2vh 1vh 2vh;
+padding:10px 40px 10px 40px;
 background-color:rgb(226, 248, 255);
 margin: 5vh;
 border-radius: 15px;
-width:600px;
-height: 95vh;
+width:580px;
+height: 630px;
 border: 2px solid #2a668437;
 box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 align-items: center;
 }
 
 .Heading_Aw{
-   padding-top: 20vh;
+   padding-top: 20px;
    font-family: "Montserrat",sans-serif;
    text-align: center;
    color: #184f68;
-   font-size: 5vh;
+   font-size: 40px;
    
 }
 
 .description_Aw{
-
-   
     text-align: center;
-    padding:0.1vh;
+    padding:1px;
 
 }
 
 .description_heading_Aw{
     font-family: "Montserrat",sans-serif;
     text-align: center;
-    padding:2vh;
-    font-size: 3vh;
+    padding:30px;
+    font-size: 20px;
     color:#184f68;
 }
 
@@ -374,16 +373,16 @@ align-items: center;
     height:300px ;
     width: 400px;
     border-radius: 30px;
-    padding: 2.0vh;
+    padding: 20px;
     
 }
 /*Awards css styles go here ................*/
 
 /*reviews css styles go here ................*/
 .heading_review{
-    padding-top: 10vh;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: "Montserrat",sans-serif;
     color:#184f68;
@@ -574,7 +573,7 @@ align-items: center;
 
 
 .Awardsbox{
-    height: 100vh;
+    height: 500px;
     width:80vh;
 }
 .imgop{
@@ -612,6 +611,9 @@ align-items: center;
         justify-content: center;
         align-items: center;
 
+    }
+    .Awardsbox{
+      height: 560px;
     }
 }
 
@@ -687,7 +689,7 @@ align-items: center;
   }
      .Awardsbox{
       width: 420px;
-      height: 610px;
+      height: 620px;
   }
     .imgop{
       width: 320px;
@@ -708,8 +710,8 @@ align-items: center;
             margin-right:40px ;
         }
         .description_para{
-          margin-left:50px ;
-          margin-right:50px ;
+          margin-left:10px ;
+          margin-right:10px ;
         }
         .description_para1{
           margin-left:60px ;
@@ -717,7 +719,7 @@ align-items: center;
         }
         .Awardsbox{
             width: 340px;
-            height: 610px;
+            height: 600px;
         }
       .imgAw{
         width: 300px;
@@ -746,9 +748,9 @@ align-items: center;
         }
         .description_para{
             font-size:10px;
-            margin-left:20px ;
-            margin-right:20px ;
-            padding:30px;
+            margin-left:10px ;
+            margin-right:10px ;
+            padding:10px;
         }   
         
         .description_para1{
