@@ -727,9 +727,7 @@ align-items: center;
       }
   }
   @media screen and (max-width: 630px) {
-    .first{
-      margin-left: 1%;
-    }
+    
     .Operationsbox{
         display: flex;
         flex-direction: column;
