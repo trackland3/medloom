@@ -109,7 +109,7 @@ html{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    z-index: 101;
+    z-index: 100;
     box-shadow: 0 4px 8px rgba(35, 67, 83, 0.197);
     backdrop-filter: blur(5px);
     transition: 200ms ease-in;
@@ -119,18 +119,70 @@ html{
 }
 
 .navlist{
-    display: flex;
-    position: fixed;
+    position: absolute;
+    left: 0;
     top: 100px;
-    width: 300px;
+    width: 100%;
     height: calc(100vh - 100px);
-    padding: 20px;
-    background-color: #234353;
-    z-index: 101;
-    transition: 400ms;
+    background-color: #0077b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 103;
+    transition: 200ms ease-in-out;
+    transform: translateX(-100%);
+
+
     
 }
 
+.navlist.active{
+    transform: translateX(0%);
+}
+
+.navlinksm{
+    width: 80%;
+    font-size: x-large;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 103;
+}
+
+.navlinkm{
+    border-bottom: 1px solid white;
+}
+
+.navlinkm:active{
+    border-bottom: 1px solid #ffffff9c;
+    color: #ffffff9c;
+}
+
+
+.loginm{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: larger;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.loginm:active{
+    background-color: #ffffff;
+    color: #0077b6;
+    scale: 0.95;
+}
 
 #checkbox {
     display: none;
@@ -275,22 +327,14 @@ html{
 
 }
 
-.navlinks .loginm{
-    text-align: center;
-    color: #234353;
-    background-color: white;
-    padding: 5px 20px;
-    border-radius: 0px;
-}
+
 
 .navlinks .login:active{
     transform: scale(0.95);
     background-color: #e24965;
 }
 
-.navlinksm a{
-    color: white;
-}
+
 
 .main{
     transition: 400ms;
@@ -1018,6 +1062,11 @@ td a:hover{
 
         .sheadshadow{
             transform: translateY(-50px);
+            /* display: none; */
+            text-align: center;
+            /* font-size: 80px; */
+
+            
         }
 
         .services section{
