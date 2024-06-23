@@ -1023,7 +1023,7 @@ td a:hover{
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
 :root {
   --initwidth: 350px;
