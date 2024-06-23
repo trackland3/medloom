@@ -28,10 +28,485 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
+    
+    <script defer src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../../style.css">
 
-    <link rel="stylesheet" href="style.css">
     <script defer src="../../script.js"></script>
+    
     <script src="https://kit.fontawesome.com/9b4b408328.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script defer src="./formvalidation.js"> </script>
+    
+    <style>
+        
+
+
+
+.main{
+    transition: 400ms;
+    
+}
+
+h1{
+    padding: 20px;
+}
+
+#formvalidation{
+    margin-top: -70px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+}
+
+.input-row{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #004a72;
+    font-weight: 600;
+    
+}
+
+input[type="text"],input[type="email"],input[type="number"],textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+
+
+
+label.error{
+    font-weight: 500;
+    display: block;
+    color: #fe4964;
+    font-size: 14px;
+}
+
+.submit {
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #004a72;
+    color: white;
+    font-weight: 600;
+    font-family: "popins",sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit:active{
+    background-color: #003a52;
+    scale: 0.95;
+}
+
+.contact{
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form{
+    margin: 60px 100px 30px 150px;
+
+    border-radius: 15px;
+    padding: 5vh;
+    width: 160vh;
+    background-color: white;
+    
+ 
+}
+
+
+
+.contact1{
+    
+    background: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    }
+
+
+#userForm{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.form-group label {
+    color: #fff;
+}
+
+
+
+/*.....................contact page eke witrk ena styles................................*/
+.contact{
+
+background: linear-gradient(145deg, #ffffff, #d7f5f7);
+display: flex;
+flex-direction: column;
+justify-content:center;
+
+}
+
+.contact_details{
+   
+   display: flex;
+   flex-direction: row;
+   
+   background-color: #0077b6;
+  
+}
+.contactsub{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    color: #0077b6;
+
+}
+
+.ContactH{
+color: #004a72;
+margin-left: 160px;
+margin-top: 10vh;
+margin-bottom: 5vh;
+font-size: 5vh;
+}
+
+.contactD{
+    margin:0px 10px 10px 30px;
+    background-color: #ffffff;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding:10px 5px 1px 10px;
+
+
+}
+.contactc{ 
+    background-color: rgb(233, 250, 255);
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.desc_contact{
+    color: #004a72;
+}
+.contact_box1{
+    width:100%;
+    background-image: url("./contactspics/R.jpg");
+    margin: 0px;
+   
+}
+
+.contact_block{
+    margin-top: 69px;
+}
+
+.img_contact4{
+    margin: 20px;
+
+}
+.img_contact4 i{
+    font-size: 40px;
+    color: rgb(25, 54, 79);
+}
+
+.img1{
+    height: 35px;
+    width: 35px;
+}
+.desc_contact{
+   
+    font-size: 16px;
+    margin: 3vh;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+
+
+.contact-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.e-app{
+   
+   margin-top: 4%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   padding: 30px;
+}
+.e-app h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.e-app h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+.e-app p{
+    font-size: 15px;
+}
+.imgstore{
+    margin-top: 18px;
+    height: 105px;
+    width: 260px;
+    
+}
+.imgstore1{
+    height: 140px;
+    width: 260px;
+}
+
+.qr-code{
+    font-size: 180px;
+    background-color:#ffffff; 
+    width: 250px;
+    height:250px; 
+    border-radius: 10px; 
+    margin-bottom:20px; 
+    padding: 0px 0px 20px 45px;
+   
+}
+/*.....................contact page eke witrk ena styles e tika methnin iwry................................*/
+
+
+/*.......................................................................contact page eke media queries..................................................*/
+@media screen and (max-width: 1024px){
+    
+    #formvalidation{
+    
+    padding: 40px 40px;
+}
+
+    .ContactH{
+      text-align:center;
+      margin-left:10px;
+      margin-top: 0px;;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+      
+    
+    .contact_form{
+        width: 700px;
+        margin: 10px 10px 10px 20px;
+    }
+
+.dowstore{
+    display: flex;
+}
+.playstore img{
+    width: 350px;
+    height: 50px;
+    margin-top: 25px;
+
+}
+.appstore img{
+    width: 350px;
+    height: 50px;
+
+}
+
+}
+@media screen and (max-width: 980px) {
+    .contact1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_form{
+        width: 460px;
+    }
+    .mainHeading{
+        font-size: 25px;
+    }
+    .contactD{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 100px;
+    }
+    .contactsub{
+        margin: 10px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    
+    #formvalidation{
+    
+    padding: 40px 0px;
+}
+
+
+    .desc_contact{
+        
+        font-size: 15px;
+        margin: 3vh;
+        font-family: "Poppins",sans-serif;
+        text-align: center;
+    }
+    .img_contact4{
+        margin: 2vh;
+    }
+    .img2{
+        width:400px;
+        height:320px;
+    }
+
+    .ContactH{
+      text-align:left;
+      margin-left:0px;
+      margin-top: 0px;;
+      padding-top: 0px;
+      font-size: 30px;
+    }
+    .img1{
+    height: 25px;
+    width: 25px;
+        
+    }
+    .desc_contact{
+    font-size: 15px;
+    padding:1px;
+    }
+
+    .contactsub{
+    height: 50px;
+    }
+    .contact_box{
+    padding-top: 60px;
+    margin-bottom: 9px;
+    }
+    .mainHeading{
+        text-align: center;
+    }
+    .contact_box1{
+        visibility:hidden;
+    }
+    .contact_details{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 560px) {
+    .contactD{
+        padding: 25px;
+    }
+    .imgstore{
+        width: 200px;
+        height: 100px;
+    }
+    .imgstore1{
+        width: 200px;
+        height: 135px;
+    
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .contact_form{
+        width: 350px;
+    }
+    .hh{
+        text-align: center;
+    }
+    .imgstore{
+        width: 150px;
+        height: 80px;
+    }
+    .imgstore1{
+        margin-top: 6px;
+        width: 150px;
+        height: 105px;
+    
+    }
+    .footercont{
+        flex-direction: column;
+        gap: 30px;
+        scale: 0.7;
+    }
+
+    .copyr{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .dateandtime{
+        right: 20px;
+        display: none;
+    }
+
+    .svc-container{
+        scale: 0.9;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .extrsvc-wrapper{
+        /* display: none; */
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    th:last-child{
+        padding-left: 0px;
+    }
+
+    td{
+        /* border: 1px solid white; */
+        height: 40px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+
+    .contact_form{
+        width: 300px;
+    }
+    .contactD{
+        width: 300px;
+    }
+    .desc_contact{
+        font-size: 12px;
+    }
+    .e-app{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+/*...........................................................................................................*/
+    </style>
     
 </head>
 <body>
@@ -39,7 +514,7 @@
 <!--This is a comment on HTML to check git push-->
 <header>
     <nav class="navbarm navb" id="navb">
-        <div class="logo" ></div>
+        <div class="logo"></div>
         <input type="checkbox" id="checkbox">
         <label for="checkbox" class="toggle" id="toggler">
             <div class="bars" id="bar1"></div>
@@ -54,62 +529,59 @@
                 <a href="./medloom/services.html" class="navlinkm">SERVICES</a>
                 <a href="" class="navlinkm">ACHIVEMENTS</a>
                 <a href="" class="navlinkm">CONTACT</a>
-                
+
             </div>
             <a href="./medloom/signin.html" class="loginm">LOGIN</a>
         </div>
-        
+
 
 
     </nav>
     <nav class="navbar navb" id="navba">
         <div class="navcont">
-            <div class="logo" ></div>
-        <div class="navlinks" >
-            <a href="./index.html" class="navlink">HOME</a>
-            <a href="./medloom/doctor.html" class="navlink">DOCTORS</a>
-            <a href="./medloom/services.html" class="navlink">SERVICES</a>
-            <a href="./medloom/achievements.html" class="navlink">ACHIVEMENTS</a>
-            <a href="" class="navlink">CONTACT</a>
-            <a href="./medloom/signin.html" class="login">LOGIN</a>
+            <div class="logo"></div>
+            <div class="navlinks">
+                <a href="./index.html" class="navlink">HOME</a>
+                <a href="./medloom/doctor.html" class="navlink">DOCTORS</a>
+                <a href="./medloom/services.html" class="navlink">SERVICES</a>
+                <a href="./medloom/achievements.html" class="navlink">ACHIVEMENTS</a>
+                <a href="" class="navlink">CONTACT</a>
+                <a href="./medloom/signin.html" class="login">LOGIN</a>
+            </div>
         </div>
-        </div>
-        
+
     </nav>
 </header>
     
 
-</div>
+
 
 <h1 style="margin-bottom: 60px; padding-top: 140px; font-family:'Poppins',sans-serif; display: flex; flex-direction: column; align-items: center; color:#004a72;" class="mainHeading">Feel free to contact us for any questions or doubts you have</h2>
 <div class="contact">
     <div class="contact1">
     <div class="contact_form">
-        <h2 style="font-family: Poppins,sans-serif; padding: 15px; justify-content: center; align-self: center; color: #ffffff;">Q & A Forum</h2>
-        <form id="userForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-                <div class="error" id="nameError"></div>
+        <form name="formvalidation" id="formvalidation" action="valid.html">
+            <div class="input-row">
+                <label for="name">Enter name</label>
+                <input type="text" name="name" id="" placeholder="User-name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error" id="emailError"></div>
+            <div class="input-row">
+                <label for="name">Enter Email Address</label>
+                <input type="email" name="email" id="" placeholder="Email" required>
             </div>
-            <div class="form-group">
-                <label for="contact">Contact Number</label>
-                <input type="text" id="contact" name="contact" required>
-                <div class="error" id="contactError"></div>
+            <div class="input-row">
+                <label for="name">Contact Number</label>
+                <input type="text" name="contact" id="" placeholder="Contact number" required>
             </div>
-            <div class="form-group">
-                <label for="question">Question</label>
-                <textarea id="question" name="question" required></textarea>
-                <div class="error" id="questionError"></div>
+            <div class="input-row">
+                <label for="name">Enter Message</label>
+                <textarea name="message" placeholder="Message" id="" required></textarea>
             </div>
-            <div class="form-group">
-                <button type="submit" class="submit_button">Submit</button>
+            <div class="submitbtn">
+                <button type="submit" class="submit">Submit</button>
             </div>
+
+
         </form>
            
     </div>
@@ -168,53 +640,59 @@
 </div>
 
 
-<footer>
+<footer style="margin-top: 0;">
     <div class="footercont">
-    <div class="finfo">
-        <div class="flogo">
-            <div class="fico"></div>
-            <div class="fdes">
-                <p>MEDLooM</p>
-                <p>e-Channeling</p>
+        <div class="finfo">
+            <div class="flogo">
+                <div class="fico"></div>
+                <div class="fdes">
+                    <p>MEDLooM</p>
+                    <p>e-Channeling</p>
+                </div>
             </div>
+            <div>
+                <p> <span class="material-symbols-outlined">call</span> +94 71 895 3623</p>
+            </div>
+            <div><a href="mailto:">
+                    <p> <span class="material-symbols-outlined">mail</span> contact@medloom.org</p>
+                </a></div>
+
         </div>
-        <div><p> <span class="material-symbols-outlined">call</span> +94 71 895 3623</p></div>
-        <div><a href="mailto:"><p> <span class="material-symbols-outlined">mail</span> contact@medloom.org</p></a></div>
-    
-    </div>
-    <div class="table">
-        <table>
-            <tr>
-                <th>Visit</th>
-                <th>Our Services</th>
-            </tr>
-            <tr>
-                <td><a href="#">► Home</a></td>
-                <td><a href="#">► Heart Diseases</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">► Doctors</a></td>
-                <td><a href="#">► Lung Diseases</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">► Services</a></td>
-                <td><a href="#">► General surgery</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">► Achievements</a></td>
-                <td><a href="#">► Sport Medics</a></td>
-            </tr>
-        </table>
-    </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Visit</th>
+                    <th>Our Services</th>
+                </tr>
+                <tr>
+                    <td><a href="#">► Home</a></td>
+                    <td><a href="#">► Heart Diseases</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">► Doctors</a></td>
+                    <td><a href="#">► Lung Diseases</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">► Services</a></td>
+                    <td><a href="#">► General surgery</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">► Achievements</a></td>
+                    <td><a href="#">► Sport Medics</a></td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div class="copyr">
         <div>Copyright © 2024 TRACKLand3. All Rights Reserved.</div>
         <div class="dateandtime" id="datetime">
-            
+
         </div>
     </div>
-    
-</footer>
 
+</footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./formvalidation.js"> </script>
 </body>
 </html>
