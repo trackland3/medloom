@@ -28,11 +28,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
-
     
     <script defer src="https://unpkg.com/lenis@1.1.2/dist/lenis.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
     
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -41,12 +39,701 @@
 
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="style.css">
+    <script defer src="../script.js"></script>
     
-
-    <script defer src="script.js"></script>
     <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+   
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+ overflow-x: hidden;
+ width: 100vw;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+
+
+
+/*..........................................................*/
+
+
+/*...............................................me thama devindage page eke style tika...................................................*/
+/*Services page css styles go here ..............*/
+/*Operations css styles go here ................*/
+.first{
+  color:#004a72;
+  background-color: #d0f3ff;
+  padding: 40px 60px ;
+  justify-self: center;
+  margin: 0px 200px 200px 200px;
+  border-radius: 20px;
+  border-style: groove;
+  border-color: #004a72;
+  border-width: 2px;
+  box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
+}
+.comma{
+  padding-left: 30px;
+}
+.comma1{
+  display: flex;
+  justify-content: end;
+ 
+}
+
+.author{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  font-weight: 500;
+}
+/* operations ease-in when scrolling down*/
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Initially hide elements */
+.Operationsbox {
+  opacity: 0;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Apply the animation when in view */
+.Operationsbox.in-view {
+  animation: slideInLeft 1s forwards; 
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* Initially hide elements */
+.Awardsbox {
+opacity: 0;
+transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Apply the animation when in view */
+.Awardsbox.in-view {
+animation: fadeInUp 1s forwards; 
+}
+
+
+
+/*Services page css styles go here ..............*/
+/*Operations css styles go here ................*/
+
+
+.Operations{
+   background-color: rgb(255, 255, 255);
+   padding-top: 150px;
+   padding-bottom: 5vh;
+     
+}
+
+.Operationsbox{
+display: flex;
+flex-direction:row;
+padding:50px 80px;
+background-color: #0077b6;
+margin-top: 15px;
+margin-bottom: 75px;
+margin-right: 5px;
+border-top-right-radius:15px;
+border-bottom-right-radius: 15px;
+justify-content: center;
+align-items: center;
+height: 500px;
+border: 2px solid #2a668437;
+box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
+
+}
+
+.Heading_Op{
+   margin-top: 150px;
+   font-family: "Montserrat",sans-serif;
+   text-align: center;
+   color: #004a72;
+   font-size: 45px;
+   margin-bottom: 40px;
+   
+}
+
+.description_Op{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.description_heading_Op{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    padding:10px;
+    font-size: 32px;
+    color:#ffffff;
+    margin-bottom: 30px;
+}
+
+.description_para1{
+  font-family: "Montserrat",sans-serif;
+  text-align: center;
+  color:#ffffff;
+  margin: 10px 25px;
+  font-size: 16px;
+  padding: 0.5px 0.1px 0.1px 0.1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+}
+.description_para{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    color:#ffffff;
+    margin: 1px 5px;
+    font-size: 16px;
+    padding: 0.5px 0.1px 0.1px 0.1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+.imgop{
+    height:450px ;
+    width: 750px;
+    object-fit:cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+/*Operations css styles go here ................*/
+
+/*Awards css styles go here ................*/
+.Awards{
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    
+}
+
+.Awardsouterbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Awardsbox{
+display: flex;
+flex-direction: column;
+padding:10px 40px 10px 40px;
+background-color:#0077b6;
+margin: 5vh;
+border-radius: 15px;
+width:750px;
+height: 630px;
+border: 2px solid #2a668437;
+box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
+align-items: center;
+}
+
+.Heading_Aw{
+   padding-top: 20px;
+   font-family: "Montserrat",sans-serif;
+   text-align: center;
+   color: #004a72;
+   font-size: 40px;
+   
+}
+
+.description_Aw{
+    text-align: center;
+    padding:1px;
+
+}
+
+.description_heading_Aw{
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    padding:30px;
+    font-size: 20px;
+    color:#ffffff;
+}
+
+.imgAw{
+    height:300px ;
+    width: 400px;
+    border-radius: 30px;
+    padding: 20px;
+    
+}
+/*Awards css styles go here ................*/
+
+/*reviews css styles go here ................*/
+.heading_review{
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    color:#184f68;
+    font-size: 30px;
+}
+.Reviews{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   /* background-image: url("../pages/505714.webp");*/
+   
+   
+}
+ 
+.container{
+  position: relative;
+}
+
+.container .card{
+  position: relative;
+  width: 650px;
+  height: 450px;
+  padding: 50px;
+  background: #e2f8ff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  border-style: solid;
+  border-color: #126286;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  justify-content: center;
+}
+
+.container .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #18aaf8;
+  clip-path: circle(200px at 80% 20%);
+  transition: 0.8s ease-in-out;
+}
+
+.container .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+
+
+.container .card .imgBx{
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.container .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .card .imgBx img{
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  height: 200px;
+  width: 220px;
+  border-radius: 40px;
+  
+}
+.container .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx{
+  height: 210px;
+}
+
+.container .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#004a72;
+  margin: 0;
+  width: 100%;
+}
+
+.container .card .contentBx .size, .container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 5px 30px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3, .container .card .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display:flex;
+  flex-direction: column;
+  color: #111;
+  background: #fff;
+  margin:  5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container .card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+
+
+/*............................................................methanin iwaray normal mage page ekt adala css styling..media query tika yatama............................................*/
+
+    /* media quaries-----devindage page eke ewa------------------ */
+    @media screen and (max-width: 1220px){
+
+      .description_heading_Op{
+          font-size: 25px;
+      }
+      .description_para{
+          font-size: 14px;
+      }
+      .description_para1{
+        font-size: 14px;
+      }
+      
+      
+      .Awardsbox{
+          height: 600px;
+          width:750px;
+      }
+      .imgop{
+        height: 380px;
+      }
+      .imgAw{
+        height: 300px;
+        width: 400px;
+      }
+      }
+      @media screen and (max-width: 1060px){
         
+        
+
+        .description_Op{
+          width:450px;
+      }
+        .Operationsbox{
+            height: 500px;
+            
+        }
+        .imgop{
+            width: 50%;
+            height: 400px;
+            margin-right: 20px;
+        }
+        .Awardsouterbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        .Awardsbox{
+          height: 600px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+      
+        .first{
+          height: 500px;
+          width: 450px;
+          margin-left: 20%;
+        }
+        .Operationsbox{
+          height: 520px; 
+         
+       }
+       .imgop{
+        height: 460px;
+       }
+    }
+    @media screen and (max-width: 690px) {
+        .first{
+          margin-left: 15%;
+        }
+      .Operationsbox{
+         height: 420px; 
+      }
+  
+      .description_para{
+          font-size:10px;
+      }
+  
+      .description_para1{
+        font-size:10px;
+    }
+      .imgop{
+          height: 300px;
+      }
+      .Awardsbox{
+          width: 420px;
+          height: 610px;
+      }
+      .container .card{
+        width: 400px;
+      }
+  }
+  @media screen and (max-width: 630px) {
+    
+    .Operationsbox{
+        display: flex;
+        flex-direction: column;
+        height: 600px; 
+     }
+     .description_heading_Op{
+      margin-top: 20px;
+      margin-bottom: 10px;
+     }
+     .description_para{
+         font-size:11px;
+         margin-left:40px ;
+         margin-right:40px ;
+     }
+     .description_heading_Aw{
+      padding-top: 10px;
+     }
+     .description_para1{
+      font-size:11px;
+      margin-left:40px ;
+      margin-right:40px ;
+  }
+     .Awardsbox{
+      width: 420px;
+      height: 620px;
+  }
+    .imgop{
+      width: 320px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+ }
+ @media screen and (max-width: 425px) {
+
+
+  .first{
+    margin-left: 5%;
+    width: 350px;
+  }
+      .description_heading_Op{
+          margin-top: 15px;
+          margin-bottom: 5px;
+          margin-left:40px ;
+          margin-right:40px ;
+      }
+      .description_para{
+        margin-left:10px ;
+        margin-right:10px ;
+      }
+      .description_para1{
+        margin-left:60px ;
+        margin-right:60px ;
+      }
+      .Awardsbox{
+          width: 340px;
+          height: 600px;
+          margin-left: 5%;
+      }
+    .imgAw{
+      width: 300px;
+      height: 230px;
+    }
+  
+    .imgop{
+      height: 160px;
+      width: 280px;
+  }
+    .Operationsbox{
+      margin-left: 3px;
+      border-radius: 15px;
+      width: 390px;
+
+    }
+}
+@media screen and (max-width: 375px) {
+  .description_heading_Op{
+      margin-top: 10px;
+      margin-bottom: 5px;
+  }
+  .imgop{
+      height: 280px;
+      width:300px
+  }
+  .description_para{
+      font-size:10px;
+      margin-left:10px ;
+      margin-right:10px ;
+      padding:10px;
+  }   
+  
+  .description_para1{
+    font-size:10px;
+    margin-left:50px ;
+    margin-right:50px ;
+    padding:30px;
+}   
+  .Awardsbox{
+      width: 300px;
+      height: 580px;
+  }
+  .imgAw{
+    width: 290px;
+    height: 250px;
+  }
+  .container .card{
+    width: 300px;
+  }
+  .container .card .imgBx img {
+    width: 200px;
+  }
+  .Operationsbox{
+    width: 350px;
+    height: 600px;
+    margin-left: 11px;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+  .Awardsbox{
+    margin-left: 11%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .Operationsbox{
+    width: 300px;
+  height: 550px;
+  margin-left:12%;
+  }
+  .description_para{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+  .imgop{
+    width: 250px;
+  }
+  .description_para1{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+  .description_heading_Op{
+    margin-top: 20px;
+  }
+  .Awardsbox{
+    margin-left: 30%;
+  }
+}
     </style>
 </head>
 <body>
@@ -65,45 +752,46 @@
     </div>-->
     
     
-  <header>
-        <nav class="navbarm navb" id="navb">
-            <div class="logo"></div>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" class="toggle" id="logo">
-                <div class="bars" id="bar1"></div>
-                <div class="bars" id="bar2"></div>
-                <div class="bars" id="bar3"></div>
-            </label>
-    
-            <div class="navlist" id="navbox" style="right: -300px;">
-                <div class="navlinks navlinksm">
-                    <a href="" class="navlink">HOME</a>
-                    <a href="" class="navlink">DOCTORS</a>
-                    <a href="" class="navlink">SERVICES</a>
-                    <a href="" class="navlink">ACHIVEMENTS</a>
-                    <a href="" class="navlink">CONTACT</a>
-                    <a href="" class="navlink loginm">LOGIN</a>
-                </div>
-            </div>
+<header>
+    <nav class="navbarm navb" id="navb">
+        <div class="logo"></div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle" id="toggler">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
 
-            
-    
-        </nav>
-        <nav class="navbar navb" id="navba">
-            <div class="navcont">
-                <div class="logo"></div>
-                <div class="navlinks">
-                    <a href="" class="navlink">HOME</a>
-                    <a href="./doctors.html" class="navlink">DOCTORS</a>
-                    <a href="./pages/Services/hiru.html" class="navlink">SERVICES</a>
-                    <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
-                    <a href="" class="navlink">CONTACT</a>
-                    <a href="" class="login">LOGIN</a>
-                </div>
+        <div class="navlist" id="navbox">
+            <div class="navlinksm">
+                <a href="./index.html" class="navlinkm">HOME</a>
+                <a href="./medloom/doctor.html" class="navlinkm">DOCTORS</a>
+                <a href="./medloom/services.html" class="navlinkm">SERVICES</a>
+                <a href="" class="navlinkm">ACHIVEMENTS</a>
+                <a href="" class="navlinkm">CONTACT</a>
+
             </div>
-    
-      </nav>
-    </header>
+            <a href="./medloom/signin.html" class="loginm">LOGIN</a>
+        </div>
+
+
+
+    </nav>
+    <nav class="navbar navb" id="navba">
+        <div class="navcont">
+            <div class="logo"></div>
+            <div class="navlinks">
+                <a href="./index.html" class="navlink">HOME</a>
+                <a href="./medloom/doctor.html" class="navlink">DOCTORS</a>
+                <a href="./medloom/services.html" class="navlink">SERVICES</a>
+                <a href="./medloom/achievements.html" class="navlink">ACHIVEMENTS</a>
+                <a href="" class="navlink">CONTACT</a>
+                <a href="./medloom/signin.html" class="login">LOGIN</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
     
 
 
@@ -338,8 +1026,8 @@
     </div>
     <div class="copyr">
         <div>Copyright © 2024 TRACKLand3. All Rights Reserved.</div>
-        <div class="dateandtime" id="datetime">
-            
+        <div class="dateandtime" id="datetime" style="color: white;">
+           
         </div>
     </div>
     

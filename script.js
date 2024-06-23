@@ -77,6 +77,38 @@ gsap.from(".emgnzbox", {
 
 })
 
+gsap.from(".doctors", {
+  opacity: 0,
+  y: 70,
+  ease: 'power2.out',
+  duration: 0.5
+
+})
+
+gsap.from(".headstring", {
+  opacity: 0,
+  y: 50,
+  ease: 'power2.out',
+  duration: 0.5
+
+})
+gsap.from(".slogan", {
+  opacity: 0,
+  y: 30,
+  ease: 'power2.out',
+  duration: 0.5
+
+})
+
+gsap.from(".form-container", {
+  opacity: 0,
+  scale: 1.2,
+  ease: 'power2.out',
+  duration: 1
+
+})
+
+
 
   gsap.set(heading, { 
     y: 0,
@@ -253,20 +285,8 @@ window.addEventListener('scroll', (e) => {
 
 const navbox = document.getElementById("navbox") 
 
-document.getElementById("logo").addEventListener("click", () => {
+document.getElementById("toggler").addEventListener("click", () => {
     navbox.classList.toggle('active')
-    if (navbox.style.right === "-300px") {
-    navbox.style.right = '0px'
-    document.querySelector('.main').style.filter = 'blur(5px)';
-    console.log('hello');
-  } else {
-    navbox.style.right = '-300px'
-    document.querySelector('.main').style.filter = 'blur(0px)';
-    console.log('helloo');
-
-  }
-
-    
 });
 
 
@@ -350,3 +370,54 @@ const formattedDateTime = `${day}\-${month[monthindex]}\-${year}, ${hours}:${min
 
 document.getElementById("datetime").innerHTML = formattedDateTime;
 }, 1000);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.Operationsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // Optionally stop observing the element after it is in view
+      }
+    });
+  }, observerOptions);
+
+  boxes.forEach(box => {
+    observer.observe(box);
+  });
+});
+/*.......................................................*/
+
+/*scroll down animation for awards */
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes1 = document.querySelectorAll('.Awardsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, observerOptions);
+
+  boxes1.forEach(box1 => {
+    observer.observe(box1);
+  });
+});
