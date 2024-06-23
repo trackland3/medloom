@@ -596,11 +596,13 @@ align-items: center;
 .container .card .imgBx img{
 
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) ;
-  width: 270px;
-  border-radius: 10px;
+  height: 200px;
+  width: 220px;
+  border-radius: 40px;
+  border-style;
 }
 .container .card .contentBx{
   position: absolute;

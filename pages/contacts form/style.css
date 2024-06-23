@@ -17,7 +17,7 @@ html{
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    z-index: 101;
+    z-index: 100;
     box-shadow: 0 4px 8px rgba(35, 67, 83, 0.197);
     backdrop-filter: blur(5px);
     transition: 200ms ease-in;
@@ -27,18 +27,70 @@ html{
 }
 
 .navlist{
-    display: flex;
-    position: fixed;
+    position: absolute;
+    left: 0;
     top: 100px;
-    width: 300px;
+    width: 100%;
     height: calc(100vh - 100px);
-    padding: 20px;
-    background-color: #234353;
-    z-index: 101;
-    transition: 400ms;
+    background-color: #0077b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 103;
+    transition: 200ms ease-in-out;
+    transform: translateX(-100%);
+
+
     
 }
 
+.navlist.active{
+    transform: translateX(0%);
+}
+
+.navlinksm{
+    width: 80%;
+    font-size: x-large;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 103;
+}
+
+.navlinkm{
+    border-bottom: 1px solid white;
+}
+
+.navlinkm:active{
+    border-bottom: 1px solid #ffffff9c;
+    color: #ffffff9c;
+}
+
+
+.loginm{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: larger;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.loginm:active{
+    background-color: #ffffff;
+    color: #0077b6;
+    scale: 0.95;
+}
 
 #checkbox {
     display: none;
@@ -183,22 +235,14 @@ html{
 
 }
 
-.navlinks .loginm{
-    text-align: center;
-    color: #234353;
-    background-color: white;
-    padding: 5px 20px;
-    border-radius: 0px;
-}
+
 
 .navlinks .login:active{
     transform: scale(0.95);
     background-color: #e24965;
 }
 
-.navlinksm a{
-    color: white;
-}
+
 
 .main{
     transition: 400ms;
@@ -475,7 +519,7 @@ font-size: 5vh;
 }
 .contact_box1{
     width:100%;
-    background-image: url("./R.jpg");
+    background-image: url("./contactspics/R.jpg");
     margin: 0px;
    
 }
@@ -584,6 +628,41 @@ font-size: 5vh;
       
           }
       
+          .heading{
+              padding: 0;
+          }
+      
+          .heading p:nth-child(1) {
+              font-size: 170px;
+              font-weight: 800;
+          }
+      
+          .heading p:nth-child(2) {
+      
+              font-weight: 600;
+              letter-spacing: 2px;
+      
+          }
+      
+          .qaccess{
+              padding: 0 10px;
+          }
+      
+          .sendto .intro{
+              font-size: 1.5rem;
+              padding: 40px;
+          
+          }
+      
+          .visbox{
+              width: 800px;
+              
+          }
+      
+          .footercont{
+              scale: 0.8;
+          }
+      
 
     .ContactH{
       text-align:center;
@@ -598,7 +677,7 @@ font-size: 5vh;
         width: 700px;
         margin: 10px 10px 10px 20px;
     }
-}
+
 .dowstore{
     display: flex;
 }
@@ -613,13 +692,7 @@ font-size: 5vh;
     height: 50px;
 
 }
-.visbox{
-    width: 800px;
-    
-}
 
-.footercont{
-    scale: 0.8;
 }
 @media screen and (max-width: 980px) {
     .contact1{
@@ -653,15 +726,15 @@ font-size: 5vh;
           .navbar{
               display: none;
           }
-         /*.navbarm{
+          .navbarm{
               display: flex;
               user-select: none;
               
-          }*/
+          }
       
           .navlinks{
               position: absolute;
-              gap: 10px;
+              gap: 20px;
               flex-direction: column;
               align-items: start;
           }
@@ -669,6 +742,19 @@ font-size: 5vh;
           .logo{
               margin: 0;
           }
+          .copyr{
+            font-size: 12px;
+        }
+    
+        .dateandtime{
+            right: 20px;
+        }
+    
+        .svc-container{
+            gap: 0;
+            scale: 0.73;
+        }
+    
     .desc_contact{
         
         font-size: 15px;
@@ -752,7 +838,44 @@ font-size: 5vh;
         height: 105px;
     
     }
-    
+    .footercont{
+        flex-direction: column;
+        gap: 30px;
+        scale: 0.7;
+    }
+
+    .copyr{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .dateandtime{
+        right: 20px;
+        display: none;
+    }
+
+    .svc-container{
+        scale: 0.9;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .extrsvc-wrapper{
+        /* display: none; */
+        padding: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    th:last-child{
+        padding-left: 0px;
+    }
+
+    td{
+        /* border: 1px solid white; */
+        height: 40px;
+        padding-left: 60px;
+    }
 }
 
 @media screen and (max-width: 325px) {
@@ -770,6 +893,10 @@ font-size: 5vh;
         display: flex;
         flex-direction: column;
     }
+    .visbox{
+        width: 350px;
+    }
+
 }
 
 /*...........................................................................................................*/

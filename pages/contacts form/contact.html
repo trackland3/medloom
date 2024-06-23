@@ -30,51 +30,58 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <script defer src="../../script.js"></script>
     <script src="https://kit.fontawesome.com/9b4b408328.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
 
 <!--This is a comment on HTML to check git push-->
-    <header>
-        <nav class="navbarm navb" id="navb">
+<header>
+    <nav class="navbarm navb" id="navb">
+        <div class="logo" ></div>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle" id="toggler">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
+
+        <div class="navlist" id="navbox">
+            <div class="navlinksm">
+                <a href="./index.html" class="navlinkm">HOME</a>
+                <a href="./medloom/doctor.html" class="navlinkm">DOCTORS</a>
+                <a href="./medloom/services.html" class="navlinkm">SERVICES</a>
+                <a href="" class="navlinkm">ACHIVEMENTS</a>
+                <a href="" class="navlinkm">CONTACT</a>
+                
+            </div>
+            <a href="./medloom/signin.html" class="loginm">LOGIN</a>
+        </div>
+        
+
+
+    </nav>
+    <nav class="navbar navb" id="navba">
+        <div class="navcont">
             <div class="logo" ></div>
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" class="toggle" id="logo">
-                <div class="bars" id="bar1"></div>
-                <div class="bars" id="bar2"></div>
-                <div class="bars" id="bar3"></div>
-            </label>
-    
-            <div class="navlist" id="navbox" style="right: -200px;">
-                <div class="navlinks">
-                    <a href="" class="navlink">HOME</a>
-                    <a href="" class="navlink">DOCTORS</a>
-                    <a href="" class="navlink">SERVICES</a>
-                    <a href="" class="navlink">ACHIVEMENTS</a>
-                    <a href="" class="navlink">CONTACT</a>
-                </div>
-            </div>
-
-
-        </nav>
-        <nav class="navbar navb" id="navba">
-            <div class="logo" scrollTrigger="top"></div>
-            <div class="navlinks" scrollTrigger="top">
-                <a href="" class="navlink">HOME</a>
-                <a href="" class="navlink">DOCTORS</a>
-                <a href="" class="navlink">SERVICES</a>
-                <a href="./pages/achievements.html" class="navlink">ACHIVEMENTS</a>
-                <a href="" class="navlink">CONTACT</a>
-            </div>
-        </nav>
-    </header>
+        <div class="navlinks" >
+            <a href="./index.html" class="navlink">HOME</a>
+            <a href="./medloom/doctor.html" class="navlink">DOCTORS</a>
+            <a href="./medloom/services.html" class="navlink">SERVICES</a>
+            <a href="./medloom/achievements.html" class="navlink">ACHIVEMENTS</a>
+            <a href="" class="navlink">CONTACT</a>
+            <a href="./medloom/signin.html" class="login">LOGIN</a>
+        </div>
+        </div>
+        
+    </nav>
+</header>
     
 
 </div>
 
-<h1 style="margin-bottom: 60px; margin-top: 130px; font-family:'Poppins',sans-serif; display: flex; flex-direction: column; align-items: center; color:#004a72;" class="mainHeading">Feel free to contact us for any questions or doubts you have</h2>
+<h1 style="margin-bottom: 60px; padding-top: 140px; font-family:'Poppins',sans-serif; display: flex; flex-direction: column; align-items: center; color:#004a72;" class="mainHeading">Feel free to contact us for any questions or doubts you have</h2>
 <div class="contact">
     <div class="contact1">
     <div class="contact_form">
@@ -142,10 +149,10 @@
                             <p style="color:#ffffff;">The eChannelling Mobile application enables you to channel doctors/consultants from 260+ private hospitals, clinics, channeling centers and private ayurvedic hospitals in Sri Lanka. It's the easy, convenient, cost and time saving way to channel doctors/consultants.</p>
                             <div class="dowstore">
                                 
-                                    <img src="playstore.png" class="imgstore">
+                                    <img src="./contactspics/playstore.png" class="imgstore">
                                 
                                
-                                    <img src="appstore.png" class="imgstore1">
+                                    <img src="./contactspics/appstore.png" class="imgstore1">
                                 
                             </div>
                         </div>
