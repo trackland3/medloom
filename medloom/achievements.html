@@ -73,12 +73,22 @@ body{
 /*...............................................me thama devindage page eke style tika...................................................*/
 /*Services page css styles go here ..............*/
 /*Operations css styles go here ................*/
+
+
+.Operations{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .first{
   color:#004a72;
   background-color: #d0f3ff;
   padding: 40px 60px ;
+  margin: 0px 150px;
   justify-self: center;
-  margin: 0px 200px 200px 200px;
   border-radius: 20px;
   border-style: groove;
   border-color: #004a72;
@@ -158,6 +168,7 @@ animation: fadeInUp 1s forwards;
 /*Operations css styles go here ................*/
 
 
+
 .Operations{
    background-color: rgb(255, 255, 255);
    padding-top: 150px;
@@ -214,9 +225,7 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
   font-family: "Montserrat",sans-serif;
   text-align: center;
   color:#ffffff;
-  margin: 10px 25px;
   font-size: 16px;
-  padding: 0.5px 0.1px 0.1px 0.1px;
   margin-top: 1px;
   margin-bottom: 1px;
 
@@ -246,6 +255,10 @@ box-shadow: 5px 5px 10px #dbdbdb, -5px -5px 10px #eef9fa;
 .Awards{
     background-color: #ffffff;
     padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -545,9 +558,7 @@ align-items: center;
     @media screen and (max-width: 768px) {
       
         .first{
-          height: 500px;
-          width: 450px;
-          margin-left: 20%;
+          margin: 0px 20px;
         }
         .Operationsbox{
           height: 520px; 
@@ -558,9 +569,7 @@ align-items: center;
        }
     }
     @media screen and (max-width: 690px) {
-        .first{
-          margin-left: 15%;
-        }
+        
       .Operationsbox{
          height: 420px; 
       }
@@ -621,10 +630,7 @@ align-items: center;
  @media screen and (max-width: 430px) {
 
 
-  .first{
-    margin-left: 5%;
-    width: 350px;
-  }
+  
       .description_heading_Op{
           margin-top: 15px;
           margin-bottom: 5px;
@@ -705,6 +711,10 @@ align-items: center;
   }
   .Awardsbox{
     margin-left: 11%;
+  }
+
+  .Reviews{
+    margin-left: 280px;
   }
 }
 
@@ -793,7 +803,7 @@ align-items: center;
     </nav>
 </header>
     
-
+<main class="achivemain">
 
 <div class="Operations">
     <div class="first">
@@ -983,7 +993,7 @@ align-items: center;
     
 </div>
 
-</body>
+
 
 <footer>
     <div class="footercont">
@@ -1032,5 +1042,6 @@ align-items: center;
     </div>
     
 </footer>
-
+</main>
+</body>
 </html>

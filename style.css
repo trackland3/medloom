@@ -686,7 +686,7 @@ html{
 
 footer{
     position: relative;
-    width: 100%;
+    width: 100vw;
     min-height: 400px;
     margin-top: 300px;
     display: flex;
