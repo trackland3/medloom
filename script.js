@@ -370,3 +370,54 @@ const formattedDateTime = `${day}\-${month[monthindex]}\-${year}, ${hours}:${min
 
 document.getElementById("datetime").innerHTML = formattedDateTime;
 }, 1000);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.Operationsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // Optionally stop observing the element after it is in view
+      }
+    });
+  }, observerOptions);
+
+  boxes.forEach(box => {
+    observer.observe(box);
+  });
+});
+/*.......................................................*/
+
+/*scroll down animation for awards */
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes1 = document.querySelectorAll('.Awardsbox');
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+      } else {
+        entry.target.classList.remove('in-view');
+      }
+    });
+  }, observerOptions);
+
+  boxes1.forEach(box1 => {
+    observer.observe(box1);
+  });
+});
